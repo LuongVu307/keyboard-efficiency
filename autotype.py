@@ -128,7 +128,7 @@ class SeekHunt(Autotyper):
                 finger = [finger2, finger2_letter]
                 time = max(distance2[finger2]/self.finger_speed[finger2], distance2_letter[finger2_letter]/self.finger_speed[finger2_letter])
 
-            return time, letter, finger
+            return time+0.05, letter, finger
 
         else:
             if letter.isupper():
@@ -148,7 +148,7 @@ class SeekHunt(Autotyper):
     
             # print(distance, letter)
 
-            return min(time), [letter.lower()], finger
+            return min(time)+0.05, [letter.lower()], finger
     
 
 class Type10Finger(Autotyper):
@@ -206,7 +206,7 @@ class Type10Finger(Autotyper):
                 finger = [finger2, finger2_letter]
                 time = max(distance2[finger2]/self.finger_speed[finger2], distance2_letter[finger2_letter]/self.finger_speed[finger2_letter])
 
-            return time, letter, finger
+            return time+0.05, letter, finger
 
         else:
             if letter.isupper():
@@ -244,4 +244,4 @@ class Type10Finger(Autotyper):
     
             # print(distance, letter)
 
-            return min(time), [letter.lower()], finger
+            return min(time)+0.05, [letter.lower()], finger

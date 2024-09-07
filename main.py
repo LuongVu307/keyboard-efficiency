@@ -527,6 +527,7 @@ def create_simulation(mode):
                 start_time = False
                 capslock = False
                 raw_typed = []
+                # total_time = 0
             case "running":
                 pressed_key = []
                 pressed_key = get_pressed_keys(QWERTY, CHOSEN_STYLE)
@@ -538,8 +539,10 @@ def create_simulation(mode):
                     if auto == True:
                         try:
                             # print(pygame.time.get_ticks() - autotype_time, cost*1000)
-                            if (pygame.time.get_ticks() - autotype_time >= cost*1000+50):
+                            if (pygame.time.get_ticks() - autotype_time >= cost*1000):
                                 cost, letter, fingers = autotyper.type(testing_text, typed, capslock)
+                                # total_time += cost
+                                # print(total_time)
                                 autotype_time = pygame.time.get_ticks()
                                 pressed_key = letter
                         except Exception:
@@ -564,8 +567,8 @@ def create_simulation(mode):
 
                     
                     if mode == "train":
-                        wps = round(len(testing_text.split())/((current_time - start_ticks)/1000)*60)
-                        data = [CHOICE, len(testing_text), current_time - start_ticks, wps, autotyper.type_genre]
+                        wpm = round(len(testing_text.split())/((current_time - start_ticks)/1000)*60)
+                        data = [CHOICE, len(testing_text), current_time - start_ticks, wpm, autotyper.type_genre]
                         with open("data.csv", "a", newline="") as file:
                             writer = csv.writer(file)
                             writer.writerow(data)
@@ -683,7 +686,7 @@ def create_simulation(mode):
                 
                 # print(raw_typed)
             case "evaluate":
-                WPS_text = start_font.render(f"Words per second: {str(wps)} (wps)", True, pygame.Color("Black"))
+                WPS_text = start_font.render(f"Words per minute: {str(wps)} (wpm)", True, pygame.Color("Black"))
                 screen.blit(WPS_text, (50, 50))
 
                 create_button(screen, "Back", start_font, pygame.Color("SkyBlue"), (150, HEIGHT - 50))
