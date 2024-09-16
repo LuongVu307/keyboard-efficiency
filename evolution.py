@@ -1,9 +1,13 @@
 import pygame
-import sys
+import os
+import random
+from collections import defaultdict
+
+import matplotlib.pyplot as plt
+import numpy as np
+import matplotlib.colors as mcolors
 
 from autotype import Type10Finger
-
-import random
 
 
 def generate_keyboard():
@@ -47,10 +51,90 @@ def process_string(individual):
     
     return individual
 
+def create_frequency_map(layout, dist_layout, frequency_map, output_path):
+    """
+    Creates an image of a keyboard layout with rectangles colored based on key frequencies.
+
+    Parameters:
+    - layout: List of lists representing the keyboard layout.
+    - dist_layout: List of lists representing the distance metrics for each key.
+    - text: Sample text to calculate key frequencies.
+    - output_image_path: Path where the output image will be saved.
+    """
+    
+
+    # Image size parameters
+    rect_width = 1
+    rect_height = 1
+    rows = len(layout)
+    cols = max(len(row) for row in layout)
+
+    # Normalize frequencies for color mapping
+    flat_frequencies = [frequency_map.get(key, 0) for sublist in layout for key in sublist]
+    max_freq = max(flat_frequencies, default=1)
+    norm_freq = mcolors.Normalize(vmin=0, vmax=max_freq)
+    cmap_freq = plt.get_cmap('RdYlGn_r')  # Red colormap for frequency
+
+    # Create figure and axis
+    fig, ax = plt.subplots(figsize=(cols, rows))
+    ax.set_xlim(0, cols)
+    ax.set_ylim(0, rows)
+    ax.set_aspect('equal')
+
+    # Draw rectangles and annotate with frequency
+    for r, (row, dist_row) in enumerate(zip(layout, dist_layout)):
+        row_width = len(row) * rect_width
+        row_offset = (cols - row_width) / 2  # Center the row horizontally
+
+        for c, (key, dist) in enumerate(zip(row, dist_row)):
+            # Calculate the center position of the rectangle
+            x = row_offset + c * rect_width + rect_width / 2
+            y = (rows - r - 1) * rect_height + rect_height / 2
+            
+            # Get frequency and map to color
+            freq = frequency_map.get(key, 0)
+            freq_color = cmap_freq(norm_freq(freq))
+            
+            # Draw rectangle with color based on frequency
+            rect = plt.Rectangle((row_offset + c * rect_width, (rows - r - 1) * rect_height),
+                                 rect_width, rect_height,
+                                 linewidth=1, edgecolor='black', facecolor=freq_color)
+            ax.add_patch(rect)
+            
+            # Draw key text with frequency
+            plt.text(x, y, f"{key}\n{round(freq/sum(frequency_map.values()), 3)}", ha='center', va='center', fontsize=8, color='black')
+
+    # Remove axes
+    ax.axis('off')
+
+    # Save the image
+    plt.savefig(output_path, bbox_inches='tight', pad_inches=0)
+    plt.close()
+
+def create_line_graph(x, y, output_path):
+    """
+    Draws a line graph of the provided x and y data and saves it as an image file.
+    
+    Parameters:
+    - x: Data for the x-axis.
+    - y: Data for the y-axis.
+    - output_image_path: Path where the output image will be saved.
+    """
+    # Create the line plot
+    plt.plot(x, y, linestyle='-', color='b', label='Line')
+    
+    # Add titles and labels
+    plt.title('LDS of generations')
+    plt.xlabel('Generation')
+    plt.ylabel('Inverse LDS')
+    
+    # Save the plot to an image file
+    plt.savefig(output_path, bbox_inches='tight', pad_inches=0.1)
+    plt.close()  # Close the figure to free up memory
 
 class Genetic:
     def __init__(self, population_number, selection_method, selection_rate, mutation_rate, 
-                 mutation_intensity, fitness_function, dominant):
+                 mutation_intensity, dominant):
         self.population = {}
 
         self.population_number = population_number
@@ -58,10 +142,12 @@ class Genetic:
         self.selection_rate = selection_rate
         self.mutation_rate = mutation_rate
         self.mutation_intensity = mutation_intensity
-        self.fitness_function = fitness_function
         self.dominant = dominant
 
         self.all_the_time_best = ["", 1e99]
+
+        self.frequency = {}
+
 
         for _ in range(population_number):
             random_keyboard = str(generate_keyboard())
@@ -87,7 +173,7 @@ class Genetic:
         while len(self.population) < self.population_number:
             self.population[str(generate_keyboard())] = 1e10
         for individual in self.population:
-            self.population[individual] = self.fitness_function(process_string(individual))
+            self.population[individual] = self.fitness_function(process_string(individual))[0]
 
         self.population = dict(sorted(self.population.items(), key=lambda x : x[1]))
         min_value = min(self.population.values())
@@ -189,23 +275,25 @@ class Genetic:
 
 
 
-        with open(f"sample_text/{text_file}.txt", "r") as f:
-            lines = f.readlines()
-            for line in lines:
-                for word in line:
-                    for key in gene_repetition:
-                        if word.upper() in key:
-                            gene_repetition[key] += 1 
-                        else: 
-                            gene_repetition[key] = 1
-                                
+        # with open(f"sample_text/{text_file}.txt", "r") as f:
+        #     lines = f.readlines()
+        #     for line in lines:
+        #         for word in line:
+        #             for key in gene_repetition:
+        #                 if word.upper() in key:
+        #                     gene_repetition[key] += 1 
+        #                 else: 
+        #                     gene_repetition[key] = 1
+
+ 
+        # gene_repetition = self.frequency
                                               
 
-        sum_repetition = sum(gene_repetition.values())
-        for key in gene_repetition:
-            gene_repetition[key] /= sum_repetition
+        sum_repetition = sum(self.frequency.values())
+        for key in self.frequency:
+            self.frequency[key] /= sum_repetition
 
-        self.gene_importance =  dict(sorted(gene_repetition.items(), key = lambda x : x[1], reverse=True))
+        self.gene_importance =  dict(sorted(self.frequency.items(), key = lambda x : x[1], reverse=True))
         
     def get_similarities(self, keyboard1, keyboard2):
         similar, counter = 0, 0
@@ -369,6 +457,9 @@ class Genetic:
         self.get_important_genes()
         self.available_key()
 
+        self.frequency = {i : 0 for j in QWERTY for i in j}
+        self.history =  []
+
         for _ in range(generation):
 
             QWERTY_score = self.fitness_function(QWERTY)
@@ -378,8 +469,12 @@ class Genetic:
 
             print("Generation: ", _, " Population: ", len(self.population))
             print("-----------------------------------------------")
+
+            # print("Calculating metrics for the generations ...")
             self.fit()
+            # print("Selecting strong keyboards")
             self.select()
+            # print("Regenerating new keyboards")
             self.regenerate()        
 
             # for i in self.new_generation:
@@ -391,21 +486,47 @@ class Genetic:
                     self.new_generation[count] = self.mutate(genes)
             self.elite()
 
-            print(f"Generation {_}'s best performance keyboard has the average typing time of {list(self.best_performance.values())[0]}")
-            print(f"Generation {_}'s keyboard has the average typing time of {sum(list(self.population.values()))/len(self.population)}")
-            print(f"QWERTY has typing time of {QWERTY_score}")
-            print(f"DVORAK has typing time of {DVORAK_score}")
-            print(f"COLEMAK has typing time of {COLEMAK_score}")
+            print(f"Generation {_}'s best performance keyboard has the average typing inverse LPS of {list(self.best_performance.values())[0]}")
+            print(f"Generation {_}'s keyboard has the average typing inverse LPS of {sum(list(self.population.values()))/len(self.population)}")
+            print(f"QWERTY has LPS of {QWERTY_score[1]} and inverse LPS of {QWERTY_score[0]}")
+            print(f"DVORAK has LPS of {DVORAK_score[1]} and inverse LPS of {DVORAK_score[0]}")
+            print(f"COLEMAK has LPS of {COLEMAK_score[1]} and inverse LPS of {COLEMAK_score[0]}")
             
             print("The keyboard layout is")
             best_keyboard = process_string(list(self.best_performance.keys())[0])
+
+            self.history.append(min(self.population.values()))
             if _ == generation-1:
                 self.fit()
                 save_keyboard = [process_string(i) for i in list(self.population.keys())[:save]]
+                
                 # print(save_keyboard)
                 with open(f'save/{name}.txt', 'w') as file:
                     for line in save_keyboard:
                         file.write(str(line) + '\n')
+
+                dist_layout = [[0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5,9.5,10.5,11.5,12.5,14],
+                [0.8, 2, 3, 4, 5 ,6 ,7, 8, 9, 10, 11, 12, 13, 14.3],
+                [0.9, 2.2 ,3.2, 4.2, 5.2, 6.2, 7.2, 8.2, 9.2, 10.2, 11.2,12.2,13.9],
+                [1.1, 2.7,3.7,4.7,5.7,6.7,7.7,8.7,9.7,10.7,11.7,13.6]
+                ]
+
+                os.makedirs(f"evaluation/{name}", exist_ok=True)
+                # print(self.frequency)
+
+                # print(list(self.best_performance.keys())[0])
+
+
+                create_frequency_map(QWERTY, dist_layout, self.frequency, output_path=f"evaluation/{name}/QWERTY_frequency_map.png")
+                create_frequency_map(DVORAK, dist_layout, self.frequency, output_path=f"evaluation/{name}/DVORAK_frequency_map.png")
+                create_frequency_map(COLEMAK, dist_layout, self.frequency, output_path=f"evaluation/{name}/COLEMAK_frequency_map.png")
+                create_frequency_map(best_keyboard, dist_layout, self.frequency, output_path=f"evaluation/{name}/generated_frequency_map.png")
+
+                create_line_graph(range(len(self.history)), self.history, output_path=f"evaluation/{name}/generated_history.png")
+
+                # print(self.history)
+
+                
 
             for row in best_keyboard:
                 print(row)
@@ -413,78 +534,107 @@ class Genetic:
             print()
             self.population = {str(i) : 1e10 for i in self.new_generation}
 
-def fit_keyboard(keyboard, sample=40):
-    # missing = set([i for row in keyboard for i in row]) - set([i for row in QWERTY for i in row])
-    # print("MISSING", missing)
+         
 
-    # for i in keyboard:
-    #     print(i)
+    def fitness_function(self, keyboard, sample=30):
+        # missing = set([i for row in keyboard for i in row]) - set([i for row in QWERTY for i in row])
+        # print("MISSING", missing)
 
-    FINGER_POS = {"1" : (2, 1), "2" : (2, 2), "3" : (2, 3), "4" : (2, 4), "5" : (2, 7), "6" : (2, 8), "7" : (2, 9), "8" : (2, 10)}
-    FINGER_SPEED = {"1" : 20, "2" : 30, "3" : 40, "4" : 50, "5" : 50, "6" : 40, "7" : 30, "8" : 20}
-    FINGER_COLOR = {"0": pygame.Color("Gray"), "1" : pygame.Color("Pink"), "2" : pygame.Color("Red"), "3" : pygame.Color("Yellow"), "4" : pygame.Color("Green"), "5" : pygame.Color("Blue"), "6" : pygame.Color("Purple"), "7" : pygame.Color("Brown"), "8" : pygame.Color("Light blue")}
+        # for i in keyboard:
+        #     print(i)
 
-    dist_layout = [[0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5,9.5,10.5,11.5,12.5,14],
-                    [0.8, 2, 3, 4, 5 ,6 ,7, 8, 9, 10, 11, 12, 13, 14.3],
-                    [0.9, 2.2 ,3.2, 4.2, 5.2, 6.2, 7.2, 8.2, 9.2, 10.2, 11.2,12.2,13.9],
-                    [1.1, 2.7,3.7,4.7,5.7,6.7,7.7,8.7,9.7,10.7,11.7,13.6]
-                    ]
-    
-    autotyper = Type10Finger(keyboard=keyboard, dist_layout =dist_layout, finger_speed = FINGER_SPEED, starting_pos=FINGER_POS)
-    WPS = 0
+        FINGER_POS = {"1" : (2, 1), "2" : (2, 2), "3" : (2, 3), "4" : (2, 4), "5" : (2, 7), "6" : (2, 8), "7" : (2, 9), "8" : (2, 10)}
+        FINGER_SPEED = {"1" : 20, "2" : 30, "3" : 40, "4" : 50, "5" : 50, "6" : 40, "7" : 30, "8" : 20}
+        FINGER_COLOR = {"0": pygame.Color("Gray"), "1" : pygame.Color("Pink"), "2" : pygame.Color("Red"), "3" : pygame.Color("Yellow"), "4" : pygame.Color("Green"), "5" : pygame.Color("Blue"), "6" : pygame.Color("Purple"), "7" : pygame.Color("Brown"), "8" : pygame.Color("Light blue")}
 
-    for _ in range(sample):
-        typed = []
-        text_type  = random.choice(["medium"])
-        with open(f"sample_text\\{text_type}.txt", "r") as f:
-            text = f.readlines()
-        testing_text = text[random.randint(0, len(text)-1)]
-        length = len(testing_text)
-        capslock = False
-        total_cost = 0
-
+        dist_layout = [[0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5,9.5,10.5,11.5,12.5,14],
+                        [0.8, 2, 3, 4, 5 ,6 ,7, 8, 9, 10, 11, 12, 13, 14.3],
+                        [0.9, 2.2 ,3.2, 4.2, 5.2, 6.2, 7.2, 8.2, 9.2, 10.2, 11.2,12.2,13.9],
+                        [1.1, 2.7,3.7,4.7,5.7,6.7,7.7,8.7,9.7,10.7,11.7,13.6]
+                        ]
         
-        while not(len(typed) >= len(testing_text)-1):
-            try:
-                cost, letter, fingers = autotyper.type(testing_text, typed, capslock)
-            except Exception:
-                print(testing_text[len(typed):], typed, letter)
-                raise Exception
-            if "caps lock" in letter:
-                capslock = False if capslock == True else True
-            for i in letter:
-                if len(i) == 1:
-                    typed.append(i)
-                if i == "space":
-                    typed.append(" ")
-            total_cost += cost
-        # print(total_cost)
+        autotyper = Type10Finger(keyboard=keyboard, dist_layout =dist_layout, finger_speed = FINGER_SPEED, starting_pos=FINGER_POS)
+        WPS = 0
 
-        WPS += length/total_cost
-        # print(length/total_cost)
+        for _ in range(sample):
+            typed = []
+            # type = random.choice(os.listdir("sample_text"))
+            type = "code"
+            text = random.choice(os.listdir("sample_text/" + type))
+            with open(f"sample_text\\{type}\\{text}", "r") as f:
+                text = f.readlines()
 
-    return 100/(WPS/sample)
+            starting_line = random.randint(0, len(text)-1)
+            testing_text = ""
+            while True:
+                if text[starting_line]:
+                    testing_text += text[starting_line]
 
-def check_balance(times, repeat=30):
-    QWERTY = [["`~", "1!","2@","3#","4$","5%","6^", "7&","8*","9(","0)","-_" ,"=+", "backspace"],
-        ["Tab", "Q" ,"W" ,"E" ,"R" ,"T" ,"Y" ,"U" ,  "I" ,"O" ,"P" ,"[{" ,"]}", "\\|"],
-        ["caps lock", "A" ,"S" ,"D" ,"F" ,"G" ,"H" , "J" , "K" ,"L" ,";:","'\"", "Enter"],
-        ["LShift",   "Z" ,"X" ,"C" ,"V" ,"B" ,"N" ,"M" , ",<",".>","/?", "RShift",]
-        ]
+                starting_line += 1
+                if len(testing_text) > 300 or starting_line >= len(text):
+                    testing_text = testing_text.replace("\n", " ")
+                    # print(testing_text)
+                    break
+                
+            testing_text = testing_text.strip()
+            length = len(testing_text)
+            capslock = False
+            total_cost = 0
 
-    sample = []
-    for _ in range(times):
-        sample.append(fit_keyboard(QWERTY, sample=repeat))
+            
+            while not(len(typed) >= len(testing_text)-1):
+                try:
+                    cost, letter, fingers = autotyper.type(testing_text, typed, capslock)
+                except Exception:
+                    # print("CHECING", (testing_text[len(typed):]), ord(testing_text[len(typed)]), "2", typed, "3",  letter)
+                    raise Exception
+                for i in letter:
+                    for j in self.frequency:
+                        if len(j) <= 2:
+                            if i.lower() in j.lower():
+                                self.frequency[j] += 1
+                        else:
+                            if i.lower() == j.lower():
+                                self.frequency[j] += 1
 
-    return sample
+
+                if "caps lock" in letter:
+                    capslock = False if capslock == True else True
+                for i in letter:
+                    if len(i) == 1:
+                        typed.append(i)
+                    if i == "space":
+                        typed.append(" ")
+                total_cost += cost
+            # print(total_cost)
+            if total_cost == 0:
+                continue
+            WPS += length/total_cost
+            # print(length/total_cost)
+
+        return 100/(WPS/sample), WPS/sample
+
+# def check_balance(times, repeat=30):
+#     QWERTY = [["`~", "1!","2@","3#","4$","5%","6^", "7&","8*","9(","0)","-_" ,"=+", "backspace"],
+#         ["Tab", "Q" ,"W" ,"E" ,"R" ,"T" ,"Y" ,"U" ,  "I" ,"O" ,"P" ,"[{" ,"]}", "\\|"],
+#         ["caps lock", "A" ,"S" ,"D" ,"F" ,"G" ,"H" , "J" , "K" ,"L" ,";:","'\"", "Enter"],
+#         ["LShift",   "Z" ,"X" ,"C" ,"V" ,"B" ,"N" ,"M" , ",<",".>","/?", "RShift",]
+#         ]
+
+#     sample = []
+#     for _ in range(times):
+#         sample.append(fit_keyboard(QWERTY, sample=repeat)[0])
+
+#     return sample
 
 
 def train():
     # print(check_balance(times=30, repeat=30))
-    gens = Genetic(population_number=100, selection_method="rank", selection_rate=0.8, mutation_rate=0.1,
-            mutation_intensity=0.3, fitness_function=fit_keyboard, dominant=0.7)
+    gens = Genetic(population_number=150, selection_method="rank", selection_rate=0.8, mutation_rate=0.1,
+            mutation_intensity=0.3, dominant=0.7)
 
-    gens.simulate(generation=100, save=10, name="simulation4")
+    gens.simulate(generation=100, save=10, name="simulation8")
+
 
 
 def main():

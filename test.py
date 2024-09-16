@@ -1,54 +1,33 @@
-import pygame
+import matplotlib.pyplot as plt
+import numpy as np
 
-# Initialize Pygame
-pygame.init()
+def draw_and_save_line_graph(x, y, output_image_path):
+    """
+    Draws a line graph of the provided x and y data and saves it as an image file.
+    
+    Parameters:
+    - x: Data for the x-axis.
+    - y: Data for the y-axis.
+    - output_image_path: Path where the output image will be saved.
+    """
+    # Create the line plot
+    plt.plot(x, y, linestyle='-', color='b', label='Line')
+    
+    # Add titles and labels
+    plt.title('Line Graph')
+    plt.xlabel('X-axis Label')
+    plt.ylabel('Y-axis Label')
+    plt.legend()
+    
+    # Save the plot to an image file
+    plt.savefig(output_image_path, bbox_inches='tight', pad_inches=0.1)
+    plt.close()  # Close the figure to free up memory
 
-# Set up display
-screen = pygame.display.set_mode((300, 200))
-pygame.display.set_caption('Toggle Button')
+    print(f"Line graph saved as {output_image_path}")
 
-# Define colors
-WHITE = (255, 255, 255)
-GREEN = (0, 255, 0)
-RED = (255, 0, 0)
-BLACK = (0, 0, 0)
+# Example usage
+x = np.linspace(0, 10, 100)  # Generate 100 points from 0 to 10
+y = np.sin(x)  # Compute the sine of these points
+output_image_path = 'line_graph.png'
 
-# Button state
-button_on = False
-
-# Button rectangle
-button_rect = pygame.Rect(100, 75, 100, 50)
-
-# Main loop
-running = True
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-        if event.type == pygame.MOUSEBUTTONDOWN:
-            if button_rect.collidepoint(event.pos):
-                button_on = not button_on  # Toggle button state
-
-    # Fill the screen with white
-    screen.fill(WHITE)
-
-    # Draw button
-    if button_on:
-        pygame.draw.rect(screen, GREEN, button_rect)
-        text = "ON"
-    else:
-        pygame.draw.rect(screen, RED, button_rect)
-        text = "OFF"
-
-    # Render text
-    font = pygame.font.Font(None, 36)
-    text_surface = font.render(text, True, BLACK)
-    text_rect = text_surface.get_rect(center=button_rect.center)
-    screen.blit(text_surface, text_rect)
-
-    # Update display
-    pygame.display.flip()
-
-# Quit Pygame
-pygame.quit()
-
+draw_and_save_line_graph(x, y, output_image_path)

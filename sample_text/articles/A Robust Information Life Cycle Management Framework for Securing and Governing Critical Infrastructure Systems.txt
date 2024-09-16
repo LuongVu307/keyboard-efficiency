@@ -1,0 +1,1308 @@
+inventions
+Article
+A Robust Information Life Cycle Management
+Framework for Securing and Governing Critical
+Infrastructure Systems
+Vrettos Moulos1,*,, George Chatzikyriakos1,, Vassilis Kassouras2, Anastasios Doulamis3,
+Nikolaos Doulamis3ID, Georgios Leventakis4, Thodoris Florakis1,, Theodora Varvarigou1,
+Evangelos Mitsokapas5,, Georgios Kioumourtzis6, Petros Klirodetis1,, Alexandros Psychas1,,
+Achilleas Marinakis1,, Thanasis Sfetsos7ID, Alexios Koniaris2and Dimitris Liapis2
+and Anna Gatzioura8
+1School of Electrical and Computer Engineering, National Technical University of Athens (NTUA),
+15780 Athens, Greece; gchatzikyriakos@gmail.com (G.C.); thodwrisfl@gmail.com (T.F.);
+dora@telecom.ntua.gr (T.V .); petros.kliro@gmail.com (P .K.); alps@mail.ntua.gr (A.P .);
+achmarin@mail.ntua.gr (A.M.)
+2Center for Security Studies (KEMEA), 10177 Athens, Greece; v.kassouras@kemea-research.gr (V .K.);
+a.koniaris@kemea-research.gr (A.K.); dimitrisli@gmail.com (D.L.)
+3School of Rural and Surveying Engineering (SRSE), National Technical University of Athens (NTUA),
+15780 Athens, Greece; adoulam@cs.ntua.gr (A.D.); ndoulam@cs.ntua.gr (N.D.)
+4Department of Shipping, Trade and Transport, University of the Aegean, 82100 Chios, Greece;
+gleventakis@aegean.gr
+5School of Mathematical Sciences, Queen Mary University of London, London E1 4NS, UK;
+e.mitsokapas@qmul.ac.uk
+6Department of Computer Science and Engineering, European University of Cyprus, Nicosia 2404, Cyprus;
+g.kioumourtzis@external.euc.ac.cy
+7Environmental Research Laboratory (EREL), National Center for Scientic Research Demokritos,
+15310 Athens, Greece; ts@ipta.demokritos.gr
+8Department of Computer Science, Universitat Politcnica de CatalunyaBarcelonaTech, 08034 Barcelona,
+Spain; anna.gatzioura@gmail.com
+*Correspondence: vrettos@mail.ntua.gr; Tel.: +30-210-772-2558
+ These authors contributed equally to this work.
+Received: 31 July 2018; Accepted: 12 October 2018; Published: 17 October 2018
+/gid00030/gid00035/gid00032/gid00030/gid00038/gid00001/gid00033/gid00042/gid00045 /gid00001
+/gid00048/gid00043/gid00031/gid00028/gid00047/gid00032/gid00046
+Abstract: In modern societies, the rampant growth of the Internet, both on the technological
+and social level, has created fertile ground for the emergence of new types of risk. On top of
+that, it enhances pre-existing threats by offering new means for accessing and exploiting Critical
+Infrastructures. As the kinds of potential threats evolve, the security, safety and resilience of these
+infrastructures must be updated accordingly, both at a prevention, as well as a real-time confrontation
+level. Our research approaches the security of these infrastructures with a focus on the data and
+utilization of every possible piece of information that derives from this ecosystem. Such a task
+is quite daunting, since the quantity of data that requires processing resides in the Big Dataspace.
+To address this, we introduce a new well-dened Information Life Cycle in order to properly model
+and optimise the way information ows through a modern security system. This life cycle covers
+all the possible stages, starting from the collection phase up until the exploitation of information
+intelligence. That ensures the efciency of data processing and ltering while increasing both the
+veracity and validity of the nal outcome. In addition, an agile Framework is introduced that is
+optimised to take full advantage of the Information Life Cycle. As a result, it exploits the generated
+knowledge taking the correct sequence of actions that will successfully address possible threats.
+This Framework leverages every possible data source that could provide vital information to Critical
+Infrastructures by performing analysis and data fusion being able to cope with data variety and
+Inventions 2018 ,3, 71; doi:10.3390/inventions3040071 www.mdpi.com/journal/inventionsInventions 2018 ,3, 71 2 of 39
+variability. At the same time, it orchestrates the pre-existing processes and resources of these
+infrastructures. Through rigorous testing, it was found that response time against hazards was
+dramatically decreased. As a result, this Framework is an ideal candidate for strengthening and
+shielding the infrastructures resilience while improving management of the resources used.
+Keywords: critical infrastructure; intelligent systems; resource optimization; critical infrastructure
+protection; infrastructure resilience; safety and security
+1. Introduction
+Nowadays, the term Critical Infrastructures ( CI) describes the assets that are vital for a society
+to function correctly. Critical Infrastructures provide the essential services that underpin society and
+serve as the backbone of the global economy, national security and the public health sector. Specically,
+there are 16main Critical Infrastructure sectors (Figure 1) whose systems and assets, whether physical
+or virtual, critically depend on this on various levels [1].
+Figure 1. Critical Infrastructure sectors.
+One can easily comprehend the importance of protecting these assets from malicious attacks,
+and therefore, the need to dene a security plan arises. In particular, processes for the identication,
+selection and prioritization of counter-measures and procedures must be dened. Taking into account
+the extent of how mainstream and accessible the Internet is, the technological progress and the
+emergence of Big Data becomes even more complicated for the protection of said infrastructures.
+Following the trends that the Big Data era has created, modern Information Systems require even more
+data from both external and internal resources in order to achieve high security standards. However,
+amassing all of this data without any signicant pre-process planning can be inefcient; thus, it is
+imperative to dene a standardised life cycle that will describe the steps needed to extract valuable
+information from raw data. Another factor that should be considered is that todays data springs
+from various places and in different forms, so when it comes to the collection phase, an entity that
+stores said data in its native format is preferable. Planning how the data will be treated before entering
+theCIand organising it in an optimal manner creates a safe zone that improves the validity of the
+Information System input. Therefore, the operation of the CIis controlled and orchestrated, providing
+at the same time a wealth of data with accurate results.
+Due to the advances in Information Technology (IT), the interdependencies between Critical
+Infrastructures have increased considerably [ 2], creating new vulnerabilities and raising the riskInventions 2018 ,3, 71 3 of 39
+levels. A failure in an infrastructure can also affect other infrastructures, resulting in cascading
+failures [ 3]. Failure within a single CIis damaging enough, but a broader multi-sector failure
+may be catastrophic [ 4] and could affect practically all aspects of society in multiple countries [ 5].
+The attacks that describe the threat prole of a critical infrastructure are of two types. The rst type
+includes unintended damages caused by poor maintenance [ 6] or threats such as natural disasters
+[7], whereas the second type concerns cases of organised attacks targeting these infrastructures.
+Every security plan that frames a Critical Infrastructure must provide protection from both of these
+types. In recent years, the incidents of organised attacks, that focus and exploit cybersecurity and IT
+security vulnerabilities, have grown considerably in number, causing debilitating damage to various
+critical sectors of different countries. Noticeable incidents are found:
+In the Energy Sector : In December 2015 , a cyber-attack on a power grid in the Ukraine left 225,000
+people in the western part of the country without power for hours. Through spear-phishing,
+the attackers seized control of the Supervisory Control and Data Acquisition (SCADA), remotely
+switching substations off [8].
+In the Nuclear Sector: In June 2010 , it was found that 14Iranian industrial sites, including a
+uranium-enrichment plant, were infected by a virus known as the Stuxnet worm. This worm
+was able to spread through the network and take control of the Programmable Logic Controlers
+(PLCs), thus spying on the system and causing the fast spinning centrifuges to tear themselves
+apart [9].
+In the Emergency Services Sector: In July 2017 , the Murfreesboro Police and Fire and Rescue
+Departments were hit by a ransomware attack, referred to as WannaCry, infecting 19computers
+along with two le servers. The IT Department had to take the entire system ofine [10].
+In the Health Sector: The National Health Service (NHS)hospitals in England and Scotland were
+attacked by the malware WannaCry, causing serious implications and disabling care provision for
+its patients [11].
+In the Financial Sector: In2017 , nearly half of the American population ( 147.9 million) was
+affected due to a massive data breach in Equifaxs credit bureau records [12].
+As a result, the protection of Critical Infrastructures has drown major research interest particularly
+focusing on modelling, analysis and simulation of the processes [ 1318]. In addition, the research that
+mainly targets small-scale systems is inadequate to reect the complexity of these infrastructures [ 19]
+and does not include various types of attacks [ 20]. Our approach departs from traditional modelling
+techniques and tries to achieve security and resilience of Critical Infrastructures by focusing on the
+data that derives from both their internal ecosystem (e.g., SCADA, sensors, cameras, etc.) and external
+sources (e.g., weather forecast data, social network data, etc.). This increasing hunger for data for
+the operational chain of CIs in combination with non-standardised ltering and analysis methods
+could cause undesired effects. A case that highlights the above is a mistakenly broadcast report by the
+Associated Press Twitter account that presented President Barrack Obama was injured in an explosion
+at the White House, which resulted in a 150-point drop in the Dow Jones index within minutes [ 21].
+At the same time, our approach orchestrates the complex operations of infrastructure, shielding critical
+processes from situations where several systems become unavailable.
+This paper extends Critical Infrastructure capabilities and enhances its resilience against intentional
+(e.g., Distributed Denail of Service (DDoS) attacks [ 22]) or unintentional (e.g., earthquake [ 23,24])
+hazards that threaten the smooth operation of the system. The work has two main contributions: (a) the
+introduction of a complete Information Life Cycle tailored for computer-oriented systems, which is
+inspired by the militarys information security management systems, and (b) the designing and
+modelling of a reference architecture that makes use of these life cycles concepts. Finally, it introduces
+a framework that was developed to highlight how we can leverage data, resources and processes in
+order to maximize the efciency and minimize the risk of downtime.Inventions 2018 ,3, 71 4 of 39
+2. Information Life Cycle
+Nowadays, aside from managing and processing the data produced by the systems and
+applications of an infrastructure assets inner circle, a considerable amount of focus should be directed
+towards evaluating and managing the data channels deriving from external information. In this
+era, the control and management of Critical Infrastructures cannot be considered unaffected by their
+external environment in terms of their architecture or security. Data from the outside world tends
+to increase in size exponentially, and this is something that puts strain on the process of protecting,
+maintaining and upgrading an existing Critical Infrastructure. Since 2013 , human-created content was
+estimated at 2.5exabytes (2.51018),90% of which was created in the last two years [ 25]. By 2025,
+the International Data Corporation (IDC) predicts that there will be overall 163zettabytes (1631021)
+of data [26]. This massive production of information comes from everywhere: sensors used to gather
+climate information, posts to social media sites, digital pictures and videos, purchase transaction
+records and cell phone GPS signals, just to name a few. This vast quantity of data raises the need for a
+quality framework that takes into account its various sources and results in qualitative data.
+Data has a unique and prominent role in securing Critical Infrastructures in an efcient and timely
+manner, so it is of great importance to examine and understand every aspect of the life cycle and
+management of information within a security system. In a general context, the life cycle of information
+can be viewed as having a standard structure that consists of the following basic stages: collection,
+validation, storage, analysis, use and evaluation. Nonetheless, when it comes to security systems,
+a more detailed and complete structure is needed; one that will embody new stages and that will offer
+the capabilities and exibility that a modern system must incorporate. The proposed Information
+Life Cycle is a hybrid model based on the protocols of North Atlantic Treaty Organisation (NATO),
+European Border and Coast Gaurd AgencyFrontex [ 27] and the Hellenic Army [ 28],tailored to face
+the above challenges. As opposed to these systems that are human capital-centred, this framework is
+based on information systems.
+It is a new and innovative approach that is able to manage a wide range of data sources.
+The proposed Information Life Cycle consists of the following stages (Figure 2):
+Tasking: This is the rst phase of the cycle that sets out all the security objectives and decisions to
+be made in order to dene the information requirements and therefore what data sources to use and
+what data to collect. Each security task is an independent entity having its own data requirements.
+Tasks are organised into categories relevant to the current security scenario. Moreover, due to their
+distinct nature, tasks are not of the same importance and, consequently, may have different priorities
+allocated to them.
+Data Sources: Regardless of how well the tasking stage is set up and organised, it is vital to
+identify the appropriate data sources that meet the tasking requirements. In order to determine the
+sources from which we can draw information, we must rst categorize them. For that purpose,
+we use the intelligence-gathering disciplines, which describe this kind of derived information,
+as well as its source and scheme. Briey, the most important of those disciplines are: HUMINT
+(Human Intelligence) [ 29], GEOINT (Geospatial Intelligence), OSINT (Open-Source Intelligence) [ 30],
+SIGINT (Signals Intelligence) and COMINT (Communication Intelligence) [ 31], TECHINT (Technical
+Intelligence), CYBINT/DNINT (Cyber Intelligence/Digital Network Intelligence) and IMINT (Imagery
+Intelligence) [ 31]. Moreover, the data from all these sources can be combined with existing data in the
+Critical Infrastructures databases.
+Data Collection: This is the stage in which data is gathered from the dened data sources.
+It contains all methods and Application Programming Interfaces (APIs) for connecting to the sources in
+order to draw the requested data. It is important that this stage is always up-to-date and follows-up on
+all the changes that may occur in the sources or to the data (e.g., change in the data format or change in
+the way the sources are accessed, etc.). It is also vital to have the appropriate tools for collection of this
+data, since not all of them are provided through services or APIs. To that end, it may be necessary toInventions 2018 ,3, 71 5 of 39
+use crawling engines to capture and collect (dynamic) web pages, images and videos from web sites,
+marketplaces, forums, social media and dark-web sources.
+Data Cleaning: This stage ensures the quality of the data upon which we act. It incorporates the
+Big Data quality indicators [ 32], making certain that we act on clean, correct, accurate and complete
+data. Based on these indicators, the Data Cleaning stage detects all of the anomalies and corruptions
+that the data derived from a record set, table or database. Then, it only proceeds with the appropriate
+indicator-specic actions in order to meet the desired quality properties.
+Data Transformation: Regardless of the cleaning process applied to the data, it remains
+unstructured and scheme-less. In order to be able to store and analyse them, data must have a
+certain structure. For this reason, proper transformations are applied. This stage converts a set of
+data values from the data format of a source data system into the data format of a destination data
+system [32].
+Index and Storage: At this stage, the collected data is stored for future use. Due to the large
+amount of data, we resort to a more organised and structured way of storage. Additionally, by using
+indexing or hashing algorithms, efcient database tuples-retrieval is achievable. There are plenty of
+indexing options, from Non-Articial Intelligence Indexing, to Articial Intelligence and Collaborative
+Articial Intelligence Techniques [33].
+Data Collation: As mentioned, each task requires a different dataset, which leads to accessing
+multiple data sources. All tasks will nally be formulated together serving the original security goal.
+The same should be done with the data. This is the stage where the gathered data is aggregated and
+combined properly, in order to be fed into the analysis stage where relations will be made.
+Data Analysis: The pre-processed data at this stage is appropriately analysed with the goal
+of discovering useful information in order to support decision-making. Depending on the data
+provided, techniques such as data mining, descriptive statistics or exploratory data analysis and
+data visualisation can be used for modelling and knowledge discovery. Furthermore, deep learning
+techniques that can achieve abstract representations and semantic tagging can obtain relational and
+semantic knowledge [ 34], extracting the maximum information from the given data. The process of
+data analysis may result in additional requests for data or information, so it is essential to correlate
+this with historical data and pattern information from previous analysis.
+Information Extraction: This is the stage at which the knowledge previously produced is
+translated into conclusions, predictions and calculations. This step is an integral part of data analysis
+as it completes the entire data processing phase. Subsequent results and knowledge derived from the
+data analysis stage are unied under one complete piece of information.
+Reporting: This phase is the summarization of the results found during the analysis activities
+including any measures of certainty involved.
+Dissemination: Results and knowledge are distributed at this stage. The information produced
+is forwarded to the external environment of the CI, for example to other agencies and organisations,
+which will make appropriate decisions and will proceed to actions.
+Exploitation: At this stage, the knowledge generated is promoted and exploited internally
+amongst the administration of the CI. The main purpose is to use the outcomes for their own interests
+and feed their conclusions and results appropriately to the reviewing process.
+Decision Making: At this stage, based on the information received by the relevant recipients,
+the appropriate decisions are made. The results of the actions following the decisions have a great
+impact on the feedback of the information cycle, since they reect the functionality and the quality of
+the cycle itself.
+Review: Finally, the results of the decisions and therefore the quality of data produced are
+reviewed in order to create suitable feedback for the re-evaluation of the Information Life Cycle.
+Each part of the tasking phase should be individualised, compared and evaluated against its original
+intention and purpose with regard to what was ultimately achieved. Framing the right questions,
+assessing the quality of the whole process, summarising the results and interpreting their effectivenessInventions 2018 ,3, 71 6 of 39
+and impact are vital steps for a healthy review that will upgrade and enhance the function of the
+Information Life Cycle.
+Figure 2. Information Life Cycle.
+To increase productivity, a mechanism is needed to store information and efciently retrieve
+information. The data will have been carefully picked through extensive research and analysis of the
+Data Sources that it comes from. The data will consist, not only of information that is outright useful,
+but also of data that might satisfy future needs. Moreover, it solves possible issues pointed out by eld
+specialists and Critical Infrastructure experts. This evaluation of the data and its sources, which is
+carried out within the Information Life Cycle, should not be a one-off thing because the data type and
+the technology that accompanies it constantly evolve. An issue that is much more apparent in the Big
+Data era is the lack of governance and the absence of any structure whatsoever, making the retrieval
+and usage of data extremely complex. In addition, consumption of unnecessary or out-of-context
+data could cause negative side effects on the different types of infrastructure assets. This ocean of
+data cannot provide proper results due to the excessive amount and variety of information that it
+contains. The contained data could be coming from a plethora of sources such as: (a) social networks
+like Facebook and Twitter, (b) governmental and nancial institutions like trade markets and banks,
+(c) hospitals and health clinics, (d) data warehouses or/and every other source that could be holding
+useful information. However, at the same time, there is data that could eventually deteriorate the
+performance of the system as depicted in Figure 3 (illustrated as red disposal bins) since there is no
+mechanism to lter it out. Without the existence of said mechanism, some of the data that is gathered
+can be noisy, unmanaged or even broken. That excessiveness of information from multiple sources
+and the existence of rogue data can transform this ocean of data to an enormous swamp.
+Considering the challenges mentioned above and having theoretically described the Information
+Life Cycle, we should dene how its rst stages are implemented. As is dened in Big Data terms,
+Data Lakes [ 35] seem like the right modelling approach. It is a scalable storage repository that holds
+a vast amount of data in its native format (structured, semi-structured or even unstructured) and
+therefore is the perfect candidate for the Data Collection stage. The data structure and requirements
+are not dened until the data is needed, which provides a lot of exibility giving the developers and
+data scientists the ability to easily congure and recongure their models, queries and applications.
+This is an efcient way for businesses and platforms to collect and store raw information from a variety
+of input, from Customer Relationship Management (CRM) data to social media posts. Moreover,
+it would take less time to access and locate data, thereby boosting data preparation and reuse efforts.
+Data Lakes come with additional perks that seem to be very useful in data utilisation and analysis.Inventions 2018 ,3, 71 7 of 39
+Given the pace of change within data science, the ability to store this information in its native format
+will denitely enhance the interoperability as it will be easier to use in future systems. Storage costs
+are also one of the primary concerns that need to be considered, and therefore, given the comparative
+unstructured nature and variety of data that can be stored without prior processing, Data Lakes offer
+sound nancial value [ 35]. Poorly-designed and neglected systems face the risk of transforming into
+swamps, containing unusable information that will not only increase in overall size, but can also
+create inaccuracies when running certain algorithms (e.g., machine learning) [ 36]. That is why Data
+Lakes should have tools like metadata management, to assure data correctness and completeness
+(Data Cleaning ). When the system fails to document the stored data accurately, it can result in
+the inability to analyse and exploit the data efciently. Without proper governance and metadata
+management, it cannot be utilized in an optimal way, making the Data Lake essentially useless and
+having more common traits with the vast Data Ocean.
+Figure 3. Ocean of Data depiction.
+By creating an efcient and agile storage layer, the next step is to retrieve the needed information
+and perform rigorous analysis on it. Performing these kind of actions on the data that a Data Lake
+contains serves no signicant purpose, and it will not yield the desired results. That is why it is better
+to focus on a single region of interest or type of content, such as sales, marketing, social media posts or
+satellite and aerial photographs. The lake can be preferable because the location and the access of
+data regarding a certain category can be carried out very efciently. However, when the data is needed,
+certain processing procedures must be carried out. Between data storage and data processing lies
+another level of data abstraction. This layer can be compared with the Data Marts [ 37] in Relational
+Database Management (RDBM) systems, systems, which is a staging area for data that serves the needs
+of a particular segment or business unit. This Data Pond is a subset of the Data Lake that focuses on
+a particular subject or operational department, tted to the purpose of the task without redundancy
+and therefore implementing the stages of Data Transformation and Data Collation . Selecting and
+organising the data for each need can simplify data analytics by a large margin, meeting a smaller or
+more specic requirement. A Data Lake can be visualized as a large clean body of water, and parts of
+it can be described as Data Ponds where the user dives into to focus their analysis (Figure 4).Inventions 2018 ,3, 71 8 of 39
+.
+Figure 4. Data Preprocessing.
+Through continuous renement of data via Data Lakes and Data Ponds, a CIsystem can optimally
+and efciently utilise the provided input from external or internal environments. On the one hand,
+this concept leads business processes to produce faster results. On the other hand, complete and
+accurate conclusions can be drawn, since data noise is reduced to a minimum. In the next section,
+we will see how the Information Life Cycle and data renements could be incorporated in Information
+System Environments.
+3. Framework
+There has been a signicant change in Critical Infrastructures, evolving them from monopolistic
+and monolithic systems to open market congurations. Therefore, in order for them to work optimally
+and carry out all the appropriate tasks, it is necessary to have access to data from external environments.
+There are many situations in which external data is crucial for a CI. For example, a seaport needs
+weather forecast data, as well as data from Automatic Identication Systems (AIS) for Vessel Trafc
+Services (VTS). This data is collected from external resources and is used in order to notify and control
+incoming and outgoing ships about the weather conditions and possible weather implications and
+delays. However, this phenomenon severely increases the complexity and the management of CIs.
+That is one of the challenges that the Data Lake and the Data Pond aim to address.
+Considering the multidimensional diversity of data that the CIrequires from the Data Sources ,
+as well as the computational capacity required to process it, it is fair to say that we enter Big Data
+territory. The Data Collection from multiple sources and the process of Data Cleaning lead to the
+creation of a Data Lake, especially and meticulously designed by experts to full requirements and
+reduce management complexity of Critical Infrastructures. Treating the data is the next logical step
+in order to perform Data Transformation and Data Collation (leading to what we described in the
+previous chapter as the Data Pond), thus creating an infrastructure Data Source Repository , as illustrated
+in Figure 5.
+At this point, the process of gathering and rening data is completed (orange steps in Figure 2),
+and according to the proposed Information Life Cycle, the next step is to exploit this data in order
+to produce useful information (green steps in Figure 2). The goal of the proposed Framework is to
+full that essential requirement. The Framework performs Data Analysis , which uses previously
+identied Information Patterns and Historical Data to provide added value. The resulting extracted
+information is then reported in order to exploit the derived knowledge within the Framework.
+Up until this step, the Framework has completed its mission of producing and exploiting valuableInventions 2018 ,3, 71 9 of 39
+information. However, in the context of a CI, the results of the previous process should be
+constantly reviewed based on quality and quantity key performance indicators to improve the life
+cycle steps (from Data Collection until Exploitation ). Finally, the review of results and revision of
+recommendations lead to the Tasking phase, whose purpose is to alter the existing Critical Infrastructure
+Business Processes , so that already dened goals could be reached, as well as to create new business
+processes that could satisfy newly-identied needs. Therefore, it is imperative to describe the business
+processes of a CIin a common way, which is the scope of the next section. Furthermore, we highlight
+among others, the role of the Resources that are the means to performing the business processes and
+thePolicies that illustrate the way these resources are utilized, as shown in Figure 5.
+Figure 5. Critical Infrastructure Sectors.
+3.1. Business Processes
+Ensuring efcient and secure management of a CIis challenging, mainly due to the fact that
+current systems are developed from different manufacturers, and therefore, the lack of adoption of
+widely accepted technical standards makes them incompatible and non-interoperable. In order to
+deal with that issue, the CIs could exploit standards such as Business Process Modelling Notation
+(BPMN) [ 38], to graphically notate the end-to-end ow of their Business Processes and identify in
+every step the systems that could carry out each part of these processes. Given the need to orchestrate
+heterogeneous hardware devices, APIs and online services that are under data ows, BPMN-based
+tools come into the equation. Using those tools, any Business Process of the CIis simulated by a graph
+that breaks into a logical sequence of tasks , represented as nodes with specic functions, offering
+in this way an abstract layer for building a solution towards the goal of the process. In this section,
+we present the strict denition of the key concepts and terms that appear throughout the paper.
+Denition 1 (Graph ).Graph ( G) represents a specic CIBusiness Process as is gate access control, which is a
+combination of tasks (nodes in the graph) such as video analysis and image processing. Each Gcontains exactly
+one starting task (a task with output and no input) and exactly one end task (a task with input and no output).
+With respect to graph theory, every Gis considered as a directed graph that contains at least one path from the
+starting task towards the end task.
+In case the purpose is to nd out the shortest path in the graph, then the latter becomes a weighted
+directed graph where the weight of each edge represents the sum of the process time inside a node
+plus the network delay between this node and the next one following the sequence of the path. In theInventions 2018 ,3, 71 10 of 39
+context of a CI, many Business Processes are carried out, each one of which is represented by a distinct
+Graph. For instance, regarding the oil and gas extraction industry, at least four major business processes
+could be identied: the exploration, development, production and site abandonment. Therefore, four
+distinct Graphs are used to model the whole CI.
+Until the use case section, we present model graphs that contain a few tasks in order to present all
+the concepts and denitions needed to be explained and visualized. However, the business processes
+that are used in the use case section are signicantly more complex.
+Denition 2 (Path ).Path ( P) represents a distinct way (in terms of algorithms, APIs, CIResources, etc.) of
+reaching the goal of a specic CIBusiness Process. With respect to graph theory, each one P, that belongs to
+a specic G, is considered as a nite directed path, whose rst and last node are the starting task and the end
+task of G, respectively. The fact that each graph contains multiple paths reects the capability of the Framework
+to adapt to various conditions, either regular or irregular, in order to optimise the way that the CIBusiness
+Processes are performed.
+3.1.1. Resource Blueprint
+Performing CIprocesses requires the use of resources, which could be a cloud infrastructure, a cluster,
+a dedicated PC, a database or even a sensor. There is a need to create a description of these resources,
+which will contain all the appropriate information for the selection process. All this information is
+contained in the form of a description file called a Blueprint (the JSON Schema of the Blueprint is available
+on GitHub: https://github.com/vrettos/persefoni/blob/master/schema_BP .json) . This Blueprint is
+structured in a way that every important feature, attribute and characteristic of a resource is described
+and easily accessed. There are seven main attributes that a resource has in the context of the CI
+operation. All the attributes are used in different stages of the selection process, each and every
+one of them for different purposes. All the attributes, as well as the logic behind their creation are
+described below:
+Geolocation : There are situations in which the geographical location of a resource is essential in
+order to perform a specic task (i.e., there are situations in which the monitoring system needs to
+access specic resources such as cameras that are located in a specic area).
+Network Locality : Communication between resources most of the times has specic requirements
+that concern the network. The network locality is separated into three major categories;
+an external network for communication between cloud or other third party providers; an internal
+network for communication between on premise resources; and a local network for inner
+resource communication.
+Virtual Entity : The parameter of Virtual Entity contains information about the governance of
+a resource. Every resource is managed and belongs to a specic organisation, company or
+institution. In the resource selection process, the governance of a resource is taken under
+consideration, for privacy, logging and security purposes. As data could have strict rules regarding
+its distribution, specic guidelines about governance should be considered for the resources that
+will be handling this kind of data.
+Resource Identier : This parameter is used for internal purposes only to uniquely identify
+a resource.
+Type : It is important to know the computational capabilities and the nature of a resource in order
+to orchestrate the system and efciently manage the resources. All the resources fall under a
+specic category based on the factors mentioned. A distinction in the proposed Framework is the
+classication of resources as computational nodes or as data store nodes.
+Details : Following the specication of the Type, there are specic details (resource specications)
+for the two types of resources (computational and data store nodes). In the case of a computational
+resource, the details contain the instance type attribute, which describes in a strict enumerated
+form the types of computational nodes based on their capabilities. Every type of computationalInventions 2018 ,3, 71 11 of 39
+node corresponds to a set of hardware specication (number of CPUs, RAM capacity, etc.) like
+the Amazon Elastic Compute Cloud (Amazon EC2) instance type paradigm. As far as the details
+of the data store nodes are concerned, there are two attributes, one dening the type of the
+database (Database Type) and the other one dening the specic Data Collection to which the
+resource refers.
+Operational Period : The operational period describes the time window in which a resource can
+be used or operates. Resources such as sensors or infrastructure monitoring components (cameras)
+might have constraints or limitations for their operational period. Moreover, some resources
+might also be unavailable due to energy saving reasons. Knowing the availability period of a
+resource is an important factor for the resource selection process, as well as for the scheduling of
+the infrastructure (as shown in the Figure 6).
+Figure 6. Blueprint example.
+As already mentioned in this section, a graph (Business Process) in our Framework consists of
+a plethora of tasks that are essentially carried out for the CIto reach a specic goal. However, each
+of these tasks can be performed by a variety of distinct resources that either belong to the CIor
+are external to it. Hence, the framework resource choice of suitability per task can be optimised,
+by introducing a proper characterization of resource sets. Similarly, a standard task specication must
+be dened and compared with the Resources Blueprint. We then introduce two task classes, depending
+on whether they are assigned to specic resources or not. Unassigned tasks formulate the Abstract Task
+class and are characterised by their specication, whereas tasks that result as an assignment process
+set up the Concrete Task class.
+Denition 3 (Abstract Task ).An Abstract Task ( AT) is dened as a theoretical quantity, representing the
+smallest unit to which a Business Process can be broken down. We denote the set of all ATs byAT(set);
+given that N (AT)<,ATi6=ATj,8i,j2N, it follows thatjATj<.
+Typical examples of ATs range from video transcoding to le encryption, voice compression and
+querying a database (a database ATexample is illustrated in Figure 7). The specication of each AT
+includes the following parameters:
+DoF : a textual description of the functionality that the ATimplements
+API: the interface of the AT, which is used to identify the possible interconnections (edges in the
+AG) of this ATwith other ATsInventions 2018 ,3, 71 12 of 39
+TLS: a Boolean parameter that indicates whether the ATcomplies with encryption/security
+guidelines or not
+Type : this parameter is the same as the one in the Resource Blueprint
+Details : this parameter is the same as the one in the Resource Blueprint
+AnAT, as element of the set AT, is equal to another ATif and only if their parameters, as dened
+above, are equal. The gure below depicts an example of an AT(the JSON schema of the ATis
+available on GitHub: https://github.com/vrettos/persefoni/blob/master/schema_AT.json).
+Figure 7. Abstract Task specication.
+Denition 4 (Abstract Graph ).Following the denition of the AT, an Abstract Graph ( AG) is a directed
+graph whose nodes are Abstract Tasks (Figure 8). It represents a CIbusiness process, before identifying the
+candidate resources that could perform the tasks.
+Figure 8. Abstract Graph.
+The gure above presents an indicative Abstract Graph, which in this case includes four possible
+paths to reach the goal (end task) of the specic Business Process of the CI. The blue dots represent
+both the start and the end Abstract Task of the Graph. On the other hand, the red colour is used to
+indicate other tasks.Inventions 2018 ,3, 71 13 of 39
+Denition 5 (Concrete Task ).A Concrete Task ( CT) is dened as the ATwith exactly one resource allocated
+to it. It could be considered as an ordered pair (two-tuples), where the rst object is the specication of the
+corresponding AT and the second one is the Blueprint of the resource allocated to the AT.
+3.1.2. Resource Allocation Process
+This process is carried out by the Resource Pool Manager (introduced in Section 3.2) and is
+represented by a one-to-one mapping that accepts input of ATs and returns a list of CTs. The process
+must ensure that the same resource can be selected for multiple ATs. Moreover, only a subset of the
+resource set is suitable for each AT; this subset is dened by comparing the specication of an ATand
+the Blueprint over all the available resources. As a working example, we apply the mapping to AT
+(AT1), whose specication is presented above, to one or more specic resources. Before proceeding,
+it is crucial that we introduce the theoretical framework needed for a procedure to be realised. To do
+so, we denote the sets of abstract and Concrete Tasks by ATand CTrespectively. Then, dene a map F
+in the following way:
+F:AT7!CT
+It is evident that Fdoes not satisfy the denition of a function, in the sense that if a2AT,
+then it is true that 9b1,b22CT, such that F(a) =b16=b2=F(a); something that contradicts our
+initial assumption.
+In this spirit of assigning a single element a2ATto a plethora (list) ofbi2CT, 0ijCTj,
+we introduce the notion of an equivalence relation.
+3.1.3. Relations
+We dene a relation Son a nite set Xas a subset of the Cartesian product XX. Now, x1and x2
+are said to be related if the ordered pair (x1,x2)2SXX, where x12X,x22X. The number of
+possible relations is the total number of subsets of XX, which is no other than 2jXj.
+Equivalence Relations
+For our purposes, we turn our attention to a special class of the relation set. Let x,y,zbe in a nite
+given set X. A binary relation Sis then called an equivalence relation if and only if Sis:
+Reexive: (x,x)2S,8x2X
+Symmetric: (x,y)2S,(y,x)2S,8x,y2X
+Transitive: If (x,y)2Sand(y,z)2S, then (x,z)2S,8x,y,z2X.
+We denote the equivalence relation with , and for two elements a,bwe write abeta, that is: a
+is equivalent to bunder a specic equivalence relation.
+Partitions
+Given a nite set X, a collection of its subsets XiX,i=1, ..., 2jXj, is called a partition if and
+only if:
+Xi6=
+SXi=X
+Xi\Xj=,8i6=j
+A partition is essentially splitting the set into disjoint subsets, such that their union constitutes
+X, whereas it is well-dened in the sense that there exist no empty subsets.
+Prerequisites are then concluded by the denitions that follow.Inventions 2018 ,3, 71 14 of 39
+Equivalence Class
+Anequivalence class is denoted with [ ]S, and it is dened as:
+[x]S:=fy2X:(y,x)2Sg
+An important result of this is that for any two equivalence classes [x1],[x2], it holds that [x1] = [ x2]
+or[x1]\[x2] =. We are now ready to introduce our equivalence relation.
+3.1.4. Equivalence Relations on Abstract and Concrete Tasks
+For the sets of Abstract Tasks ATand Concrete Tasks CT, we introduce the following relation
+between the elements of ATwith the help of mapping F:
+Given two elements a,b2CT, we say that ais equivalent to bif and only if aand bare images
+originating from a common element in AT.
+A more formalistic way to put forward the above is the following:
+Lab,8a2CT,8b2CT,9t2AT:a=F(t)and b=F(t)
+For the sake of completeness, we show that Lis indeed an equivalence relation.
+Lis reexive: For every Concrete Task a2CT, if there exists an Abstract Task t2AT:a=F(t),
+then the other element aalso equals F(t). Hence, aa.
+Lis symmetric: Let a,b2CT, and let (a,b)2L. Then:
+(a,b)2L,a=F(t)and b=F(t),b=F(t)and a=F(t),(b,a)2L
+Hence, ab=ba.
+Lis transitive: Let a,b,g2CTandab,bg. Then, given ab, we have that a2F(t)and
+b2F(t). However, we know that bg, which translates to: b2F(t)andg2F(t))g2F(t).
+Hence, a2F(t)andg2F(t), which simply means that ag.
+Given that Lis indeed an equivalence relation, we are ready to introduce the corresponding
+equivalence class:
+[a]L:=fb2CT:(b,a)2Lg
+Application of Lcreates a disjoint union on the set of subsets of CT, i.e., a partition Pof all possible
+outcomes. Let us dene a map fin the following way: f:AT7!CT, such that f(t)=a,a2[F(t)].
+This mapping will assist us into constructing a function between the set of Abstract Tasks and the
+partition PofCT. We are now ready to construct a function fbetween the set ATand the partition of
+CT. For every incoming task of the sequence of Abstract Tasks, this function has to be bijective, as well
+as well-dened, i.e., the empty set cannot be part of the equivalence relation. Let fbe dened as:
+f:AT7!CT/L
+t7![f(t)]L
+with its closed form: g(t) = [ f(t)]L. This is indeed a well-dened function since by denition;
+any partition does not contain the empty set. Moreover, at each consecutive i-th Abstract Task element,
+a new partition Piof the available Resources is realised.
+Passing on to the working example, Lcould be dened as all the data stores that are MongoDB
+AND contain the collection employees ( e22). Figure 9 depicts (a) the Abstract Task AT1illustrated
+with a yellow circle, (b) the set of available resources of the CI(green and pink boxes in the middle
+of the gure) and (c) the subset of those resources (on the right) that satisfy the equivalence relation
+L, which is illustrated with the red arrow. Initially, the pink resources are excluded since their typeInventions 2018 ,3, 71 15 of 39
+is computational and not data store. Moreover, R5is also excluded as it is not a MongoDB, but a
+Cassandra one and does not contain the needed data. Consequently, the resource allocation process
+results in matching AT1to a list (two) of CTs, whose resources are R1and R2, respectively, as shown
+in Figure 9.
+Figure 9. Resource Allocation Process based on the equivalence relation L, where for the AT1, a list of
+CTs, is created, assigning that Abstract Task to the resources R1and R2.
+This repetitive process applies to all ATs (one by one) that need to be assigned to specic resources.
+The nal result of the Resource Allocation Process is the Concrete Graph.
+Denition 6 (Concrete Graph ).A Concrete Graph (CG)is a directed graph whose nodes are Concrete Tasks.
+It represents a CI Business Process, after identifying all the candidate resources that could perform the tasks.
+In Figure 10, a Concrete Graph that is derived from the Abstract Graph (Figure 8) is depicted.
+The oval shapes, notated with capital letters, represent different Virtual Entities. The blue dots represent
+both the start and the end Concrete Task, similarly to the Abstract Graph. The green colour is used
+to indicate that after the resource allocation process, the corresponding ATmatches to exactly one
+resource and therefore to a set of CTs that contains exactly one element (singleton). On the other hand,
+the yellow colour is used to highlight that the CTderives from an AT, which matches to a set that
+contains more than one CTs, thus creating one or more different paths in the Graph. For example,
+the last ATof the bottom path in Figure 8 matches to four CTs that are circled in Figure 10 within H
+Virtual Entities. There are also cases where CTs that derive from the same ATdo not belong to the
+same VE, as circled within Iand JVEs in the gure bellow.
+The way the goal of a process is achieved reects the need of a framework that should be able to
+implement business processes in different ways (e.g., including or excluding a task, using cloud or
+edge resources etc.). In addition, the current conditions of the system in terms of security, availability
+of resources, saving energy or even in case of an emergency have to be taken into consideration.
+Therefore, the selection of the most suitable path depends on the current state of the system that has
+been declared by the Security Ofcer (Actor) of the CI.Inventions 2018 ,3, 71 16 of 39
+Figure 10. Concrete Graph.
+Denition 7 (State ).State is an abstract and generic concept that is used to describe the current conditions of
+theCI, the goals that need to be achieved and possible events/threats that are taking place, like a terrorist attack.
+Following this denition, it is necessary to determine the values that the State could be in, in a CI.
+This, in turn, provides comprehensive and effective means to disseminate information regarding the
+kind of conditions that may affect the operation of the CI. This logic leads us to identify four values
+for the State parameter.
+1. Normal : This state implies that the CIis operating under regular conditions. During its existence,
+theCIwill mostly be under this state, and if it is not, actions either subtle or vital will be taken in
+order to recover and return to this state. This is the desired state of the CI.
+2. Energy Efciency : During this state, the CIaims to decrease the energy consumption (footprint)
+for its working processes. There are cases where this goal requires some kind of compromise,
+like higher execution times, in order to be achieved, but on the other hand, it could save money
+or it could be a way to achieve governmental goals in energy efciency.
+3. Isolation : Under this state, every external data source in relation to the CIis ignored, in order
+to create a layer of data isolation. There are cases where a CIreceives information from outside
+sources like public services, utility companies or even from social media and news feeds in order
+to provide advanced, more accurate and detailed results to end users. However, there are cases
+in which the external sources or even the CInetwork itself are not reliable, causing corrupted or
+misleading data. Unveried data could cause unexpected behaviours within the system and by
+extension of the CI.
+4. Critical : This state reveals that the CIis or will be under some kind of threat and there is a dire
+need for protection of its vital operations and its integral systems. The danger could originateInventions 2018 ,3, 71 17 of 39
+from the external environment, in the form of a terrorist or a cyber-attack, or it might originate
+from within the CI, such as a major system malfunction.
+The State refers to the CIas a whole, but each graph of the CIshould follow its own rules and
+functionalities depending on the State. Therefore, when the Security Ofcer declares a distinct value
+for the State, the following parameters for every graph change in a deterministic way (e.g., selecting
+the appropriate condition from the UI when a terrorist attack is under way):
+Constraints : A set of rules that could exclude one or more Concrete Tasks and consequently the
+path (or paths), thus changing the way a graph could be accomplished. Four Constraints have
+been identied, but more can be added depending on the business intelligence that is required.
+Enforce Security Limitations : Every resource outside the CImust comply with security and
+privacy guidelines for its communication with the CI.
+Enforce Operation Period Limitations : The Operating Administrator denes working hours for
+each device in the system meaning that outside of these hours, it is not recommended to use these
+resources (a reason could be to reduce the energy footprint of the CI). If this Constraint exists,
+then all the tasks that run on a resource outside of its working period will become unavailable.
+Enforce Operation Time Limitations : The Operating Administrator denes the maximum time
+of a task execution. If this Constraint exists, then the tasks whose execution exceeds the threshold
+time will become unavailable.
+Restrict to CIResources : If this Constraint exists, then the Concrete Tasks and eventually paths
+that include interconnections with external service providers are not valid.
+Prioritisation : This criterion describes the level of priority of each graph. When a Ghas a
+higher priority (compared to others), it will contest the resources of the CImore frequently,
+making the rest of the graphs that have lower prioritization slower. Six levels of prioritization
+have been identied:
+Emergency : The highest level of prioritization. The safety of vital CIassets is threatened,
+meaning that the whole operation of the CIis at risk. Initiation of the corresponding processes is
+set into motion, as well as diversion of resources as necessary.
+Urgent : Not a life-threatening emergency. This level implies that certain processes are required
+for the continuous operation of the CI(e.g., maintenance or repair work). These processes have to
+be completed in order to ensure the continuous and uninterrupted operation of the facility.
+High Priority : Processes that are essential, under normal working conditions, have this level
+of prioritization.
+Medium Priority : Processes of the CIthat are important, but fall below higher priority processes,
+are found at this level. Their execution depends on the availability of resources and whether more
+crucial ongoing processes are in effect.
+Low Priority : Processes that are desired, but not that essential in terms of completion fall into this
+category. Typically, new, untested or secondary processes are given this level of priority.
+No Priority : This level contains processes of the CIthat may be safely postponed without any
+major economic or operational impact. These processes should be executed, but cannot be
+scheduled due to ones with higher priority, or due to fund shortages, or conditions outside of the
+CI. A reclassication in the future can lead to their eventual execution.
+Routing Algorithm : A criterion that is used to determine which path (if there are multiple
+available and valid ones) is going to be selected in order to reach the end node of the graph.Inventions 2018 ,3, 71 18 of 39
+Apparently, only one Routing Algorithm is valid at a time. Three possible Routing Algorithms
+have been identied:
+Shortest Path : It is used to minimize the total execution time of the graph. The way to calculate
+the execution time of each edge in the graph is dened in Denition 1.
+Minimum Nodes : It is used to minimize the number of tasks needed to traverse a graph.
+Minimum Virtual Entities : It is used to minimize the number of Virtual Entities involved in
+the graph.
+According to the graph in Figure 11, the selected path per Routing Algorithm for that Business
+Process is the following:
+Shortest Path: ABDGJpath (blue path, 11 time units)
+Minimum Nodes: ACFHJpath (green path, 6 tasks)
+Minimum Virtual Entities: AEJpath (red path, 3 Virtual Entities)
+In case the Routing Algorithm is the Shortest Path, then the State also denes for this graph:
+The function that calculates the weight of the edges in the graph (ratio between benchmarking
+and monitoring data).
+The number or percentage of the paths that could actually be deployed, given the ranking of
+all the paths based on their total execution time (e.g., top 10%, or top 5%). That parameter is
+necessary when the graphs are too complex or big for a complete re-evaluation during runtime
+due to computational overhead.
+The time period (window) where the Framework re-evaluates the total execution time of the
+above paths, a process that would consequently lead to path changes.
+Figure 11. Paths that could be selected based on the Routing Algorithm.Inventions 2018 ,3, 71 19 of 39
+As mentioned, the State of the CI, determined by the Security Ofcer, holds a distinct value that
+assigns the Constraints, the Prioritization and the Routing Algorithm per graph. Therefore, full control
+of all the Business Processes is achieved, while at the same time, the systems of the CIare able to
+adapt to its current needs, in a fully-automated and efcient way. The rationale behind the uniqueness
+of the State within the whole CIis that the proposed framework needs to manage the interference
+between the various Business Processes of the CI, since those usually compete for the same resources.
+In order to deal with that issue, the framework should primarily consider the current conditions of
+theCI, which are actually reected by the current value of the State. For instance, that necessity
+becomes more clear taking into account a CIlike a port, which is examined in this paper, and the way
+through which its mechanisms should react in case of an incident like a terrorist attack. When such
+events occur, the safety of the passengers and the staff is the main goal. At the same time, processes
+like face recognition for terrorist identication become signicant. On the other hand, processes like
+vessel trafc, port handling and logistics should be postponed or should not use resources that main
+and urgent processes should take. If those processes had a different State, then it might be the case
+where valuable resources, which should be dedicated to the people safety, would be occupied by less
+important processes like logistics.
+However, there could be slices that should be isolated and independent of the rest part of a CI,
+like a nuclear reactor within an energy manufacturing infrastructure. For security reasons, the reactor
+has preallocated and isolated resources. The architecture of the proposed framework could also adapt
+to these types of infrastructure, but such a kind of CIs is out of the scope of this paper. In these cases,
+the Resource Pool Manager (introduced in Section 3.2) and its subcomponents would annotate the
+resources, which belong to the nuclear reactor VE, as unavailable for all the other business processes
+of the CI. Consequently, despite being under the same State, the resources of the nuclear reactor are
+still totally devoted to its needs.
+3.2. Architecture
+The idea behind the design of the architecture of the system is to easily scale its processes and the
+type and amount of data that it could host and handle, considering the various needs of the CIstates.
+At the same time, it should be able to adapt to highly unstable environments and respond accordingly
+in order to manage the resources efciently. The architecture and components are developed in order
+to efciently manage the complex and heterogeneous operations of a CIalong with delivering crucial
+information about the status of the overall system to the actor (Security Ofcer of the CI). Another goal
+of this architecture is to maximize utilization of the underutilized resources in order to increase data
+that the CIcould receive and use. Offering even more data to the infrastructure and taking full
+advantage of available underutilized resources ensure smooth operation of the system and increase
+the accuracy of the information that the processes produce, giving better response mechanisms against
+threats. Furthermore, a high level of transparency of the operations performed in the framework
+should be available, since it is one of the main objectives in a CI.
+Every component that is going to be described in the following paragraphs contributes to the
+orchestration and better utilization of resources, so that the main CIprocesses are executed in an
+optimal way. At the same time, by the continuous monitoring of the components that produce or store
+data, the system can investigatevia deep learning algorithmspatterns regarding the operational
+status and performance of every component and resource, both at present and in the future.
+Figure 12 depicts all the components and the connections between them that compose the
+architecture of the Framework introduced. Seven major components are going to be described and
+analysed in the following paragraphs. In order to comprehend the relations and functionalities of each
+of the components, we will present the life cycle of the architecture, as well as how this architecture
+responds to State changes and manages resources in order to become more efcient.Inventions 2018 ,3, 71 20 of 39
+Figure 12. System Architecture.
+Business Continuity Framework : This component is the backbone of the architecture, and it
+is responsible for the orchestration and control of the information ow. Moreover, it handles the
+connection between system components, as well as deployment of the processes. Finally, it is the means
+that enables the Actor to interact with the Framework through a user-friendly interface. The Business
+Continuity Framework contains four subcomponents:
+Dashboard: The main purpose of the dashboard is to make the Framework functionalities
+accessible to the actor through a user interface. The dashboard, as a subcomponent of the
+Business Continuity Framework, provides information about the current State of the system,
+displaying real-time analytics of the running processes and proposes recommendations regarding
+the optimal administration of the CIand its processes. Along with the fact that it presents a
+general overview of the system, the dashboard enables the Actor to proceed with State changes,
+if deemed necessary by the status of the infrastructure.
+Orchestration Engine: This component is responsible for the orchestration, deployment and
+real-time management of the Business Processes that are portrayed as complex graphs (created by
+the Graph Resolver). It enables resuming, restarting, stopping and blocking capabilities for these
+complex processes, and at the same time, it can trace and benchmark every available path for
+further evaluation. Another goal is to take corrective actions to ensure the efciency and reliability
+of the CIby selecting the optimal path for a specic time window. Additionally, it offers complete
+visibility concerning the status of the graphs, giving the Actor the power to alter them.
+Deployment Engine: This component is an operating system-agnostic middleware, responsible for
+hosting and scaling the integration tool, which is responsible for the orchestration of the processes
+as presented above and has to deploy Virtual Machines or micro-containers for the processes that
+require it. Moreover, it works in direct relation with the monitoring component, to evaluate the
+resources constantly and to keep track of the performance of the containerised services.Inventions 2018 ,3, 71 21 of 39
+Semaphore: The heart of the Frameworks architecture is the Semaphore, because communication
+of the components is conducted and orchestrated through it. Specically, whenever the State
+is changed by the Framework or by the Actor, the Semaphore is triggered and enables the
+interaction between the Dashboard and the Resource Resolver. This initiates the matchmaking
+process between the Abstract Tasks and the Resources. This action is initiated after the change
+of State, which the Actor or the Framework could make due to a scheduled or an unexpected
+event. In addition, the Semaphore gathers the necessary information from the Policy Repository,
+in order to retrieve the policies that affect the Constraints, the Prioritization and the Routing
+Algorithm of each Concrete Graph. Furthermore, it interacts with the Policy Resolver and the
+Micro Benchmarking System, in order to apply Constraints to each Concrete Graph and to
+conduct benchmarks. All these communications are needed so that the Semaphore can send the
+necessary information and graphs to the Graph Resolver component in order to compute the
+optimal solution/path. The stateless nature of those operations, as well as the distribution of
+the operations that the Framework needs to perform in order to reach the nal ow of tasks,
+makes the Semaphore a very crucial component for the procedures of the system.
+Resource Resolver : This component is responsible for selecting the best candidate resources
+given an Abstract Task. Every Abstract Graph contains many Abstract Tasks, which can be performed
+by specic resources. There is a need to map every resource based on their description with the
+corresponding Abstract Task. The result of this mapping is the Concrete Graph that contains all the
+possible resources for the tasks in order to complete a specic process. Creating this mapping is not
+sufcient. Furthermore, the appropriate quality control is performed for all the resources in order to
+assure efcient management. There are four subcomponents in the Resource Resolver:
+Process Manager: Given a specic State change, this component gathers all the appropriate
+Abstract Graphs (business processes that need to be performed at a certain state) from the
+Infrastructure Processes Repository in order to organise them and send them to the Resource Pool
+Manager. Afterwards, the organisation of the resources, the matchmaking between the Abstract
+Tasks (that the Abstract Graphs contain) and selection of the resource that can perform these tasks
+(delivered from the Resource Pool Manager) are carried out. After the operation of the following
+components, the Process Manager transforms the Abstract Graphs to Concrete Graphs.
+Resource Pool Manager: Receiving all the Abstract Tasks (delivered from Process Manager) as
+input, this component initiates the resource discovery procedure. Primarily, it requests all the
+resource blueprints, which match with each Abstract Task specication, from the Registered
+Resource Repository. This repository contains all the blueprints that describe every resource
+within the CIso that the Resource Manager can identify the compatibility of every resource
+and assign it to the proper Abstract Task. Therefore, evaluating the compatibility of a resource
+regarding a given task is the rst step towards mapping. However, resources can be off-line or
+generally unavailable, automatically excluding them as eligible candidates. The Resource Pool
+Manager, given the type of a resource (either a computational resource or a data store resource),
+sends a signal to the appropriate quality control subcomponents.
+Computational Node Manager: This component is responsible for evaluating all the candidate
+resources that are of a computational nature. Specically, the Computational Manager gathers
+information from the Monitoring component and evaluates it based on the availability of the
+resources, their utilization and the computational load they currently have in order for them to
+full certain quality characteristics. In addition, it could be a Service Level Agreement ( SLA ) that
+needs to be taken into consideration for the resource selection.
+Datastore Node Manager: In the same manner as the Computational Node Manager, this
+component evaluates the resources related to data storage. Just like the computational resources,
+so do the data repositories have some quality characteristics. This component evaluates the
+resources on two levels. Keeping in mind that many repositories can contain eligible informationInventions 2018 ,3, 71 22 of 39
+for a specic task, the rst evaluation measures the quality of data for each one of these sources.
+Nevertheless, evaluating the quality of the data can also ensure the best matching between a data
+store resource and an Abstract Task. As a second step, it evaluates the capabilities of the data
+stores by taking into consideration characteristics such as scaling, cloning and also capabilities
+like data movement and cashing.
+Policy Resolver (Policy Enforcer) : In a Critical Infrastructure, there are specic policies dened
+for each of its processes. These policies must be implemented by the Framework, by translating them
+into rules that transform the graph to the desired form. To be more precise, the Policy Enforcer uses
+the Concrete Graphs from the Resource Resolver (through the Semaphore) as input, as well as the
+policies from the Policy Repository to deliver a more rened Concrete Graph that marks all the nodes
+that do not meet the Constraints regarding the policies of the CI. This graph is then delivered back to
+the Semaphore, which forwards it to the Graph Resolver.
+Micro Benchmarking System : This component is responsible for conducting real-time
+benchmarks for every path of a Concrete Graph in order to calculate the execution times of the Concrete
+Tasks. It is a lightweight benchmark tool that performs benchmarks with the minimum amount of
+load in order to avoid overhead in the system and its resources. All the results from the benchmarking
+are stored in the Historical Repository in order to be used by other components, such as the Graph
+Resolver. The operation of micro benchmarking is triggered by the Semaphore for every Concrete
+Graph whenever a change takes place in the CIs State. As the execution times of the Concrete Tasks
+may vary from time to time regardless of the CIs State, the Micro Benchmarking System is triggered
+periodically for an already deployed graph by the Orchestration Engine for re-evaluation purposes.
+Monitoring : The Monitoring component is responsible for constantly monitoring the resources
+operated by the CIand the processes that are currently running. It works in direct collaboration with
+the Deployment Engine and delivers monitoring information to the Resource Resolver for evaluation
+purposes. All data produced by this component is stored in the Historical Repository in order to
+be mainly used by the Graph Resolver component for conducting graph resolution and nding the
+optimal paths based on this data.
+Graph Resolver : This component makes the nal decision regarding which path of the Concrete
+Graph is the most suitable for a given State. It receives input from both the Policy Repository and
+Historical Repository in order to take under consideration both the active policy and the performance
+of the resources. The Graph Resolver contains two subcomponents:
+Graph Resolver: This component is in charge of updating the graph provided by the Policy
+Resolver through the Semaphore with all the necessary information so that the Path Resolver is
+able to nd the optimal path. This component queries the Historical Repository to get three sets
+of data. The rst one consists of data derived from the benchmarks performed on the graphs;
+the second one contains all the data that were collected during the runtime by the Monitoring
+Component; and the last one is a correlation (scale comparison) between the rst two. The reason
+for having the third dataset is because the computational load in real-time monitoring differs from
+the computational load produced by the micro benchmarks; this dataset acts as a bridge between
+the other two and helps the evaluation of each graph in order to apply the appropriate weights
+to them. Moreover, the Graph Resolver communicates with the Policy Repository. The reason
+behind this connection is that a policy of any given State dictates the ratio of monitoring and
+benchmarking data that should be considered when calculating the weights of the graphs edges.
+A good example is that, in the case of an emergency, the latest benchmarking data is more crucial
+than the historical captured data of a path, so the policy dictates that the nal value will mainly be
+produced from benchmarking data, while historical data will have less impact (i.e., 80% vs.20%).
+Path Resolver: The Path Resolver takes the weighted graph from the Graph Resolver and runs the
+appropriate algorithm. The algorithm that is going to be applied to the graph in order to nd the
+optimal path is decided based on the policy related to the given state. This algorithm will runInventions 2018 ,3, 71 23 of 39
+using the graph weights that the Graph Resolver has generated. Specically, the Path Resolver
+takes into account not only the weighted graph, but also the routing algorithm specied for the
+given state by the Graph Resolver; for instance, if the State is emergency, then the policy dictates
+that the shortest path algorithm is going to be used on the graph. Taking into consideration this
+information, the Path Resolver will run the Dijkstra algorithm to nd the shortest path.
+Recommendation System : In contrast to the Orchestration Engine, in which the actions are
+reactive, the Recommendation Engine is designed to be proactive. Its scope is to assist the Actor with
+best practice guidelines, hints and recommendations, in order to (a) modify the graphs in case of
+dead loops (where two or more graphs are constantly swapping paths between each other), (b) alert
+the Actor in case a specic state could cause major delays and (c) provide a better system overview.
+In addition, it analyses the information, which the monitoring component produces and stores in
+theHistorical Repository , for pattern identication. The results of this analysis (using deep learning
+algorithms) are stored in the Pattern Repository , and the components can consult it so that they can
+detect threats or operational anomalies.
+3.3. Sequence
+After the description of the general architecture and its components, illustrating the life cycle of
+the system should be the next logical step. To demonstrate the life cycle, we chose to examine the
+operation of the system when a change of the global state of the Critical Infrastructure is enforced.
+To represent this, we use sequence diagrams that follow the Unied Modelling Language (UML) 2.0
+paradigm. These type of diagrams show object interactions arranged in time sequence, thus providing
+a very comprehensive description of the actual life cycle. Furthermore, we have divided said life
+cycle into three separate sequence diagrams named Resource Resolving, Constraints and Micro
+Benchmarking and Graph Resolving (Figure 13), in order to make it more coherent for the readers.
+Figure 13. System Life cycle on State change.
+The rst diagram displays the communication of the components that are involved mainly in the
+Resource Resolver and the assignment of the tasks into specic resources inside the CIecosystem.
+Everything starts when an external actor forces a change to the global state of the CI, by using the
+Dashboard that the Business Continuity Framework has provided, as shown in the picture above.
+This message will be forwarded by said Dashboard to the Semaphore, which will communicate with
+the Process Manager in order to retrieve the active graphs (Business Processes) of this new state.
+These graphs are stored in a repository called the Infrastructure Processes Repository, and they contain
+Abstract Tasks ( ATs) at every node, meaning that each task has not been assigned to any resource.
+Therefore, when the Process Manager asks for these graphs, the repository will return all the active
+Abstract Graphs ( AGraphs ) for the new state in which the CIis found. The next step is to assign all the
+ATs of the selected graphs to resources. The Resource Pool Manager is the one that will perform this
+job for every single AT, and it will take place in two stages. First, there has to be a communication with
+a repository that holds the blueprints for each CIresource (Registered Resources Repository) in order
+the match the ATwith the resources that are able to perform it. Afterwards, when the blueprints of
+the candidate CIresources have been retrieved based on the matching that took place in the previous
+step, there has to be an actual validation of these resources to gure out whether the allocation isInventions 2018 ,3, 71 24 of 39
+possible. Taking into consideration the type of AT, the Resource Pool Manager sends the matched
+blueprints to either the Computational Nodes Manager or Data Store Nodes Manager to validate
+these resources in real time and receives the blueprints that correspond to the ones that are ready and
+capable to run the AT. When this assignment is completed for every AT, the Resource Pool Manager
+will have a list of Concrete Tasks ( CTs) for every AT, which indicates the resources that can run a
+specic AT. This list will then be forwarded to the Process Manager in order to assign the ATs to each
+AGraph and eventually generate the Concrete Graphs ( CGraphs ), which are graphs that contain the
+CTs, which means ATs that have been assigned to the CIresources. The CGraphs will be sent back to
+the Semaphore in order to continue the life cycle and eventually deploy them. The sequence diagram
+of the interactions that we just described is depicted in Figure 14.
+The second stage begins after all ATs of every active AGraph have been assigned to resources,
+thus creating the CGraphs . This stage is about applying the Constraints using the Policy Resolver
+component and running benchmark tests on the CGraphs using the Micro-Benchmarking System .
+The Semaphore asks the Policy Repository for the Constraints, the Prioritization and the Routing
+Algorithm (given the State) for every CGraph . When the Semaphore receives those values, it will
+communicate with the Policy Enforcer and the Micro-Benchmarking System. The Policy Enforcer will
+apply Constraints on every graph and will return to the Semaphore the new constrained Concrete
+Graphs ( CCGraphs ). Meanwhile, the Micro-Benchmarking System will benchmark every CGraph ,
+given the new state and each graphs Prioritization, and store the results on the Historical Repository
+in a parallel fashion. When these operations (benchmark and storing) are completed for all of the
+CGraphs , a conrmation message will be sent back to the Semaphore. At this point, the Semaphore
+has the CCGraphs , and the benchmarking of the CGraphs is completed. The sequence diagram that
+shows these actions is illustrated in Figure 15.
+Figure 14. Resource Resolution.
+In the nal step of this process, the system resolves the CCGraphs with the assistance of the
+Graph Resolver component. The rst course of action is for the Semaphore to send the global state
+and the CCGraphs to the Graph Resolver along with the Constraints, the Prioritization and the
+Routing Algorithm of each graph. The Graph Resolver needs to generate weights for the edges of the
+graphs in order for the Path Resolver to nd the optimal path for the deployment phase. For every
+CCGraph , the Graph Resolver checks what kind of Routing Algorithm has been dictated by the policy.Inventions 2018 ,3, 71 25 of 39
+In the rst and easy case, setting the weights of the edges is straightforward due to the routing
+algorithm (e.g., Minimal Nodes), so they are generated immediately. On the other hand, if the Routing
+Algorithm is the Shortest Path (based on time), a more complex procedure must take place, because
+the way the weights on edges is calculated may change according to the policy that the graph follows.
+First, the Graph Resolver must communicate with the Policy Repository and ask what kind of data
+types are needed from the Historical Repository and under what kind of formula they are combined
+in order to generate the appropriate values. Afterwards, for every CTof a CCGraph , the Graph
+Resolver will query the Historical Repository and will receive the duration process times concerning
+the specic state, timestamp and graph. Along with these records, there is also a value that represents
+the relation that these duration times might have. That is due to the fact they might be coming from
+different data types (e.g., benchmarking time vs. real-world scenario time). When all this information
+is available on the Graph Resolver, the weights on the edges of the graphs can nally be calculated,
+thus concluding the case of the Routing Algorithm being the Shortest Path. Further on, the Graph
+Resolver will now forward the newly-created weighted CCGraphs to the Path Resolver with their
+policy values (Constraints, Prioritization and Routing Algorithm) and will evaluate the optimal path
+plus some of the next best candidate paths in order to have alternative routes during the runtime.
+The completely resolved graphs will be forwarded to the Semaphore, and from there, they will be sent
+to the Orchestration Engine in order to be deployed. These actions are illustrated in Figure 16.
+Figure 15. Constraints and Micro-Benchmarking.Inventions 2018 ,3, 71 26 of 39
+Figure 16. Graph Resolution.
+4. Test Case and Validation
+For validation, we choose to test our proposed Framework at a Greek port. Greeces port
+infrastructure is being constantly upgraded and improved to meet the needs of cargo shipping,
+security concerns and the countrys tourism. As the ports ecosystem constantly evolves, so must
+its needs, its services and data. A port is a complex system that consists of multiple heterogeneous
+critical infrastructures , which are connected and dependent on each other.
+Mandatory elements of this complex system are: ports, ships and ICT supporting and management
+systems. The maritime transportation system operates using information and communication systems.
+These systems play an important role in each of these links as a core platform for the information
+exchange and support the safety monitoring of people, vessels, equipment and cargo in ports and
+during the ships waterway passage. Based on their interdependencies and interconnections, port
+operations can be classied into three different CInetworks: the port CInetwork, the shipping
+CInetwork and the ship trafc and port operation information CInetwork, as introduced in [ 39].
+Dependencies between these operations, as well as strong interconnections between the different CIs,
+can lead to a cascade of failures or a domino effect. A disruption of a CInetwork or the CIitself
+may become a source of disturbance for another CIorCInetwork. Furthermore, the need of resilient
+systems arises in order to provide the ability to withstand the slings and arrows of life and operations,
+from human error to migration failure to natural disasters. Any of these factors can disrupt or even
+cripple the ports functionality. For all of the reasons presented above, a port seems to be the most
+suitable candidate to test our Framework implementation. Its main goal is to increase the resilience of
+the ports CIassets at an individual level and more importantly to shield them from cascading failures.
+There are ve major Virtual Entities ( VE) that form the port ecosystem, as depicted in Figure 17.
+One is the Security and Control Network, that is responsible for the security of the infrastructure and
+its surveillance. The Governmental VEkeeps the data backup of the whole Infrastructure in case of
+failure or data loss. The primary VEconsists of the main Infrastructure premises where the ofces
+and the main data and computer rooms are located. The Cargo and Trafc Monitor is the VEthat
+controls and navigates the vessels, schedules the arrivals to the port, informs and communicates withInventions 2018 ,3, 71 27 of 39
+vessels and handles bulk cargoes. Finally, Cloud Providers compose a secondary solution for process
+execution and data backup and retrieval. The resources that are used by these VEare presented
+in Table 1.
+Figure 17. Port Architecture.
+Table 1. Available Resources.
+Security and Control Network Governmental Cloud Providers Infrastructure Cargo and Trafc Monitor
+IP Cameras (H264 encoder)Infrastructure Backup
+Data CenterS3Spark Cluster
+(for analytics)Control Center
+Analogue Cameras (Legacy) Backup Data Center AWS Data centreSensors (RFIDs, proximity
+sensors, trafc cameras)
+Embedded Devices
+(Raspberry Pi 2/3)Dedicated PCs
+(120+ for the staff)Network Communication
+System (for the vessels)
+Backup System Weather station
+Recording System Proximity Radar
+Control Room Information ClusterWearable sensors
+(for the workers)
+Transcoding Cluster (Spark) High Denition Cameras
+Ship Trafc Information System
+Command Center
+There are various types of network links between VEs and several redundant ones, as this is
+vital for their communication. Wide Area Network (WAN) is the main way to communicate between
+on-premises and off-premises buildings. For redundancy or Quality of Service (QoS) purposes,
+some vital Business Processes have been assigned dedicated leased lines or satellite communications.
+In the following sections, we introduce tests that highlight the core concepts of the Routing Algorithm,
+Prioritization and Constraints, as well as tests regarding the performance of the overall system.
+4.1. State Change Paradigm
+A process of the Critical Infrastructure system is actually a business functionality, and as
+mentioned, a graph with multiple paths and tasks can describe it accurately. Each of these graphs,
+considering the global state of the CI, have three identiers: the Routing Algorithm, Prioritization and
+Constraints. In this section, we will present examples of State change on the CIand will try to highlight
+how these identiers affect the chosen path, by showing the before and after status of certain graphs.Inventions 2018 ,3, 71 28 of 39
+4.1.1. Routing Algorithm Use Case
+In the rst use case example (Figure 18), there is a graph that operates on an Energy Efciency
+State and uses Minimum Nodes as its Routing Algorithm. The Constraints and the Prioritization
+are not important in this example; for completeness, we assume that there are no Constraints and no
+specic Prioritization. In this state, the path chosen has a value of 43s, but time is of no importance
+due to the Routing Algorithm chosen (green arrow path in "Before" graph, Figure 18).When the State
+changes to Normal, which forces the Routing Algorithm to also change to Shortest Path, the chosen
+path should be re-evaluated. At the end, a different path is chosen, one that accumulates 28s and
+complies with the new Routing Algorithm (green arrow path in "After" graph, Figure 18).
+Figure 18. Routing Algorithm Use Case.
+4.1.2. Prioritization Use Case
+In the next use case, there are three different running graphs under the State Normal.
+These graphs do not have any special Prioritization, and they all use the same Routing Algorithm,
+the Shortest Path. One thing to notice is that all of them have one common Concrete Task in
+Node 4, which is why that node is highlighted (Figure 19). When the State changes to Critical,
+Prioritization changes are imposed on graphs G1and G3without any Routing Algorithm and
+Constraint changes. The graph G1has the highest priority, which means that its tasks have high
+priority, as well. G3s priority also increased, but it stays behind G1, while G2takes last priority.
+What we notice in this case that the path of G1, which uses Node 4, becomes faster ( 28s prior,
+compared to 22s now) due to the fact that G1is using the resources for Node 4more and therefore
+decreasing the processing time on that node. On the other hand, G2stands at the bottom of the
+priority list, so using Node 4increases the time of the chosen path from 40s to51s, ultimately forcing
+an alternative path that has a value of 44s, complying with the Routing Algorithm. Finally, yet
+importantly, even though G3has a higher priority than before, it also received an increase in time,
+from 30time units to 35, because using Node 4led to competition with Urgent priority graph G1.
+That time increase though was not a substantial one, and it had no effect on the path because G3s
+priority is higher than G2s.Inventions 2018 ,3, 71 29 of 39
+Figure 19. Prioritization Use Case.
+4.1.3. Constraints Use Case
+In order to understand the effects of the Constraints on the path choice, a model, as depicted in
+Figure 20, was designed, where a graph under the State Normal enforces the Minimum Nodes
+Routing Algorithm and medium Prioritization. In this State, there are two Constraints that the path
+needs to follow, the rst being Enforce Security Limitation and the second being Enforce Operation
+Time Limitations. These Constraints ultimately give the results that are presented in Figure 20 before
+the State change. One can notice here that Nodes 3and 4are crossed out. This crossing out implies
+that the path cannot include these nodes because the Constraints will not be fullled.
+When the State changes to Critical, the Shortest Path Routing Algorithm is implemented,
+and the Prioritization of the graph receives the characterisation Emergency, changing some of
+the values of the edges. In this test, two different cases are taken into consideration. In the rst
+one, when the State changed, the Constraints remain the same, but the Shortest Path ( 22s) cannot
+be chosen because it uses Node 4; therefore, the system compromises with an alternative one that
+accumulates 31s. The second test shows that, if some of the Constraints are loosened or removed
+while using the same Routing Algorithm, a better outcome can be achieved. By removing the Enforce
+Security Limitations Constraint, Node 4can now be used, and the fastest path of the graph can be
+ultimately deployed.Inventions 2018 ,3, 71 30 of 39
+Figure 20. Constraints Use Case.
+4.2. Framework Application on the Port Critical Infrastructure
+In this section, we present the results that derive from the Framework when used at a Greek port.
+In detail, we measured its responsiveness and adaptivity under unstable or unpredictable conditions.
+We identied both cases in which the result was expected, as well as situations where the Framework
+struggled to gure out optimal solutions. These situations could be pinpointed and indexed by the
+system for future reference.
+4.2.1. Resources Utilization Use Case
+In the rst use case, we evaluate a process that, before the State change, was under the Minimum
+Nodes Routing Algorithm, and after the State change, it will be under the Shortest Path. The scope
+of this test is to present the utilization changes of the involved resources in regards to the execution
+time of the selected path (the ow within the red frame in Figure 21). Before this change, the selected
+path was the one with a single node, the Cloud Service Provider, as shown in Figure 21. Due to
+this selection, the utilization of that resource is extremely high, as the blue coloured line shown in
+Figure 22b. After 141s, the State changed to Normal, which forced the Routing Algorithm to change to
+Shortest Path (Figure 22a).Inventions 2018 ,3, 71 31 of 39
+Figure 21. Testing Graph.
+(a) Selected path
+(b) Utilization of resources per node
+(c) Total execution time of testing graph
+Figure 22. Resource Utilization benchmark.Inventions 2018 ,3, 71 32 of 39
+After that point, the chosen path, which is the fastest one, consists of three nodes. The path that
+consists of the x64 PC (transcoder), Spark Cluster and Raspberry Pi 3 nodes in that exact order is
+now the selected path (Figure 21). From now on, every new execution uses the path that utilizes these
+nodes. The path change results in an immediate increase on the rst nodes (x64 PC) utilization (orange
+line in Figure 22b); respectively, the Cloud Service Provider utilization decreases as the tasks that it
+has to carry out are declining. When the rest of the nodes Spark Cluster and Raspberry Pi 3 start
+to receive tasks, there is an increase in the reduction of the utilization for the Cloud Service Provider.
+The black box of Figure 22b highlights the period where all the resources of the selected path are
+starting to accept tasks. As the tasks are in sequential order, their utilization increase will happen
+accordingly. During that period, the utilization of the initial path is falling because the remaining tasks
+that were using it are getting nished.
+Chart (c) in Figure 22 illustrates this gradual change. It presents the average total time of the
+path executions and how the change that we made after 141s in the State affects them. The average
+time of the two paths is about 60and 40s, respectively. The transition period starts at about 40s after
+the change (as shown in Figure 22c with the blue vertical line) because that is when the rst graph
+that uses the new path is completed; thus, after 181s, the average completion time starts to decrease
+(green vertical line in Figure 22c). From that point on, the executions that we observe are coming from
+both paths. In about 60s after the change ( 201s), the last graph execution via the rst path has been
+completed, and therefore, the total time stabilizes (magenta line).
+4.2.2. Benchmarking Window Use Case
+In the next use case, we have a graph with four different paths. Figure 23 shows the total execution
+time of the paths, when benchmarking them after every second. In that use case, we illustrate
+the advantages and disadvantages of different window intervals using as a base reference the
+benchmarks that we performed at the 1-s window.
+Figure 23. Total execution time per path.
+The windows interval values are presented in the next four charts (Figure 24) and are 1,30,
+60and 240s, respectively. Using a small window, the system is able to identify faster disconnected
+paths that could be created due to failures ofa resource. Moreover, the smaller the window is, the
+faster the optimal path will be identied. In the Critical State, this can be crucial as the required goal
+is to achieve short and stable graph execution time through the best path selection. For example, at
+the 498th second (indicated by the vertical red line) of Figure 23, the purple path (Path 4), which was
+the fastest one, doubles its execution time, leading to different permutations given different windows.
+This event in the 30-s window case is observable after 12s on the 510-s mark (indicated by a red arrow)Inventions 2018 ,3, 71 33 of 39
+in Figure 24b, whereas in the 60-s window case (Figure 24c), after 42s on the 540s mark (indicated
+by a red arrow). On top of that, using a 240-s window (Figure 24d), the system is not only able to
+adapt to this change, but it also does not perform any switch to the selected path until the 720-s mark
+(indicated by a red arrow).During that period, the 30-s window case has led to 10path changes and
+the60-s window to ve changes. On the other hand, using a 1-s window, the system performs more
+than 50changes, and 20of them happen in less than a minute. Therefore, the system can be affected by
+windows that are too small, through continuous unnecessary path switches, which overburden it with
+extra overhead. As each business process has different requirements and goals, we have to balance
+between the late response and the process overhead that benchmarking produces.
+(a) Window 1
+(b) Window 30
+(c) Window 60
+(d) Window 240
+Figure 24. Selected path with different windows.
+4.2.3. Overall System-Priorities Use Case
+In the last use case, we simulate 134different Business Processes (graphs) of the CI, and we
+run them in parallel. We enforced a State change from Energy Efciency to Normal, causing the
+system to re-evaluate the graphs based on the new Prioritization, Constraint and Routing Algorithm
+parameters. The scope of this use case is to present the overall performance of the system and howInventions 2018 ,3, 71 34 of 39
+that could benet the CIby giving the opportunity to use underutilized resources or reallocate them
+in a way that will best serve the new conditions that the global State has dictated. Furthermore,
+we evaluated the process execution time taking into consideration the Prioritization of each graph.
+The main concept of this case is how different processes compete for the available resources, based on
+their Prioritization. This situation is created because identical resources are specied in a common,
+unied way (Resource Blueprint), making them candidates for more than one task. The resources are
+in a main pool, as was shown in Section 3.1, so some paths that are included in different graphs could
+contain nodes (tasks) that use the same resource.
+We picked 11indicative graphs, out of the total 134graphs, which had their priorities changed,
+while the Routing Algorithm remained the same (Shortest Path). In Figure 25, we demonstrate the total
+execution time of those graphs. The rst outcome we notice is the improved execution time (after a
+certain time period) for the graphs that improved their priority and especially those that already had
+or were changed to the highest priority (Emergency). The main reason is that they use the resources
+of the optimal path with relatively low competition, due to their higher Prioritization. The higher
+priority processes slow down the other processes and force them to switch paths. That results in the
+emergence of alternative shortest paths, forcing them to switch. This procedure can be repeated more
+than once, causing multiple path shifts and therefore abrupt changes of execution time that are evident
+in Figure 25. Eventually, most of the graphs become stable by using the same path. However, there are
+some exceptions where graphs switch periodically between different paths.
+Figure 25. Total execution time per process.
+We divided the business processes depicted in Figure 25 into three different groups according to
+their new Prioritization.
+The processes that receive, or already have, the highest priority (Emergency) are grouped and
+depicted in Figure 26. For the majority of them, the execution time eventually decreases. However, there
+is an exception (Process 1, blue colour) where the time slightly increases. That is because, after the
+State change, the total number of Emergency Prioritization graphs of the system has been increased,
+resulting in a higher competition on resources.
+The second group of business processes whose priorities remained or changed to medium
+(Figure 27) yields no clear conclusion about the execution time for graphs. Many uctuations have
+occurred, like the Process 6case (orange colour) between the time period of 900and 1500 s in Figure 27.
+These graphs are constantly trying to nd better paths. Process 7(yellow colour), on the other hand,
+is periodically switching between paths as other processes of the system (with higher priorities) are
+interfering, and therefore, there is no stabilization point for that graph.Inventions 2018 ,3, 71 35 of 39
+Figure 26. High priority processes.
+Figure 27. Medium priority processes.
+Figure 28 illustrates the group of business processes with low priorities (No Priority, Low Priority).
+Processes 8(blue), 9(orange) and 10(yellow) have their execution time raised even though after
+the State changes some of them (Processes 8and 9), they repeatedly try to nd alternative paths.
+An exception to that phenomenon is Process 11(purple), where despite its low priority, its execution
+time gets slightly better as it has chosen a path that uses resources without any other competing
+processes. That is achieved only when all other processes of the system utilize different resources from
+those that this specic process uses.
+Figure 28. Low priority processes.Inventions 2018 ,3, 71 36 of 39
+4.2.4. Computational Overhead of the Orchestration Engine
+ACIincludes many business processes, especially the one we chose to apply the proposed
+framework on (port use-case), as it is a combination of different CIs. Moreover, the business processes
+of such CIs are complex because they are comprised by a considerable amount of tasks. This overall
+complexity creates additional computational overhead for the real-time management of the CIbusiness
+processes. In order to overcome this challenge, the State value has a parameter that indicates the
+percentage of the paths that could actually be deployed per graph. For example, if in a graph,
+this parameter has a value of 30%, that indicates that only 30% of the best paths is going to be deployed.
+To showcase how this parameter affects the performance of the Orchestration Engine (the component
+that is responsible for the real-time management of the CIbusiness processes), we recorded its
+operation while it was monitoring the port CI.
+The specications that the Orchestration Engine was running under was an AMD Opteron
+6360 CPU (located at the National Technical University of Athens, Athens, Greece) with 64 GB RAM.
+The results are presented in Figure 29 where we can see that the computational usage is exponentially
+increasing due to the additional path resolution that is needed.
+Figure 29. Computational cost.
+5. Conclusions
+In summary, we presented a well-dened and complete Information Life Cycle design, aimed to
+manage and process data from a variety of sources. Each step of this process is strictly established
+(inspired by military protocols) in order to extend the capabilities and to offer exibility to modern
+information systems. This aspect of the research suggests that Critical Infrastructure Systems should
+incorporate this Information Life Cycle due to the constant need for data from external resources.
+That is why we created and introduced a rigorous Framework that puts everything into practice.
+One of the main functionalities of the Framework is the assignment to CIresources of tasks that
+are necessary to be executed in an optimal way, taking into consideration any business intelligence
+and policies that have to be followed. The Framework handles the resources in a common manner,
+using a Blueprint as a means to strictly describe them, making the allocation of any remaining
+underutilised resources effortless. This unied way of representing CIresources leads to an increase
+of the amount of data that can be processed by taking advantage of the underutilised resources
+of the CI, thus boosting the veracity of the information that the business processes can produce.
+Finally, we evaluated the Framework by using it at a Greek port, and the results showed that it
+efciently managed the operations of the CI. The Framework was able to quickly adapt in unstable
+environments and raised the performance of crucial (high priority) Business Processes of the CI.
+In addition, the Framework delivered crucial information about the status of the overall system
+concerning anomalies or inconvenient situations (i.e., dead loops, as we mentioned), and nally,
+it stored and analysed data for the prevention of a potential future crisis.Inventions 2018 ,3, 71 37 of 39
+Author Contributions: All authors conceived of the theoretical aspects of this work. A.P ., T.F., A.M., G.C., V .M.,
+E.M. and P .K. designed and performed the experiments and analysed the data and the experimental results.
+These seven authors wrote the paper.
+Acknowledgments: This work has partly been supported by the European Commission through the Horizon
+2020 Research and Innovation program under Contract 731945 (DITASproject).
+Conicts of Interest: The authors declare no conict of interest. Additionally, the founding sponsors had no role
+in the design of the study; in the collection, analyses or interpretation of data; in the writing of the manuscript;
+nor in the decision to publish the results.
+Abbreviations
+AG Abstract Graph
+AIS Automatic Identication System
+API Application Programming Interface
+AT Abstract Task
+AWS Amazon Web Services
+BPMN Business Process Model and Notation
+CG Concrete Graph
+CI Critical Infrastructure
+CPU Central Processing Unit
+CRM Customer Relationship Management
+CT Concrete Task
+DDoS Distributed Denial of Service
+DoF Description of Functionality
+EC2 Elastic Compute Cloud
+G Graph
+GPS Global Positioning System
+ICT Information and Communication Technology
+IDC International Data Corporation
+IT Information Technology
+NATO North Atlantic Treaty Organization
+NHS National Health Service
+P Priority
+PC Personal Computer
+PLC Programmable Logic Controller
+QoS Quality of Service
+RAM Random Access Memory
+RDBM Relational Database Management
+SCADA Supervisory Control and Data Acquisition
+SLA Service Level Agreement
+T Task
+TLS Transport Layer Security
+UI User Interface
+UML Unied Modelling Language
+VE Virtual Entity
+VM Virtual Machine
+VTS Vessel Trafc Services
+WAN Wide Area Network
+References
+1. The White House; Ofce of the Press Secretary. Presidential Policy DirectiveCritical Infrastructure Security
+and Resilience. The White House Ofce. 2013. Available online: https://obamawhitehouse.archives.
+gov/the-press-ofce/2013/02/12/presidential-policy-directive-critical-infrastructure-security-and-resil
+(accessed on 16 October 2018).Inventions 2018 ,3, 71 38 of 39
+2. Rinaldi, S.M.; Peerenboom, J.P .; Kelly, T.K. Identifying, understanding, and analyzing critical infrastructure
+interdependencies. IEEE Control Syst. 2001 ,21, 1125.
+3. MacDermott, A.; Hurst, W.; Shi, Q.; Merabti, M. Simulating Critical Infrastructure Cascading Failure.
+In Proceedings of the 2014 UKSim-AMSS 16th International Conference on Computer Modelling and
+Simulation, Cambridge, UK, 2628 March 2014.
+4. Van Eeten, M.; Nieuwenhuijs, A.; Luiijf, E.; Klaver, M.; Cruz, E. The state and the threat of cascading
+failure across critical infrastructures: The implications of empirical evidence from media incident reports.
+Public Adm. 2011 ,89, 381400. [CrossRef]
+5. Scarlat, C.; Simion, C.; Scarlat, E.I. Managing new technology projects: Some considerations on risk
+assessment in the case of NPP critical infrastructures. In Proceedings of the 2011 2nd IEEE International
+Conference on Emergency Management and Management Sciences, Beijing, China, 810 August 2011.
+6. Zimmerman, R.; Restrepo, C.E. Analyzing Cascading Effects within Infrastructure Sectors for Consequence
+Reduction. In Proceedings of the 2009 IEEE Conference on Technologies for Homeland Security , Boston, MA, USA,
+1112 May 2009.
+7. Kadri, F.; Birregah, B.; Chatelet, E. The Impact of Natural Disasters on Critical Infrastructures: A Domino
+Effect-based Study. J. Homel. Secur. Emerg. Manag. 2014 ,11, 217241. [CrossRef]
+8. Polityuk, P .; Vukmanovic, O.; Jewkes, S. Ukraines Power Outage Was a Cyber Attack: Ukrenergo ; Reuters:
+London, UK, 2017.
+9. Kushner, D. The Real Story of Stuxnet. IEEE Spectr. 2013 ,3, 4853. [CrossRef]
+10. Grunik, K. Murfreesboro Police, Fire Department Computers Hit with Malware Attack. FOX 17, Electronic
+Copy. Available online: https://fox17.com/news/local/murfreesboro-police-re-department-computers-
+hit-with-malware-attack (accessed on 6 July 2017).
+11. Jon Ungoed-Thomas, R.H.; Gadhe, D. Cyber-Attack Guides Promoted on YouTube. The TIMES , Electronic
+Copy. Available online: https://www.thetimes.co.uk/article/cyber-attack-guides-promoted-on-youtube-
+972s0hh2c (accessed on 14 May 2017).
+12. Bernard, T.S.; Hsu, T.; Perlroth, N.; Lieber, R. Equifax Says Cyberattack May Have Affected 143 Million in
+the U.S. The New York Times , Electronic Copy. Available online: https://www.nytimes.com/2017/09/07/
+business/equifax-cyberattack.html (accessed on 7 September 2017).
+13. Bagheri, E.; Ghorbani, A. A service oriented approach to critical infrastructure modeling. InProceedings of
+the Workshop on Service Oriented T echniques ; National Research Council Canada: Ottawa, ON, Canada, 2006.
+14. Bagheri, E.; Ghorbani, A.A. UML-CI: A reference model for proling critical infrastructure systems.
+Inf. Syst. Front. 2010 ,12, 115139. [CrossRef]
+15. Castorini, E.; Palazzari, P .; Tofani, A.; Servillo, P . Ontological framework to model critical infrastructures and
+their interdependencies. In Proceedings of the Complexity in Engineering (COMPENG10), Rome, Italy,
+2224 February 2010; pp. 9193.
+16. Flammini, F.; Mazzocca, N.; Pappalardo, A.; Pragliola, C.; Vittorini, V . Improving the dependability of
+distributed surveillance systems using diverse redundant detectors. In Dependability Problems of Complex
+Information Systems ; Springer: New York, NY, USA, 2015; pp. 3553.
+17. Liu, Z.; Xi, B. COPULA model design and analysis on critical infrastructure interdependency. In Proceedings
+of the 2012 International Conference on Management Science and Engineering (ICMSE), Dallas, TX, USA,
+2022 September 2012; pp. 18901898.
+18. Marrone, S.; Nardone, R.; Tedesco, A.; DAmore, P .; Vittorini, V .; Setola, R.; De Cillis, F.; Mazzocca, N.
+Vulnerability modeling and analysis for critical infrastructure protection applications. Int. J. Crit. Infrastruct. Prot.
+2013 ,6, 217227. [CrossRef]
+19. Puuska, S.; Rummukainen, L.; Timonen, J.; Lperi, L.; Klemetti, M.; Oksama, L.; Vankka, J. Nationwide
+critical infrastructure monitoring using a common operating picture framework. Int. J. Crit. Infrastruct. Prot.
+2018 ,20, 2847. [CrossRef]
+20. Wang, W.; Yang, S.; Hu, F.; Stanley, H.E.; He, S.; Shi, M. An approach for cascading effects within critical
+infrastructure systems. Phys. A Stat. Mech. Its Appl. 2018 ,510, 164177. [CrossRef]
+21. Keller, J. A Fake AP Tweet Sinks the Dow for an Instant. Bloomberg Businessweek , Electronic Copy. Available
+online: https://www.bloomberg.com/news/articles/2013-04-23/a-fake-ap-tweet-sinks-the-dow-for-an-
+instant (accessed on 24 April 2013).Inventions 2018 ,3, 71 39 of 39
+22. Tweneboah-Koduah, S.; Buchanan, W.J. Security Risk Assessment of Critical Infrastructure Systems:
+A Comparative Study. Comput. J. 2018 ,61, 13891406. [CrossRef]
+23. He, X.; Cha, E.J. Modelling the damage and recovery of interdependent critical infrastructure systems from
+natural hazards. Reliab. Eng. Syst. Saf. 2018 ,177, 162175. [CrossRef]
+24. Boin, A.; McConnell, A. Preparing for critical infrastructure breakdowns: The limits of crisis management
+and the need for resilience. J. Conting. Crisis Manag. 2007 ,15, 5059. [CrossRef]
+25. Wardman, D. Bringing Big Data to the Enterprise. 2013. Electronic Copy. Available
+online: ftp://public.dhe.ibm.com/software/os/systemz/pdf/09_-_Dan_Wardman_-_Bring_Big_Data_
+to_the_Enterprise_.pdf (accessed on 16 October 2018).
+26. Reinsel, D.; Gantz, J.; Rydning, J. Data Age 2025: The Evolution of Data to Life-Critical. SEAGATE ,
+2017. Electronic Copy. Available online: https://www.seagate.com/www-content/our-story/trends/les/
+Seagate-WP-DataAge2025-March-2017.pdf (accessed on 16 October 2018).
+27. Frontex. Common Integrated Risk Analysis Model (CIRAM)-Comprehensive Update. Capacity4dev Project.
+2014. Electronic Copy. Available online: https://europa.eu/capacity4dev/le/21158/download?token=
+D9Gkxx6U (accessed on 16 October 2018).
+28. Hellenic Military Force. GC 31-14 Control of Information ; Hellenic Force Publishing House: Athens,
+Greece, 2005.
+29. Rudner, M. Protecting Critical Energy Infrastructure Through Intelligence. Int. J. Intell. CounterIntell. 2008 ,
+21, 635660. [CrossRef]
+30. Lee, S.; Shon, T. Open source intelligence base cyber threat inspection framework for critical infrastructures.
+In Proceedings of the 2016 Future Technologies Conference (FTC), San Francisco, CA, USA, 67 December 2016 .
+31. Yurcik, W.; Doss, D. Information Security Educational Initiatives to Protect E-Commerce and Critical National
+Infrastructures ; Information Systems Education Conference (ISECON): Philadelphia, PA, USA, 2018.
+32. Gao, J.; Xie, C.; Tao, C. Big Data Validation and Quality AssuranceIssuses, Challenges, and Needs.
+In Proceedings of the 2016 IEEE Symposium on Service-Oriented System Engineering (SOSE), Oxford, UK,
+29 March2 April 2016.
+33. Gani, A.; Siddiqa, A.; Shamshirband, S.; Hanum, F. A survey on indexing techniques for big data: taxonomy
+and performance evaluation. Knowl. Inf. Syst. 2015 ,46, 241284. [CrossRef]
+34. Najafabadi, M.M.; Villanustre, F.; Khoshgoftaar, T.M.; Seliya, N.; Wald, R.; Muharemagic, E. Deep learning
+applications and challenges in big data analytics. J. Big Data 2015 ,2, 1. [CrossRef]
+35. Fang, H. Managing data lakes in big data era: Whats a data lake and why has it became popular in data
+management ecosystem. In Proceedings of the 2015 IEEE International Conference on Cyber Technology in
+Automation, Control, and Intelligent Systems (CYBER), Shenyang, China, 812 June 2015.
+36. OLeary, D.E. Embedding AI and Crowdsourcing in the Big Data Lake. IEEE Intell. Syst. 2014 ,29, 7073.
+[CrossRef]
+37. Moody, D.L.; Kortink, M.A. From Enterprise Models to Dimensional Models: A Methodology for Data
+Warehouse and Data Mart Design. In Proceedings of the International Workshop on Design and Management
+of Data Warehouses (DMDW2000), Stockholm, Sweden, 56 June 2000; Volume 28, pp. 5.15.12.
+38. Breuer, C.; Siestrup, G.; Haasis, H.D. Operational Risk Issues and Time-Critical Decision-Making for Sensitive
+Logistics Nodes. In Decision-Making for Supply Chain Integration ; Springer: London, UK, 2012; pp. 123143.
+39. Guze, S.; Kolowrocki, K. Modelling Operation Process of Baltic Port, Shipping and Ship Trafc and Operation
+Information Critical Infrastructure Network. TransNav Int. J. Mar. Navig. Saf. Sea Transp. 2016 ,10, 275284.
+[CrossRef]
+c
+2018 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access
+article distributed under the terms and conditions of the Creative Commons Attribution
+(CC BY) license (http://creativecommons.org/licenses/by/4.0/).

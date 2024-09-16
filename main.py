@@ -1,10 +1,12 @@
 import sys
 import csv
 import random
+import os
 
 import pygame
 from pygame.image import load
 from pygame.transform import scale
+
 
 from autotype import SeekHunt, Type10Finger
 from evolution import generate_keyboard, process_string
@@ -116,7 +118,7 @@ def convert_key(key):
 def get_pressed_keys(layout_original, layout_convert):
     pressed_keys = []
     keys = pygame.key.get_pressed()
-    for i in range(97, 123):
+    for i in range(96, 123):
         if keys[i] == True:
             pressed_keys.append(chr(i))
     for i in range(44, 58):
@@ -190,6 +192,13 @@ def create_text(screen, text, font, color, position):
     text_rect = text_.get_rect()
     text_rect.center = position
     screen.blit(text_, text_rect)
+
+def create_box(surface, x, y, width, height, inside_color, border_color, border_thickness, border_radius):
+    # Draw the inside box (filled rectangle with rounded corners)
+    pygame.draw.rect(surface, inside_color, (x, y, width, height), border_radius=border_radius)
+    
+    # Draw the border (outside color) with rounded corners and a custom width
+    pygame.draw.rect(surface, border_color, (x, y, width, height), width=border_thickness, border_radius=border_radius)
 
 def draw_input_box(screen, input_box, text, font, active, color_active, color_inactive):
     color = color_active if active else color_inactive
@@ -282,10 +291,15 @@ def create_simulation(mode):
                     x, y = pygame.mouse.get_pos()[0], pygame.mouse.get_pos()[1]
                     # print(x, y)
                     if 90 <= x <= 210 and 180 <= y <= 220:
-                        state = "start"
+                        state = "menu"
                     if (len(typed) >= len(testing_text)-1):
                         if 715 <= x <= 885 and 180 <= y <= 220:
                             wps = round(len(testing_text.split())/((current_time - start_ticks)/1000)*60)
+                            lps = round(len(testing_text)/(current_time - start_ticks)*1000)
+                            mistake = 0
+                            for i, j in zip(typed, testing_text):
+                                if i != j:
+                                    mistake += 1
                             state = "evaluate"
                         elif 532 <= x <= 667 and 179 <= y <= 216:
                             state = "prepare"
@@ -298,14 +312,34 @@ def create_simulation(mode):
                 if pygame.mouse.get_pressed()[0] and mouse_down == False:
                     mouse_down = True
                     x, y = pygame.mouse.get_pos()[0], pygame.mouse.get_pos()[1]
-                    if 360 <= x <= 440 and 100 <= y <= 140:
+                    # print(x, y)
+                    if 680 <= x <= 740 and 100 <= y <= 140:
                         if auto_message == "OFF":
                             auto_message = " ON "
                             auto = True
                         else:
                             auto_message = "OFF"
                             auto = False
-                    elif 480 <= x <= 660 and 100 <= y <= 140:
+                    elif 290 <= x <= 425 and 100 <= y <= 135:
+                        if text_length == "Normal":
+                            text_length = "  Long "
+                            limit = 500
+                        elif text_length == "  Long ":
+                            text_length = "  Short  "
+                            limit = 280
+                        else:
+                            text_length = "Normal"
+                            limit = 350
+                    elif 140 <= x <= 280 and 100 <= y <= 135:
+                        if text_type == "Dummy":
+                            text_type = "  Book  "
+                        elif text_type == "  Book  ":
+                            text_type = "Article"
+                        elif text_type == "Article":
+                            text_type = "  Code  "
+                        elif text_type == "  Code  ":
+                            text_type = "Dummy"
+                    elif 780 <= x <= 960 and 100 <= y <= 140:
                         if auto_type_message == "10 fingers":
                             auto_type_message = " 2 fingers "
                         else:
@@ -355,6 +389,10 @@ def create_simulation(mode):
                 auto_type_message = "10 fingers"
 
                 auto = False
+                text_length = "Normal"
+                limit = 350
+
+                text_type = "Dummy"
 
             case "menu":
                 title = title_font.render("Keyboard Simulator", True, pygame.Color("Black"))
@@ -362,13 +400,15 @@ def create_simulation(mode):
                 title_rect.center = (WIDTH/2, HEIGHT/10)
                 screen.blit(title, title_rect)
 
-                create_text(screen, "Auto: ", start_font, "Black", (320, 120))
-                create_button(screen, auto_message, start_font, pygame.Color("Black"), (400, 120), width=3, border_radius=2)
-
+                create_text(screen, "Auto: ", start_font, "Black", (620, 120))
+                create_button(screen, auto_message, start_font, pygame.Color("Black"), (720, 120), width=3, border_radius=2)
                 if auto:
-                    create_button(screen, auto_type_message, start_font, pygame.Color("Black"), (570, 120), width=3)
+                    create_button(screen, auto_type_message, start_font, pygame.Color("Black"), (870, 120), width=3)
 
 
+                create_text(screen, "Text: ", start_font, "Black", (100, 120))
+                create_button(screen, text_type, start_font, pygame.Color("Black"), (210, 120), width=3, border_radius=2)
+                create_button(screen, text_length, start_font, pygame.Color("Black"), (360, 120), width=3, border_radius=2)
 
                 
                 pygame.draw.rect(screen, pygame.Color("Black"), (70, 160, image_width+20, image_height+20))
@@ -394,12 +434,31 @@ def create_simulation(mode):
                 test = Test(screen)
 
                 if change_text:
-                    text_type = "medium"
-                    if mode == "train":
-                        text_type  = random.choice(["long", "short", "medium"])
-                    with open(f"sample_text\\{text_type}.txt", "r") as f:
+                    if text_type == "  Book  ":
+                        text_path = "books"
+                    elif text_type == "Article":
+                        text_path = "articles"
+                    elif text_type == "  Code  ":
+                        text_path = "code"
+                    elif text_type == "Dummy":
+                        text_path = "dummy"
+                    file_name = random.choice(os.listdir(f"sample_text\\{text_path}"))
+                    with open(f"sample_text\\{text_path}\\{file_name}", "r") as f:
                         text = f.readlines()
-                    testing_text = text[random.randint(0, len(text)-1)]
+                    starting_line = random.randint(0, len(text)-1)
+
+                    testing_text = ""
+                    while True:
+                        if text[starting_line]:
+                            testing_text += text[starting_line]
+
+                        starting_line += 1
+                        if len(testing_text) > 300 or starting_line >= len(text):
+                            testing_text = testing_text.replace("\n", " ")
+                            # print(testing_text)
+                            break
+                    # testing_text = "    whatsoever. You may copy it, give it away or re-use it under the terms"
+                    testing_text = testing_text.strip()
                     # testing_text = """The robot clicked disapprovingly, gurgled briefly inside its cubical interior and extruded a pony glass of brownish liquid. "Sir, you will undoubtedly end up in a drunkard's grave, dead of hepatic cirrhosis," it informed me virtuously as it returned my ID card. I glared as I pushed the glass across the table."""
                     repeat = 0
 
@@ -527,6 +586,8 @@ def create_simulation(mode):
                 start_time = False
                 capslock = False
                 raw_typed = []
+                finished = False
+
                 # total_time = 0
             case "running":
                 pressed_key = []
@@ -548,8 +609,10 @@ def create_simulation(mode):
                         except Exception:
                             cost, letter, fingers = autotyper.type(testing_text, typed, capslock)
 
-                    current_time = pygame.time.get_ticks() 
+                    if not finished:
+                        current_time = pygame.time.get_ticks() 
                 else:
+                    finished = True
                     create_button(screen, "Evaluate", start_font, pygame.Color("Black"), (800, 200))#pygame.font.Font("freesansbold.tff", 32))
                     create_button(screen, "Restart", start_font, pygame.Color("Black"), (600, 200))#pygame.font.Font("freesansbold.tff", 32))
 
@@ -588,8 +651,7 @@ def create_simulation(mode):
                     start_ticks = pygame.time.get_ticks()
                 if start_time == True:
 
-                    stopwatch = start_font.render(format_time(current_time - start_ticks), True, pygame.Color("Black"))
-                    screen.blit(stopwatch, (10, 10))
+                    create_text(screen, format_time(current_time - start_ticks), start_font, "Black", (90, 40))
 
                     if mode == "train":
                         if (current_time - start_ticks)/1000 > 500:
@@ -686,8 +748,17 @@ def create_simulation(mode):
                 
                 # print(raw_typed)
             case "evaluate":
-                WPS_text = start_font.render(f"Words per minute: {str(wps)} (wpm)", True, pygame.Color("Black"))
-                screen.blit(WPS_text, (50, 50))
+                create_box(screen, 10, 10, 980, 230, pygame.Color("Gray"), pygame.Color("Black"), 5, 10)
+                create_text(screen, f"Text length: ", start_font, "Black", (120, 50))
+                create_text(screen, f"{len(testing_text.split())} words                 {len(testing_text)} letters", start_font, "Black", (600, 50))
+                create_text(screen, f"Time:", start_font, "Black", (100, 130))
+                create_text(screen, f"{(current_time - start_ticks)/1000}s", start_font, "Black", (600, 130))
+                pygame.draw.line(screen, pygame.Color("Black"), (200, 150), (800, 150), 2)    
+                create_text(screen, f"Speed: ", start_font, "Black", (100, 200))
+                create_text(screen, f"{str(wps)} (WPM)              {str(lps)} (LPS)", start_font, "Black", (600, 200))
+                # print(mistake, raw_error)
+                # WPS_text = start_font.render(f"Words per minute: {str(wps)} (wpm)", True, pygame.Color("Black"))
+                # screen.blit(WPS_text, (50, 100))
 
                 create_button(screen, "Back", start_font, pygame.Color("SkyBlue"), (150, HEIGHT - 50))
 
