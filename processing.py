@@ -66,11 +66,11 @@ def pdf_to_text(pdf_file_path, output_file_path=None):
             if output_file_path:
                 with open("sample_text/articles/" + output_file_path, 'w', encoding='utf-8') as text_file:
                     text_file.write(text)
-            os.remove("sample_text/articles/" + pdf_file_path)
+            os.remove("sample_text/sample_text/articles/" + pdf_file_path)
                 # print(f"PDF text extraction complete! Saved to {output_file_path}.")
-            validate("articles/" + output_file_path[:-4])
         except Exception:
             pass
+        validate("articles/" + output_file_path[:-4])
 
         
 def validate(input_path):
@@ -99,8 +99,8 @@ def validate(input_path):
     
 
 def process_book(input_path):
-    validate("books/"+input_path)
-    with open(f"sample_text/books/{input_path}.txt", "r+") as file:
+    validate("evaluation/"+input_path)
+    with open(f"sample_text/evaluation/{input_path}.txt", "r+") as file:
         content = file.read()
         
         content = content.replace("    ", "")
@@ -132,10 +132,12 @@ def process_and_delete_repo(source_dir, dest_file):
 
 
 def main():
+    # for i in os.listdir("sample_text/code"):
+    #     validate(f"code/{i[:-4]}")
     book_name = input("Book Processing Name: ")
     if book_name:
         if book_name == "all":
-            for name in os.listdir(f"sample_text/books"):
+            for name in os.listdir(f"sample_text/evaluation"):
                 process_book(name[:-4])
         else:
             process_book(book_name)

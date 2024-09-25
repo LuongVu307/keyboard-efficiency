@@ -1,0 +1,911 @@
+
+WORKING PAPER
+Circular economy as
+a climate strategy:current knowledge and calls-to-action
+Working Papers contain preliminary research, analysis, findings, and recommendations. They are circulated to stimulate timely
+discussion and critical feedback, and to influence ongoing debate on emerging issues.
+
+CONTENTS
+Executive Summary                           2
+1  Introduction                                3
+2  Circular economy strategies can reduce
+greenhouse gas emissions                    5
+3  Circular economy strategies can support
+a sustainable clean energy transition          13
+4  Circular economy strategies can enhance
+climate change adaptation                  14
+5  From knowledge landscape to
+calls-to-action                             14
+Conclusions                                  19
+Endnotes                                    21
+References                                  23
+Acknowledgments                            27
+AUTHORS
+Ke Wang, Milo Costanza-van den Belt,
+Garvin Heath, Julien Walzberg, Taylor Curtis, Jack Barrie, Patrick Schrder, Leah Lazer, Juan
+Carlos Altamirano
+November 2022
+Suggested citation:  Wang, K., M. Costanza-
+van den Belt, G. Heath, J. Walzberg, T . Curtis,
+J. Barrie, P . Schroder, L. Lazer, and J. C. Altamirano. 2022. Circular economy as a climate strategy: current knowledge and calls-to-action. Working Paper. Washington, DC: World Resources Institute. Executive Summary
+Highlights
+Existing pledges and Nationally Determined Contributions (NDC) targets, even if fully achieved, are still not sufcient to meet the Paris climate goals. Considerable additional strategies and actions are urgently needed to close the emission gap.
+Built environment, transport, food system and clean energy are the most relevant sectors for circular economy strategies to deliver climate change mitigation benefts.
+Circular economy strategies can complement decarbonisation measures to further reduce greenhouse gas emissions
+1 from mate-
+rial production, help lower emissions from operational energy use in the built environment and transport, and cut emissions from waste management.
+The largest potential greenhouse gas emission reductions through circularity come from consumption-side measures and product design measures.
+Circular economy strategies can support a sustainable clean energy transition by helping to relieve mineral supply pressure, increasing supply chain resilience, preventing new waste chal-lenges, and accelerating the adoption of clean energy technologies as well as maximising their climate benefts.
+Furthermore, circular economy strategies can help enhance adap-tation to climate change.
+Nine calls to action are put forward for government, business, and civil society leaders to accelerate circular economy strategies with the highest potential for climate benefts, and for the research community to close critical knowledge gaps.
+Objective of this paper
+The circular economy has been gaining increasing momentum as a
+compelling way to help meet the Paris climate goal. This paper aims to synthesise current knowledge on the potential role of  the circular economy in climate change management, including mitigation and adaptation. Through review of  prominent literature and extensive expert consultation, the paper identifies consensus, debates and critical knowl-edge gaps. It then suggests how the current knowledge landscape can be translated into actions, both for practitioners
+2 to adopt and accelerate
+circular economy strategies where they can most effectively contribute to climate goals, and for the research community to advance the knowledge base and close critical knowledge gaps.
+
+
+
+
+
+Key fndings from the literature
+landscape
+The circular economy can contribute to climate change
+management through three major mechanisms:
+1) Reduce greenhouse gas emissions. Circular economy
+strategies can lessen demand for (virgin) raw materials and new products, and consequently reduce greenhouse gas emissions from the production phase. There is broad agreement that built environment, transport and the food system are the sectors with the highest greenhouse gas reduction potential through circular economy strategies, and the largest potential emissions reduc-tions through circularity come from consumption-side measures and product design measures. In addition to reducing emissions from material production, circular economy strategies can also lower emissions from waste management, and can lead to reduc-tions from operational energy use such as heating, cooling and fuel for transport.
+2) Support a sustainable clean energy transition. A
+prominent part of  global climate action is the transition to clean energy such as solar, wind and electric vehicles, which will allow us to reduce greenhouse gas emissions from energy production and use. Current clean energy technologies are often mineral-intensive. Therefore, proper material management on both the input (e.g., critical mineral supply) and output (i.e., waste streams from decommissioned equipment) ends of  the sector will be crucial to support its sustainable scaling. Circular economy strategies can help relieve the material management pressure on both the input and output ends, hence making the clean energy transition more feasible and sustainable.
+3) Enhance adaptation to climate change. Literature on
+this mechanism is still rather limited, but indicates that circular economy strategies may contribute in various ways such as by slowing down nature degradation, improving soil health, increasing flood resilience and many more.
+In summary , important consensus is emerging from the knowl-
+edge community on how and where circular economy strategies can deliver the highest benefits for climate change manage -
+ment. On the other hand, the knowledge base still needs to be advanced to agree on the magnitude and timeline of  these benefits, to assess and balance potential trade-offs, as well as to understand and manage the consumption side (including displacement rates and rebound effects) to reach an absolute reduction in global resource use and greenhouse gas emissions. Calls-to-action:
+Building on the literature- and consultation-based knowledge landscape, the following nine interconnected areas are identified for collective action:
+1. Shift consumption patterns.
+2. Stimulate product circularity from
+the design phase.
+3. Incorporate circularity across clean energy value chains.
+4. Integrate circular economy strategies into national climate policies and plans.
+5. Incentivise cross-border greenhouse gas emission reductions.
+6. Connect circular economy metrics with climate change impacts.
+7. Increase transparency and comparability in modelling methodologies.
+8. Apply systemic and context-specific impact assessment to inform decision-making.
+9. Investigate the role of  the circular economy in climate change adaptation.
+We invite governments, businesses, philanthropies, NGOs, multilaterals and researchers to join the discussion and act collaboratively , to make circularity contribute most effectively towards climate goals.
+1 Introduction
+The 2015 Paris Agreement established a goal to limit global warming to well below 2C, and to pursue efforts to limit it to 1.5C. To stay below the 1.5C limit, global net greenhouse gas emissions must be cut in half  from 2010 levels by 2030, and reach net zero by the early 2050s. This will require far-reaching system changes at an unprecedented scale. As of  2021, it is estimated that even if  all existing pledges and targets in the latest NDC submissions are fully achieved, in 2030 there will still be a substantial gap of  25 Gt CO
+2e between actual emissions and
+those required to meet the 1.5C goal (UNEP 2021). Consid -
+erable additional strategies and actions are urgently needed to close the gap.
+Circular economy as a climate strategy: current knowledge and calls-to-action   | 3
+
+
+
+
+HUMAN ECONOMIC SYSTEM NATURAL SYSTEM
+1
+1 INPUT OUTPUT
+3 2    Reduce material inputs
+2 Keep products and
+components in use
+3 Cycle materials back
+4 Regenerate natural system The circular economy has been gaining increasing momentum
+as a proposed pathway to help meet the Paris climate goal. For instance, in the latest Assessment Report by the Intergovern-mental Panel on Climate Change (IPCC 2022), the circular economy was mentioned for the first time as a solution for climate change mitigation.
+This paper summarises current knowledge on the role of  circu-
+lar economy strategies in climate change management, including mitigation and adaptation, based on literature and consultations. This is not an exhaustive academic literature review. Instead, it focuses largely on several highly influential reports with primary research results widely quoted by practitioners,
+3 complemented
+with related academic literature as well as consultations with over 30 experts through interviews and reviews (see Acknowl-edgements). The paper examines three mechanisms through which the circular economy can contribute to climate change management (Sections 2-4). It identifies where consensus, debates and critical knowledge gaps are by comparing literature and consultation inputs across specific topics. It then suggests how the current knowledge landscape can be translated into actions (Section 5), both for practitioners to adopt and acceler-
+Figure 1  | The four categories of circular economy strategies ate circular economy strategies where they can most effectively contribute to climate goals, and for the research community to close critical knowledge gaps.
+Several definitions exist for the circular economy ,
+4 some with
+different breadth of  scope. To avoid duplicating discussions on
+the roles of  energy , water, land and other resources in climate change management, this paper will focus on the circularity of material resources, which include biomass, fossil fuels, metals and non-metallic minerals (IRP 2019)
+5 and will highlight where
+different resource scopes are used in referenced literature. Most circular economy strategies can be clustered into the follow-ing four categories (Figure 1): 1) reduce material inputs, which can be achieved through e.g., refuse, material-efficient product design and manufacturing, dematerialisation and substitution; 2) keep products and components in use, which can be achieved through e.g., increased durability , upgrading, sharing, reusing, repairing, resale, refurbishing, remanufacturing, repurpos-ing; 3) cycle materials back into the economy , usually through recycling;
+6 4) regenerate natural systems, which is particularly
+relevant for biomass materials.
+4 | WORKING PAPER |  November 2022
+
+
+
+
+
+
+
+
+
+34
+15
+16 13
+PERCENT SHARE While this paper focuses on the role of  the circular economy in
+climate change management, it is important to emphasise that climate change is not the only relevant impact category for the circular economy . Other environmental and socio-economic impact categories, such as biodiversity , decent work and social equity , are just as relevant and important.
+Furthermore, this paper mainly examines ways in which, and to
+what extent, a circular economy , if  achieved, may help manage climate change. Readers interested in how to accelerate the tran -
+sition to a circular economy are referred to abundant existing literature from e.g., Ellen MacArthur Foundation, UNEP , Circle Economy and PACE.
+2 Circular economy
+strategies can reducegreenhouse gas emissions
+Reducing greenhouse gas emissions is a relatively well-studied
+pathway for the circular economy to contribute to climate goals. After reviewing global emissions related to both industrial and biomass materials (Section 2.1), this section synthesises projec-tions of  potential reductions through circular economy strategies in six sectors from the literature (Section 2.2), and then proceeds to discuss the most outstanding debates or attention points aris -
+ing from comparing the literature findings as well as from the expert consultations (Section 2.3).
+2.1Materials-related greenhouse
+gas emissions
+Annual global material extraction has more than tripled since 1970 to 92 billion tons in 2017 (IRP 2019) and is projected to double again by 2050 (IRP 2017). This increased material con -
+sumption has contributed to economic development and rising living standards, but has also become a root cause of  the triple planetary crisis (climate change, biodiversity loss and pollution) the world is facing today .
+The International Resource Panel estimates that about half
+of  global greenhouse gas emissions come from material resource extraction and processing
+7 (IRP 2020). These emissions occur
+in many different ways, including the energy used to power machinery and industrial facilities that extract and process the materials, emissions released during the process of  extracting or transporting fossil fuels, those released from chemical reactions Figure 2  |   Global greenhouse gas emissions per sector
+(direct and indirect combined) in 2019 for a total of
+59Gt CO2e
+Industry Energy use by buildings Other energy
+AFOLU Energy use by transport
+22
+Note:  AFOLU: Agriculture, Forestry and Other Land Use
+Source:   IPCC 2022
+in production (e.g., the transformation of  limestone into calcium
+oxide in cement production), and energy used to transport materials and manufacture them into their final form.
+According to the IPCC sixth assessment report, emissions
+attributed to industry
+8 accounted for about 34% of  total global
+greenhouse gas emissions in 2019 (IPCC 2022). The materi -
+als that contribute most emissions are metal (accounting for 7.8% of  global total emissions), cement (2.6%
+9) and chemicals
+(6.3%). These materials are also often referred to as harder to abate, since their decarbonisation requires technologies that do not exist at an industrial scale yet, and/or the costs remain prohibitive. For biomass materials, the IPCC estimates that the Agriculture, Forestry and Other Land Use (AFOLU) sector is responsible for about 22% of  total net global greenhouse gas emissionsnearly 13 Gt CO
+2e (IPCC 2019). Emissions from
+Circular economy as a climate strategy: current knowledge and calls-to-action   | 5
+
+
+
+
+
+
+AFOLU come primarily from food production: agriculture
+and associated land use change contribute to about 11 Gt CO
+2e (IPCC 2019).
+In addition to extraction and processing, materials-related greenhouse gas emissions also include waste management, mainly from open dumps, landfills and incineration. Data from 2016 shows that about 5% of  global greenhouse gas emissions were generated from solid waste management (Kaza et al. 2018).
+2.2Projected reduction potential
+through circular economy
+strategies
+There is broad agreement in the literature that by lowering
+demand for (virgin) raw materials and new products, circular economy strategies can lead to reduced emissions from indus -
+trial processes by avoiding production of  emissions in the first place. For example, materials-efficient product design can lower demand for industrial material inputs; keeping products in use can reduce demand for new products; and recycling can decrease demand for virgin materials that are often more carbon-intensive to produce compared to recycled materials. It is important to notice that some circular economy strategies can also reduce greenhouse gas emissions from operational energy use such as heating/cooling in buildings and fuel in transport. Furthermore, by reducing the volume of  waste and diverting it from landfills and incineration, circular economy strategies can reduce greenhouse gas emissions from waste management.
+This section reviews the findings of  the current literature on
+circular economys potential to reduce greenhouse gas emissions across six sectorsbuilt environment, transport, food systems, plastics, textiles and electronics, as projected in the literature. These six sectors correspond with the key product value chains identified by the European Commission for the circular econ -
+omy (European Commission 2020). Collectively , they account for 8590% of  global greenhouse gas emissions.
+10 Figure 3 sum-
+marises the materials-related emissions11 and operational energy
+use emissions from each sector, as well as top circular economy strategies that are broadly agreed to have substantial greenhouse gas emission reduction potential.
+Figure 3  |   Materials-related and operational energy use emissions by sector, alongside the circular economy
+strategies with highest projected greenhouse gas reduction potential
+Material-related emissions Operational energy use emissions Top circular strategies for GHG reduction Gigaton of CO2 1. Reduce foor area
+2. Material-ecient building design Built environment 3. Improve recycling
+1. Car-sharing, ride-sharing
+Transport 2. Smaller and lighter vehicles
+1. Reduce food loss and waste
+Food system 2. Productive use of food waste
+1. Eliminate unnecessary plastics
+2. Reduce single-use plastics Plastics
+3. Recycling (mechanical)
+1. Keep textiles in use for longer
+Textiles 2. Recycling
+1. Recycling
+Electronics 2. Keep products in use for longer
+16 14 12 10 8 6 4 2 0 0 2 4 6 8 10 12 14 16
+Gigaton of CO2e Gigaton of CO2e
+Note:  Blue dots indicate that a strategy decreases materials-related emissions  Orange dots indicate that a strategy decreases operational energy use emissions
+Sources:  Built environment: Global Alliance for Buildings and Construction et al  2019  Transport: IPCC 2022; Hertwich et al  2019, with extrapolation by authors  Food system: IPCC 2019  Plastics:
+OECD 2022  Textiles: McKinsey and Global Fashion Agenda 2020  Electronics: Belkhir and Elmeligi 2018, with extrapolation by authors
+6 | WORKING PAPER |  November 2022
+
+
+
+
+
+2.2.1 Built environment
+Buildings currently account for about 3040% of  global greenhouse gas emissionsincluding nearly 10 Gt CO
+2e
+energy-related emissions, primarily from energy used for heat -
+ing, cooling, lighting etc.; and 11 Gt CO2e embodied carbon
+in construction materials (Global Alliance for Buildings and Construction et al. 2019), dominated by concrete and steel (Hertwich et al. 2019).
+The International Resource Panel (IRP) estimates that material
+efficiency strategies could reduce greenhouse gas emissions in the material cycle of  residential buildings by 80100% in G7 countries and China, and 5070% in India by 2050 (IRP 2020). Material Economics and Ellen MacArthur Foundation estimate that circular economy strategies could reduce greenhouse gas emissions from the four key industrial materials (cement, steel, plastics and aluminum) used in buildings by 3438% in 2050, in the EU or globally (Material Economics 2018; Ellen MacArthur Foundation 2019a). The Circularity Gap Report has forecasted greenhouse gas reduction potential as high as ~13 Gt
+12 through
+circular solutions in housing (Circle Economy 2021).
+The studies converge on the following strategies showing
+the highest potential to reduce emissions for material use in buildings: 1) reduce floor area per person (in higher income population); 2) material efficient designfor example, the amount of  concrete and steel used in the building structure can be reduced without loss of  functionality through optimised design (IRP 2020); 3) improved recycling rates and technologies for construction materials. Quantitative differences between the studies mainly arise from how various strategies are defined and modelledthis will be discussed further in Section 2.3.1.
+Besides reduction of  materials-related emissions, less floor area
+per person can also substantially reduce emissions from building energy use such as heating and cooling (Ivanova et al. 2020). IRP estimates such synergies can reduce a further 130 Mt of emissions in G7 countries in 2050, bringing the sum of  emission reduction opportunity (materials plus energy) through material efficiency strategies to 35% for homes (IRP 2020).
+2.2.2 Transport
+Operational energy use in transport amounted to 15% of  global greenhouse gas emissions, or 8.8 Gt CO
+2e, in 2019 (IPCC 2022).
+The embodied emissions in materials used to make vehicles are about an order of  magnitude lower compared to the operational energy use emissions (based on data from Hertwich et al. 2019), therefore estimated to be about 1 Gt CO
+2e in 2019. Circular economy literature on transport focuses so far largely on passenger cars. IRP found that material efficiency strategies could reduce materials-related emissions of  passenger cars in 2050 by 57%70% in G7 countries, and by 4060% in China and India (IRP 2020). Similarly , Material Economics and Ellen MacArthur Foundation found that a circular scenario could reduce greenhouse gas emissions from the industrial materials used in passenger cars by 70% in 2050 (Material Economics 2018; Ellen MacArthur Foundation 2019a). The Circularity Gap Report has forecasted greenhouse gas reduction potential as high as ~6.7 Gt
+13 through circular solutions in mobility
+(Circle Economy 2021). There is consensus in these studies that changing patterns of  vehicle use (e.g., ride-sharing and car-shar -
+ing
+14) and shifting towards smaller, lightweight vehicles both have
+high potential to reduce materials-related emissions in transport. Material Economics, Ellen MacArthur Foundation and Circle Economy also expect vehicle lifetime extension to play a significant role.
+In transport, the most significant opportunity for reducing emis-
+sions through circular economy strategies can come from less fuel use
+15 enabled by e.g. lighter/smaller vehicles or shifts in use
+pattern. For instance, it is estimated that, as a redesign strategy , using mainly aluminum would reduce the vehicles total mass by 26%, therefore reducing total material input and improving fuel efficiency , which avoids 8% of  life cycle greenhouse gas emis-sions (Modaresi et al. 2014). Further emission savings can be achieved through closed-loop recycling of  aluminum (Modaresi et al. 2014). Moreover, since personal vehicles are being used on average only 5% of  the time and to a third of  their capacity (Hertwich et al. 2019), car-sharing and ride-sharing have the potential to reduce the total number of  vehicles needed and the person-kilometres travelled, therefore cutting emissions from both material use and fuel use. The actual impact will depend on associated consumption behaviour change, such as the degree of  rebound effects (Coulombel et.al. 2019; Tsuji et.al. 2020). IRP estimates that material efficiency strategies can reduce 25 Mt emissions from material use and 280 Mt from operational energy use in G7 countries in 2050, bringing the total life cycle emission reduction opportunity (materials plus energy) through material efficiency strategies to 40% for cars (IRP 2020).
+2.2.3 Food system
+Total global food system greenhouse gas emissions, including agriculture and associated land use change, plus emissions beyond the farm gate such as from the food processing industry , amount to as high as 1119 Gt CO
+2e (IPCC 2019). The World
+Circular economy as a climate strategy: current knowledge and calls-to-action   | 7
+
+
+Resources Institute estimates that slowing and shifting growth in
+food demand, including more sustainable diets and reduced food loss and waste, could reduce emissions from agriculture by 5 Gt CO
+2e/year globally by 2050 (Searchinger et al. 2019). Ellen
+MacArthur Foundation expects that a circular food system characterised by regenerative agriculture, food loss and waste reduction, and compostingcould reduce annual greenhouse gas emissions from the global food system by 49% in 2050 (Ellen MacArthur Foundation 2019a). The Circularity Gap Report expects about 4.4 Gt
+16 greenhouse gas emissions reduction from
+sustainable food production, healthy diets and clean cooking methods (Circle Economy 2021).
+The contribution of  regenerative agriculture to greenhouse gas
+reduction, e.g. by increased vegetation and soil carbon capture, is a topic of  debate, partly originating from different definitions of  regenerative agriculture (Ranganathan et al. 2020; EIT Food 2020; Morseletto 2020). It is expected by some to be a signifi-cant opportunityfor example, Ellen MacArthur Foundation projects that if  80% of  the worlds cropland adopts practices such as no till, intercropping and cover crops, it could lead to an annual carbon benefit of  2.5 Gt CO
+2e; while managed
+grazing on half  of  the worlds suitable pastureland could lead to a net annual carbon benefit of  1.4 Gt CO
+2e in 2050 (Ellen
+MacArthur Foundation 2019a). On the other hand, the climate impact of  farming depends on many factors, including geogra -
+phy , soil type, agriculture product type, practice and timeframe, therefore requiring context-specific approaches. Furthermore, there are concerns if  forests are cleared to create new farmland to compensate for potentially lower yields from regenerative agriculture practices, net emissions may increase (Benton and Harwatt 2022). To ensure that enough food can be produced in ways that regenerate nature without further land use change, it is critical to shift what we eatand therefore what we produce, and to minimise food loss and waste.
+Food loss and waste reduction has widely recognised climate
+benefits, by reducing greenhouse gas emissions across the entire food value chain. Food loss and waste is currently responsible for about 810% of  annual greenhouse gas emissions (IPCC 2019). The World Bank estimates that a reduction in food loss and waste by 50% at all stages of  the supply chain would reduce global greenhouse gas emissions by 3%, with most of  the decline associated with reduced output in the farming and transport sectors (World Bank 2020). More cold transport and storage will be needed to reduce food loss and waste, but the benefits are expected to outweigh the drawbacks (FAO 2019), especially if low-carbon cooling solutions are used.
+Furthermore, nutrient cycling, through practices such as com -
+posting and applying manure, can improve the productivity of
+soils by improving water retention, reintroducing soil microbes and adding nutrients, thereby reducing demand for chemical fertilisers and irrigation on degraded soils. This reduces emis-sions from fertiliser production and emissions associated with the energy use for irrigation (Ellen MacArthur Foundation 2019a; Toor et al. 2021). The greenhouse gas benefits of  nutrient cycling are especially high in degraded contexts, as soils can be transformed from carbon emitting to carbon sequestering. Turn-ing food waste into productive uses (such as insect feed, textile or plastic feedstock, fertiliser and energy sources) can reduce greenhouse gas emissions from landfills. Some cities have started pioneering urban circular food ecosystems, turning food waste from one business into feedstock for another (PACE 2021d).
+2.2.4 Plastics
+Plastics generated 1.8 Gt CO2e of  greenhouse gas emissions in
+2019 (about 3% of  global emissions)90% of  these emissions come from the production phase (OECD 2018).
+An integrated circular system change in plastics is projected to
+result in 25% lower plastic-related greenhouse gas emissions in 2040 (The Pew Charitable Trusts and Systemiq 2020). Circular economy strategies that eliminate unnecessary plastics and increase plastics reuse can reduce emissions related to plastics production and disposal. The greenhouse gas reduction poten -
+tial of  plastics recycling strongly depends on the technology . Compared to landfill, it is estimated that mechanical recycling can save up to 50% in lifecycle greenhouse gas emissions (The Pew Charitable Trusts and Systemiq 2020), and even greater reductions compared to incineration. Lifecycle greenhouse gas emissions of  chemical recycling are currently similar to landfill, and lower than incineration. The climate impact of bio-based input materials for plastics can be highly variable, dependent on the type of  plastic, feedstock, region, production process and land use (Piemonte and Gironi 2011; Walker and Rothman 2020).
+8 | WORKING PAPER |  November 2022
+
+2.2.5 Textiles
+The global apparel industry currently emits between 1.0 and
+3.3 Gt CO2e per year across its value chain (Ellen MacArthur
+Foundation 2017; Quantis 2018; McKinsey and Global Fashion Agenda 2020; World Resources Institute and Apparel Impact Institute 2021). The large estimate variation originates from the scope, assumptions and methodology of  each study and the specific cases used to calculate emissions for each mate -
+rial. It is estimated that 75% of  these emissions are from the production stages: from fibre to yarn to fabric and to gar -
+ment (UNEP 2020).
+Interventions on both materials and energy have been proposed
+in a roadmap to net zero emissions in the apparel industry (World Resources Institute and Apparel Impact Institute 2021). Keeping textiles in use for longer (including shifting away from fast fashion), and increasing recycling rates, are in general expected to reduce greenhouse gas emissions if  new produc-tion and/or virgin material input is displaced. If  on average the number of  times a garment is worn were doubled, then green -
+house gas emissions would be 44% lower (Ellen MacArthur Foundation 2017). Climate benefits of  re-use will likely outweigh additional transport needs such as in used clothing export, provided that the exported clothing gets re-used for a sufficiently long period. For textile recycling, caution should be paid in the case of  energy-intensive recycling technologies with high-carbon energy sources (Sandin and Peters 2018). Shifting from high carbon footprint textile inputs to recycled materials can reduce greenhouse gas emissions (Global Fashion Agenda and The Boston Consulting Group 2017; Shen et al. 2012; van de Vreede and Sevenster 2010). However, the climate impact of  shifting from synthetic to plant-based fibres is more complex since it may lead to land conversionwhere forests are cleared, emissions will increase (Forster et al. 2013; Peltzer 2014). On the other hand, where wood-based fibres are grown on degraded crop-land, it may help reduce greenhouse gas emissions by increasing soil carbon (Piemonte and Gironi 2011).
+2.2.6 Electronics
+Although electronics17 are not yet considered a predominant
+contributor to global greenhouse gas emissions, the sectors carbon footprint is increasing rapidly . It is estimated that ICT alone already accounted for 33.6% of  global emissions in 2020 (Belkhir and Elmeligi 2018). The breakdown between materials-related emissions and operational energy use emissions strongly depends on the product category . Substituting virgin materials with recycled materials will reduce greenhouse gas emissions from electronics, as the production of  recycled materials is on average much less carbon intensive (OECD 2018). For instance, aluminum recycling saves 95% of the energy footprint of  producing virgin aluminum (Material Economics 2018). Recycling of  rare earth elements uses 58-88% less energy compared to baseline primary production (Sprecher et al. 2014). Certain electronic products, such as refrigera -
+tors and air conditioners, use potent greenhouse gases such as fluorinated gases, with much higher global warming potential than CO
+2. Proper collection and recycling of  these products will
+therefore be crucial for greenhouse gas emission reduction (GIZ 2017). Keeping electronics products and their components in use (either for longer or more intensively through sharing) can reduce, or at least slow down the increase in, emissions from new production, especially since electronics manufacturing is cur -
+rently concentrated in countries with carbon-intensive coal-fired power in their energy mix. In most cases, greenhouse gas savings from displaced new production can outweigh emissions from reverse logistics and potential energy efficiency improvements of new products (Parajuly et al. 2019).
+2.3Discussions
+2.3.1 Magnitude of the benefts
+Although the existing literature largely agrees that circular economy strategies can play a significant role in reducing green -
+house gas emissions, they diverge considerably on the magnitude of  the potential benefits. The quantitative differences originate from a variety of  factors, including the scope of  what is consid -
+ered a circular economy strategy , the scope of  greenhouse gas savings included, as well as the assumptions and data used by different research groups.
+Take the built environment as an example. Figure 4 compares
+the sets of  strategies considered by three widely quoted reports on this subject, and their relative greenhouse gas emission reduc-tion potential according to each report. Some of  the differences in scope, such as material substitution and natural housing solutions,
+18 have substantial impacts on greenhouse gas emis-
+sions and may explain the large variations on the magnitude of  the benefits across the reports. This example illustrates that, although the knowledge community is converging on the basic principles and definition of  the circular economy , there are still important differences in interpretation of  the scope of  circular economy strategies.
+Circular economy as a climate strategy: current knowledge and calls-to-action   | 9
+
+
+Figure 4  |   Comparison of circular strategies for the built environment and their relative signifcance in greenhouse
+gas emissions reduction potential, as modelled in diferent studies
+EMF IRP
+CGR Reduce foor area per person
+Material ecient design and construction
+Reuse building components
+Increase recycling rates
+Lifetime extension
+Material substitution
+Natural housing solutions
+Resource ecient housing
+Sources:
+EMF: Ellen MacArthur Foundation  2019a  IRP: International Resource Panel  2020  CGR: Circle Economy 2021
+For a specific circular economy strategy the estimated benefits
+in emission reduction can still differ significantly , since some literature considers only direct savings in materials and their embodied carbon, while others count also synergic energy savings in the use phase. An example here is car-sharing, which can reduce the total number of  vehicles needed and therefore save emissions from their production. It can also reduce the total number of  kilometres travelled, which saves emissions from fuel use. When operational energy savings are included, the magni -
+tude of  the benefits can be a lot higher. Another major source of  quantitative differences comes from the assumptions. There are very few empirical studies on the greenhouse gas emission impacts of  circular economy strategies. Most literature is based on speculative modelling. Assumptions on the effectiveness of  the strategies (e.g., whether assuming a 2x increase or a 1.5x increase in building lifetime), or on the scale of  uptake (e.g., whether assuming 10% or 50% of  the world population adopts healthier diets) will clearly affect results. These assumptions are not always clearly explained in the litera -
+ture, nor are the lower and upper limits of  the estimated results clearly marked.
+10 | WORKING PAPER |  November 2022
+
+
+Finally , data source and quality also lead to differences in the
+magnitude of  the benefit. Due to the lack of  empirical data at a larger scale, most literature uses secondary data extrapolated from limited case studies, which vary in quality and in magni-tude due to different contexts.
+2.3.2 Time horizon of the benefts
+For climate change mitigation, not only is the magnitude of  the greenhouse gas reduction important, the timing of  the reduction also matters. There is still very limited information from current literature on the time horizon of  the climate benefits from differ -
+ent circular economy strategies. Important factors for the time horizon would include:
+Transition speed. Models used in the current literature
+typically assume that circular economy strategies are imple -
+mented at a large scale. However, there is still very limited understanding on the practical timeline of  scaled transition, considering costs, incumbent technology lock-in, dispersion of  innovation, geopolitical situation, etc.
+Product life cycle. For example, buildings typically have
+very long lifespans. Therefore, circular economy strategies such as building lifetime extension and new design/construction methods for building component reuse are long-term strategies. Their emission reduction benefits will only be realised decades from now. On the other hand, strategies with longer-term ben-efits should not be considered less important. Precisely because of  their long lifespan, linear building design and construction methods of  today will have a long-term lock-in effect, hamper -
+ing reuse and recycling potentials decades into the future.
+2.3.3 Relation with decarbonisation
+Circular economy strategies mainly reduce greenhouse gas emis-sions in the production phase of  (virgin) raw materials and new products through demand management. It is therefore impor -
+tant to understand how this relates to decarbonisation strategies that reduce emissions in the production phase through fuel/ feedstock switch, process change or carbon capture.
+While some argue that deeper decarbonisation in production
+processes will make the potential greenhouse gas emission reduc-tion benefits of  circular economy strategies less important, the circular economy is in general considered as a complementary lever to decarbonisation
+19 and energy efficiency to achieve net
+zero emissions (Energy Transitions Commission 2018). Where decarbonisation technologies are either still premature or too expensive, circular economy strategies can allow greenhouse gas emission reduction to start sooner and potentially at a lower cost. Furthermore, by reducing demand for virgin materials and new products, the circular economy also helps make a fuel/feed -
+stock switch in decarbonisation easier to achieve.
+Applying circular economy strategies for the decarbonisation
+technologies themselves is necessary for their scaling. Since decarbonisation technologies (such as solar or wind power) can be more mineral intensive than their conventional counterparts (IEA 2021), care is needed to make sure that their scaling does not shift our dependency on one finite resource (fossil fuel) to another (e.g., rare earth elements), and cause unintended environmental or social consequences along the way . Therefore, decarbonisation and circularity need to go hand-in-hand. Sec -
+tion 3 dives deeper into this aspect.
+2.3.4 Win-wins and trade-ofs
+Next to synergetic win-win opportunities outlined in 2.2.1 and 2.2.2, there are also potential trade-offs between materials-
+related and operational energy-related greenhouse gas emission reduction  in some cases. A representative example
+is whether it is better for the climate to extend the use phase of products with lower energy/fuel efficiency , or to replace them with new ones. There is no simple, uniform answer here. Gener -
+ally speaking, for products that generate most of  their lifetime emissions in the manufacturing phase, use life extension may be more favourable; while for products that generate most of  their lifetime emissions in the use phase, product replacement may be more favourable (GlserChahoud et al. 2021; Tasaki et al. 2013). But this trade-off also depends on the energy mixes in the locations where the product is produced and used. In areas with a low-carbon energy mix, extending the use life of  a less energy-efficient product may have a higher net gain.
+Sometimes there are trade-offs between different circular
+economy strategies: certain practices to improve one circular
+economy strategy may negatively affect another. For example, gluing components together in electronics design increases prod-uct durability , but can make repair and recycling more difficult, costly and environmentally burdensome (Thompson et al. 2020; Norgren et al. 2020).
+Furthermore, although this paper focuses on the climate impact,
+it should not be the only lens to evaluate circular economy (or any other) strategies. Other environmental impacts such as pol-lution and biodiversity , as well as socio-economic impacts such as decent work and social equity , should also be considered to reach a balanced assessment. As in any complex system change, the transition to a circular economy can lead to both win-win opportunities and potential trade-offs between material/
+Circular economy as a climate strategy: current knowledge and calls-to-action   | 11
+
+
+
+
+
+climate impacts and other environmental or socio-
+economic impacts  (PACE 2021). The European Commission
+applies the Do No Significant Harm principle, which requires activities that benefit one environmental or social objective do not significantly harm other objectives in the process (European Commission 2021a). These win-wins and trade-offs depend on many factors. Therefore, a systemic and context-specific impact assessment should be used to inform the best decision.
+2.3.5 Consumption and absolute reduction
+Since a major mechanism for the circular economy to reduce greenhouse gas emissions is through demand management for (virgin) raw materials and new products, the extent of  the ben -
+efit will depend on whether actual demand is indeed reduced. Important factors affecting actual demand change include displacement rate and rebound effect.
+Displacement rate. Displacement refers to the extent to
+which product reuse replaces the production and consump -
+tion of  new products. For example, whether the purchase of a secondhand garment or the renting of  an item happens instead of  the purchase of  a new garment. It is proposed that brands launching such new business models should build in effective means to monitor and evaluate the actual outcomes (Cunningham 2020).
+Rebound effect.  The rebound effect refers to an increase in
+consumption which may occur as an unintended side-effect
+of  the introduction of  policy , market and/or technology interventions aimed at environmental efficiency improvements (Maxwell et al. 2011). It is speculated that resource productiv-ity improvements from successful implementation of  some circular economy strategies may lead to increased demand and higher consumption of  other goods, such as more individualised transport, more floor space and food, which may offset the envi-ronmental benefits in resource use and greenhouse gas reduction (Best et al. 2018). The risk of  rebound effect is expected to be lower for some circular economy strategies (such as repair) and higher for others (such as sharing) (Koide et al. 2022).
+There is growing attention to the consumption side of  resource
+use and the circular economy . Unlimited growth in consumption will offset any efficiency improvement on the production side. According to IRP , an absolute reduction in the use of  natural resources is indispensable to meet climate change, biodiversity and pollution ambitions (Potonik and Teixeira 2022; SYS -
+TEMIQ and Center for Global Commons 2022). Therefore, it is important to not only address efficiency, but also suf-ficiency. Shifting consumption patterns are increasingly recognised as critical to addressing climate change (Institute for Global Environmental Strategies et al. 2019).
+3 Circular economy
+strategies can support asustainable clean energytransition
+The transition to clean energy technologies such as solar, wind
+and electric vehicles is a prominent part of global climate action. Their scaling-up will bring new challenges in both the input (e.g., critical mineral supply) and output (i.e., waste streams from decommissioned equipment) ends of  the industry .
+On the input side, current clean energy technologies are often
+mineral-intensive. The International Energy Agency (IEA) estimates that global clean energy transitions will have far-reaching consequences for mineral demand over the next 20 years. Total mineral demand from clean energy technologies is projected to double by 2040 under the current policy scenario, and even quadruple under a sustainable development scenario, turning the energy sector into a leading consumer of  minerals (IEA 2021). The demand increase will be particularly drastic for some critical minerals, potentially by a factor of  20 or more for lithium, cobalt and nickel (Xu et al. 2020). Todays mineral supply chains are not ready to support such accelerated energy transitions (IEA 2021). The pandemic and geopolitical crises in the last few years have further exacerbated the vulnerability of mineral supply chains.
+On the output side, decommissioned clean energy equipment
+will soon become a fast-growing new waste stream. For instance, if  the current situation continues of  limited recycling infrastruc-ture, generally non-existent or unclear policies, and challenging recycling economics, end-of-life solar panels are expected to generate 78 million tons of  waste cumulatively by 2050 (IEA PVPS/IRENA 2016). This new waste stream will become comparable to the worlds total e-waste volume today and, if not properly managed, may pose the risk of  joining e-waste in causing further environmental and social hazards for developing countries (Barrie and MacEwen 2021). Similarly , wind turbine blades are projected to generate 43 million tons of  waste cumu-latively by 2050 (Liu and Barlow 2017).
+12 | WORKING PAPER |  November 2022
+
+
+
+Circular economy strategies are expected to be able to support a
+more sustainable scaling of  the clean energy transition by help-ing relieve the material supply pressure, increasing supply chain resilience, preventing new waste challenges, accelerating the adoption of  clean energy technologies, as well as maximising the climate benefits of  deployed equipment in the following ways:
+Materials-efficient product design and manufacturing.
+For example, over the past decade, 40-50% reductions in the use of  silver and silicon in solar cells have been achieved, which has contributed to a substantial rise in solar PV deployment (IEA 2021). Reducing high-impact materials in EV batteries, for instance through the development of  low-cobalt or cobalt-free cathodes, could have similar effects while reducing the socio-ecological costs and carbon footprint. There are a number of promising cathode prototypes that provide alternatives to cobalt-intensive designs, although more research is necessary to ensure these designs can be safe and cost-effective (Cui et al. 2021; Gourley et al. 2020; Li et al. 2020).
+Product lifetime extension. Clean energy technologies often
+enjoy a high innovation speed and rapidly increasing energy efficiency . However, since the equipment is often material- and energy-intensive to manufacture, it can be better for the climate to keep the equipment in use for longer, instead of  early replace -
+ment with newer technologies, as one recent life cycle assessment of  solar panels has suggested (Rajagopalan et al. 2021). Lifetime extension strategies, such as upgrade, repair, cascade reuse applications, refurbish and remanufacture can therefore help to maximise the climate benefit of  deployed clean energy equip-ment. Furthermore, some of  these strategies (such as cascade reuse applications) can provide access to clean energy at lower costs, thus helping to accelerate the transition.
+Recycling. Recycling has already been recognised by the clean
+energy sector as an important strategy , particularly for critical minerals. For instance, it is estimated that by 2040, recycled cop-per, lithium, nickel and cobalt from decommissioned batteries could reduce the demand for primary supply of  these minerals by around 10% (IEA 2021).
+4 Circular economy
+strategies can enhanceclimate change adaptation
+Regardless of  future climate action, 1.1C of  global warming
+has already taken place (GISTEMP Team 2022), and further temperature increases are locked-in due to the long atmo-spheric lifetime of  existing emissions (UNEP 2019). This means that adapting to the effects of  climate change will be essential for a thriving, inclusive future. Literature on the relationship between circular economy strategies and climate change adapta -
+tion is still limited, but the following linkages are considered to be relevant:
+Slow down nature degradation through reducing
+demand for virgin materials. Ninety percent of  terrestrial biodiversity loss and water stress are caused by material resource extraction and processing (IRP 2019). Reducing the demand for virgin materials will decrease pressure on natural ecosystems, which might otherwise be damaged by extractive processes such as mining or industrial forestry and agriculture. This enables those natural areas to contribute to both climate mitigation (through carbon sequestration) and adaptation (through ecosys -
+tem services such as mangroves protecting against flooding or forests regulating temperatures), as well as safeguarding biodi-versity , local heritage and land-based livelihoods.
+Improve soil health through regenerative agriculture.
+Regenerative agricultural practices can prevent and revert the loss of  healthy soil. For example, researchers found that organic amendments can improve overall soil carbon (Poulton et al. 2018). Increased carbon plays an important role in soil health, water holding capacity and nutrient cycling, which can increase resilience against both intense rainfall and drought.
+Increase flood resilience through better waste man -
+agement. Increased risk of  severe flooding is one of  the most
+widespread and damaging effects of  climate change for human
+settlements. When urban drainage infrastructure is blocked by trash, water collects more quickly and drains more slowly . Plastic debris in rivers in particular causes a faster and denser blockage in waterways (compared to organic matter), creating additional flood risks for urban environments (Honingh et al. 2020). Through various circular economy strategies, waste can be reduced, collected, recycled or properly disposed of.
+Relieve freshwater stress through circular water solu -
+tions. According to the IPCC Sixth Assessment Report (IPCC
+2022), climate change will increase both wet and dry extremes and the general variability of  the water cycle, bringing more intense rainfall and associated flooding as well as more intense drought in many regions. This affects the quality and amount of  freshwater resources in regions already suffering from water stress. Circular water approaches can improve water efficiency , re-optimise, re-use and replenish aquifers, therefore ensuring the resilience of  agricultural and industrial systems to climate change impacts. Examples of  circular solutions for water,
+Circular economy as a climate strategy: current knowledge and calls-to-action   | 13
+
+
+
+
+
+
+
+
+many of  which are already applied in water scarce regions
+in the Global South, include a range of  approaches ranging from micro-level solutions such as rainwater harvesting, dry toilets and eco-sanitation to alternative ways to manage waste -
+water and effluent from agriculture. Other more macro-level approaches such as green water infrastructures and landscape and wetland restoration are needed to rebuild ecosystems and make settlements more resilient against flooding and climate change (Schrder 2018).
+Enhance local resilience through more circular value
+chains. Going beyond the physical/infrastructure side of adaptation, developing a circular economy could also play an important role in building community level and national level resilience to climate shocks and stresses. At a community level, the scale-up of  the sharing economy could improve access to essential goods and services when needed. At the national scale, by increasing capacity for reuse, repair, refurbishment, switching to regenerative agriculture practices and use of  local materials for production, countries can become more resilient to global supply chain shocks induced by increasingly volatile climate events.
+5 From knowledge land -
+scape to calls-to-action
+Based on a review of  prominent circular economy literature and extensive expert consultation, we find that there is broad, qualitative consensus in the current knowledge landscape that circular economy strategies can deliver clear, significant benefits for climate change management:
+Built environment, transport, food system and clean energy are the most relevant sectors for circular economy strategies to deliver climate change mitigation benefits.
+Circular economy strategies can complement decarbonisation measures to further reduce greenhouse gas emissions from material production, help lower emissions from operational energy use in the built environment and transport, and cut emissions from waste management.
+The largest potential greenhouse gas emissions reductions through circularity come from consumption-side measures (such as reducing floor area per capita, car-sharing/ ride-sharing, and keeping products in use for longer) and upstream production-side measures (such as materials-efficient design of  buildings and vehicles). For the food system, reducing food loss and waste has widely-recognised substantial climate benefits.
+Circular economy strategies can support a sustainable clean energy transition, by helping relieve the material supply pressure, increasing supply chain resilience, preventing new waste challenges, accelerating the adoption of  clean energy technologies, and maximising their climate benefits.
+There are also areas with debates, important attention points, or knowledge gaps:
+More quantitative consensus is needed on the magnitude and timeline of  the climate benefits of  circular economy strategies.
+To achieve net benefits for climate change mitigation, it is important to understand and balance potential trade-offs between materials-related and operational energy-related greenhouse gas emissions.
+Outcomes on the consumption side, including displacement rate and rebound effects, need to be better evaluated and managed for an absolute reduction in resource use and total emissions.
+Literature on the role of  the circular economy in climate change adaptation is still very limited.
+Climate change is not the only lens to evaluate circular economy strategies. Other environmental and socio-economic impact categories (such as biodiversity , pollution, decent work and social equity) need to be considered to reach a balanced assessment.
+In areas where clear potential benefits are agreed upon by the knowledge community , actions from government, business and civil society leaders are needed to turn the potential into real progress towards the climate goal. In areas with critical debates and knowledge gaps, actions from the research community are needed to advance the knowledge base to better inform practi -
+tioners. Building on this knowledge landscape, the following nine distinct yet related areas are identified for collective action:
+1. Shift consumption patterns
+There is clear consensus from the knowledge landscape that
+the highest greenhouse gas reduction potential of  a circular approach will come from shifts in consumption patterns (in
+14 | WORKING PAPER |  November 2022
+
+
+
+
+higher income populations), such as reducing floor space per
+capita, car-sharing or ride-sharing, and keeping clothes in use for longer.
+Achieving consumption pattern shifts at scale will need a palette
+of  levers, such as consumer information and education, service-based business models and policy nudges (Institute for Global Environmental Strategies et al. 2021). One powerful lever is (sub)urban planning, which can reduce needs for physical products while delivering the same function or wellbeing benefits through better system design. For example, design our cities better to become more adaptable to ever-shifting societal needs
+20
+and minimise the number of  unused buildings, and roll out green public and active transport infrastructure to significantly reduce the need for private ownership of  cars. We need to move beyond product-centric circularity towards better understand-ing of  city-level circular approaches. Some municipalities and national governments have started to co-develop policy roadmaps to design for city-level circularity (Ellen MacArthur Foundation 2019b). Some examples can be found from the Circle Lab for Cities programme (ICLEI 2022).
+Outcomes on the consumption side, whether as the result of
+efforts to shift consumption patterns or as consequences of  other circular economy strategies, need to be better evaluated and managed for an absolute reduction in resource use and total emissions. Important examples here are displacement rate and rebound effects, where quantitative analysis is still quite lim -
+ited and often not yet accounted for in impact assessment and policy decisions.
+2. Stimulate product circularity from the design phase
+Regardless of  whether the magnitude or the time horizon of
+the climate benefit is considered, more attention needs to be given to stimulate product circularity from the design phase. As discussed in Section 2.2, materials-efficient design for the built environment and for transport is among the circular economy strategies with the highest greenhouse gas reduction potential. Since material efficient design reduces emissions at the very beginning of  the product life cycle rather than at the end, it can be attractive from a time horizon point of  view as well. Besides material efficient design, product design is also a key enabler for other circular economy strategies such as lifetime extension and recycling later in the product life cycle.
+Since current market mechanisms are often insufficient to
+incentivise product design according to circularity principles, policy instruments can provide the much-needed stimulation. The European Commission has proposed Ecodesign for Sustain -
+able Products Regulation
+21 (European Commission 2022), which
+would further reinforce product design for durability , repair-ability and recyclability . For the built environment, policies and tools such as building codes and standards, construction material passports and assessments of  buildings circularity can be used to further stimulate materials-efficient design and the adoption of  design and construction techniques that allow for full decon -
+struction and re-use of  building components (reversible design) (Debacker and Manshoven 2016).
+3. Incorporate circularity across clean
+energy value chains
+Circular economy for clean energy value chains is a young yet increasingly active field. While encouraging progress has been made, a lot more still needs to be done. According to a recent lit -
+erature review of  the circular economy for lithium-ion batteries and solar panels (Heath et al. 2022), current efforts are over -
+whelmingly focused on recycling only . While significant efforts are indeed still needed to set up recycling in these value chains (including technology improvement, regulatory framework and market studies), the attention to other circular pathways such as reuse should increase, to fully capture the environmental and social benefits of  circularity .
+Businesses, governments, NGOs and researchers need to come
+together to define a common vision and collective actions to embed circular economy strategies in clean energy value chains, such as solar and wind power and electric vehicles. The material side of  the clean energy transition needs to be properly man-aged from the beginning, to support their sustainable scale-up, and to avoid having to repair any unintended environmental and social negative consequences retrospectively .
+4. Integrate circular economy strategies into national
+climate policies and plans
+Circular economy strategies can enhance and complement existing sectoral climate targets and policies. There has been increasing momentum to call on policy makers to include circular economy approaches in national climate plans (UNDP-UNEP 2020; GIZ 2021; IPCC 2021; GACERE 2021). Germany , for instance, has integrated circular economy along with other strategies in their national greenhouse gas neutral -
+ity scenario analysis (UBA 2020). Using NDCs as a proxy to indicate the approaches considered by countrieswith the notion that national climate policies are a lot broader than NDCs alone  the number of  COP parties mentioning circular
+Circular economy as a climate strategy: current knowledge and calls-to-action   | 15
+
+
+
+
+
+
+economy or equivalent strategies in their NDCs has substantially
+increased between 2015 and 2022 (see Figure 5). Nevertheless, most of  these focus only on waste management. While waste management has an important role in greenhouse gas emis-sions reduction, more systemic and upstream circular economy strategies are needed to deliver higher greenhouse gas reduction potentials. Furthermore, some of  the largest emitters have not yet considered circularity at all in their NDCs.
+22
+Due to the circular economys systemic and cross-sectoral nature, it is important to not only raise awareness, but also build capacity on how to integrate it with other climate strategies and adapt to country context in practice. GIZ (Deutsche Gesellschaft fr Internationale Zusammenarbeit) has proposed a generic pro-cess for countries to incorporate circular economy strategies into their domestic climate policies (GIZ 2021). UNDP , UNEP and UNFCCC have developed a guidance toolkit for policy makers to integrate circular economy and other sustainable production/ consumption measures into their NDCs.
+5. Incentivise cross-border greenhouse gas
+emissions reduction
+Existing policy mechanisms for greenhouse gas reduction usually consider only emissions within national or regional borders. This siloed focus can have the unintended consequence of  countries offshoring emissions by shifting carbon-intensive operations elsewhere. Furthermore, it provides little incentive to integrate circular economy into climate actions, since circular economy strategies reduce emissions in the value chain, which often extends beyond borders. In some cases, it even causes resistance to incorporating circular economy strategies which can reduce
+Figure 5  |   COP parties with circular or equivalent strategies mentioned in NDCs based on 2022 data
+Mention circular economy,
+circularity, recycling and/or resource eciency
+Source:  This map was made using the keyword search functionality on WRIs Climate Watch  Keywords used: circular, recycling, resource efcient, and resource efciency  Each mention of circular
+was checked manually and only those that referenced a circular economy were included  Each mention was also scanned to determine whether systemic, upstream circular economy strategies are
+included  The NDCs that have not yet been added to Climate Watch were searched manually using the same methodology as above
+16 | WORKING PAPER |  November 2022
+
+
+
+emissions at a global level, but may increase emissions locally .
+Therefore, to fully capture the circular economys climate mitigation benefits, new accounting and policy mechanisms are needed to break siloes and incentivise measures that can cut emissions beyond country borders.
+While several such mechanisms are under development, their
+use in practice is still very limited. Consumption-based
+accounting (CBA)which counts the life cycle emissions of all the products consumed within a country (Tukker et al. 2020)  could be adopted alongside production-based accounting to inform cross-border emissions reduction measures in national climate policies. Reducing greenhouse gas emissions using CBA could incentivise importing countries to choose imports with lower carbon footprints to reduce their overall emissions, and exporting countries to reduce their materials-related emissions to make their export products more attractive (Afionis et al. 2017). More profoundly , it can encourage high-consumption countries to consider demand management strategies (such as through circular economy strategies) to reduce their carbon footprint. However, CBA s use is currently mostly limited to academia (e.g., SDSN et al. 2021),
+23 because production-based
+accounting is simpler and provides more certainty . Similar to CBA but at a company level, scope-3 emissions  include
+all the indirect, upstream and downstream emissions resulting from a companys practices, such as the emissions of  the goods and services a company buys, or the emissions generated by their products (GHG Protocol 2013). While scope-3 emissions reporting is still voluntary , there is a small but growing move -
+ment towards greater adoption amongst companies. Besides accounting mechanisms, policy instruments such as carbon tax have also been proposed. The EU, for instance, has proposed a phased implementation of  carbon border tax between 2023 and 2026, where importers will eventually buy carbon certificates corresponding to the carbon price that would have been paid for their production, had the goods been produced inside the EU (European Commission 2021b).
+Each of  the above accounting and policy mechanisms has its
+pros and cons, but a common challenge for all of  them to work in practice is data availability . The fluctuating carbon content for essentially every traded good will need to be determined, which is not feasible with current data collection capacities and may be particularly challenging for industries with highly complex or fragmented supply chains (Patchell 2018; Russell 2019; Bacchus 2021). Nonetheless, starting to use consumption- and value chain-based carbon accounting is a crucial step towards greater international cooperation on reducing materials-related green -
+house gas emissions globally . 6. Connect circular economy metrics with climate change impact
+Measuring circularity is a vibrant field that has seen significant development over the past few years, resulting in a large number of  metrics and targets. Existing targets are often defined using individual company or country contexts, instead of  being derived from desired global outcomes and impacts. While circu-larity can be and should be measured by a multitude of  metrics, selecting the best ones and defining SMART
+24 targets are crucial
+for guiding the transition to deliver optimal benefits for climate change, as well as other environmental and socio-economic impact categories.
+This need has already drawn attention from various stake-
+holders and initiatives, including the European Commission, EUROSTAT , WBCSD and Circular Economy Indicator Coali -
+tion. Building upon progresses in modelling and other impact analyses, metrics developers and users will increasingly be able to work out a science-based approach to identify circularity metrics that are most relevant for climate change management and set targets accordingly . Such an approach could potentially be adapted to connect circularity metrics with other plan -
+etary boundaries.
+7. Increase transparency and comparability in
+modelling methodologies
+Although there is qualitative agreement on the benefits of circular economy for greenhouse gas emission reduction, the magnitude and timeframe of  the benefits is debated due to dif -
+ferences in the scope of  what is considered circular economy , the scope of  greenhouse gas savings included, the assumptions and data used by different research groups.
+Agreeing on the scope of  the circular economy is an essential
+first step to reaching consensus on its environmental and socio-economic impacts. Progress is being made through e.g., the EU Taxonomy and ISO Technical Committee 323. Increased exchanges and collaborations within the research community are needed to work towards more comparable methodologies for modelling the greenhouse gas emission impact of  circular economy strategies, including greater transparency on the assumptions and data used. Furthermore, since countries currently differ on the definition, collection and reporting of  resource flow data (especially waste flows), greater har -
+monisation is needed to improve data availability , quality and comparability for aggregation.
+Circular economy as a climate strategy: current knowledge and calls-to-action   | 17
+
+
+8. Apply systemic and context-specific impact
+assessment to inform decision-making
+Any complex, systemic change has many interlinkages, leading to both trade-offs and synergies. So does the circular economy . These trade-offs and synergies depend on many factors and are often context specific, where single-focused or one size fits all approaches are not suitable. Therefore, to achieve net climate benefits and avoid problem shifting, it is important to assess the potential outcome of  a certain strategy by applying systemic and context-specific impact analysis (e.g., Life Cycle Assessment) to inform decision-making for policies and for businesses.
+An example is the food system. A fundamental reason for the
+current debates around the climate impacts of  regenerative agriculture is that the impact strongly depends on different geographic, cultural, climatic and economic contexts. Therefore, it may not be possible, or even desirable, to reach consensus on a common set of  regenerative agriculture practices that should be promoted everywhere. Instead, there is an urgent need to invest in context-specific research in regenerative agricultural practices, followed by effective policies to promote their implementation.
+9. Investigate the role of  the circular economy in
+climate change adaptation
+Current studies have mostly focused on the role of  circular economy strategies in climate change mitigation. Enhancing adaptation to climate change is equally urgent, and requires an even broader set of  environmental, economic and social strategies. A systematic transformation towards a circular economy can be an important part of  that strategy set, creating co-benefits for people and nature. Yet the knowledge base is only in its infancy . We call for greater efforts from the knowledge community to investigate how circular economy strategies can best support climate change adaptation, from both environmen-tal and socio-economic perspectives. Conclusions
+The knowledge base on circular economy for climate change mitigation and adaptation is relatively young but growing fast. Recent years have seen increasing awareness that tackling energy-related emissions alone is not sufficient to combat climate change, as well as increasing awareness that circularity is not the end goal but a means to achieve greater environmental and socio-economic impacts. This combined awareness has sparked a rapidly growing number of  studies on the intersection between circular economy and climate change, from academia, NGOs, multilateral organisations and other research/advocacy groups.
+Important consensus is emerging from the current knowledge
+base on where circularity can deliver big wins for climate change mitigation. The consensus clearly points out that measures affecting both production and consumption are needed. Although recycling has been, and will continue to be, an important circular economy strategy , the key to substantially reducing greenhouse gas emissions through circularity is in demand management. We need to deliver the same function or wellbeing benefits with fewer products and materials. Embracing circularity from the product design phase, as well as shifting con-sumption patterns (such as through applying circular thinking in city design), are crucial pathways to achieve this.
+Stronger collaborations are needed to continue advancing
+the knowledge base and to better support the integration of circular economy strategies into climate change management: including between research groups, to compare and harmonise methodologies in estimating the benefits; between researchers and practitioners, to build better understanding on the practical timeline of  the transition and its benefits; and between circular economy and climate/energy communities, to find out how circularity may best work with other existing climate change mitigation and adaptation strategies, to become an integrated part of  the solution.
+18 | WORKING PAPER |  November 2022
+
+ACRONYMS
+EIT European Institute of Innovation and Technology IRP
+GACERE Global Alliance on Circular Economy and Resource ISO
+EfciencyBEV battery-electric vehicle NDC
+GISTEMP NASA Goddards Global Surface Temperature Analysis OECD
+GIZ Deutsche Gesellschaft fr Internationale Zusammenarbeit
+IEA International Energy Agency PACE
+IEA PVPS International Energy Agency Photovoltaic Power UNDP
+Systems Programme UNEP
+IPCC Intergovernmental Panel on Climate Change WBCSD
+IRENA International Renewable Energy Agency International Resource Panel
+International Organization for Standardization
+Nationally Determined Contributions
+Organisation for Economic Co-operation
+and Development
+Platform for Accelerating the Circular Economy
+United Nations Development Programme United Nations Environment Programme
+World Business Council for Sustainable Development
+Circular economy as a climate strategy: current knowledge and calls-to-action   | 19
+ENDNOTES
+1  Greenhouse gas emissions include not only carbon dioxide, but also other
+gases such as methane, nitrous oxide and fuorinated gases
+2  Practitioners refers to governments, businesses, philanthropies, NGOs
+and multilateral organisations
+3  This includes reports from International Resource Panel, Ellen MacArthur
+Foundation, Material Economics, and Circle Economy  These reports are
+frequently used as sources by other publications in the practitioner world on this subject
+4  For example, the United Nations defnes circular economy as one of the
+current sustainable economic models, in which products and materials are designed in such a way that they can be reused, remanufactured recycled or recovered and thus maintained in the economy for as long as possible, along with the resources of which they are made, and the generation of waste, especially hazardous waste, is avoided or minimised, and GHG emissions are prevented or reduced, can contribute signifcantly to sustainable consumption and production (UNEA 2019); the European Unions Taxonomy Regulation defnes circular economy as an economic system whereby the value of products, materials and other resources in the economy is maintained for as long as possible, enhancing their efcient use in production and consumption and thereby reducing the environmental impact of their use (European Commission 2020); the Ellen MacArthur Foundation has laid out three circular economy principlesdesign out waste and pollution; keep products and materials in use; and regenerate natural systems
+5  Material resources are defned as biomass (crops for food, energy and
+bio-based materials, as well as wood for energy and industrial uses), fossil fuels (in particular coal, gas and oil for energy and industrial uses), metals (such as iron, aluminium and copper used in construction and electronics manufacturing) and non-metallic minerals (used for construction, notably sand, gravel and limestone) (IRP 2019)
+6  Energy recovery from materials is not consistently included in circular
+economy literature
+7  This includes the full supply chain of all inputs and disposal phase of all
+outputs arising in these stages, also called cradle-to-gate
+8  This includes both direct emissions from the industrial process, and the
+reallocation of emissions from electricity and heat used by the industry
+9  Only counting direct emissions from cement production
+10  By adding up the emissions from Figure 2  11  Also often referred to as embodied carbon
+12  Authors of this paper have extrapolated the 13Gt from the report (Circle Economy, 2021) by adding up the estimated greenhouse gas emissions saving from several interventions for housing: natural housing solutions, resource efcient construction, reducing foor space, increasing housing durability, and circular construction materials; and then subtracting their overlaps approximately
+13  Authors of this paper have extrapolated the 6 7Gt from the report (Circle Economy 2021) by adding up the estimated greenhouse gas emissions saving from several interventions for mobility: reduced travel, improving vehicle utilisation, circular vehicles, vehicle durability, and vehicle design improvements, and subtracting their overlaps approximately
+14  Ride-sharing means joining someone for (part of) a trip; car-sharing means collective ownership of a car but used individually  Both are diferent from ride hailing, which is a taxi-like service
+15  Here only internal combustion engine vehicles are considered
+16  Authors of this paper have extrapolated the 4 4Gt from the report (Circle Economy 2021) by adding up the estimated greenhouse gas emissions sav -
+ing from several interventions for nutrition: sustainable food production, reduction of excess consumption, healthy diet and clean cooking stoves, and subtracting their overlaps approximately
+17  In this paper, Electronics includes all types of electronic and electrical equipment as defned by the EU Waste Electrical and Electronic Equipment (WEEE) Directive  This specifcally includes devices and equipment from six product categories: temperature exchange equipment, screens and monitors, lamps, large equipment, small equipment, and small IT (European Parliament and European Council 2012)
+18  By material substitution, the IRP 2020 report referred to replacing brick or concrete with timber  Natural housing solutions referred to green roofs, passive houses, and producing own renewable energy in the CGR 2021 report
+19  Circular economy and decarbonisation are not always considered distinct concepts  For example, renewable energy is included in many circular economy frameworks
+20  For example, the booming of e-commerce may reduce the need for retail buildings, the rising of work-from-home reduces the need for ofce spaces, demographic change leads to shifts in demand for residential buildings
+21  Once the proposal is adopted, an ecodesign and energy labelling working plan will carry out from 20222024
+20 | WORKING PAPER |  November 2022
+
+
+
+22  The G7 countries have recently agreed in the Berlin Roadmap to leverage
+circular economy to step up their NDCs (G7 2022)
+23  UK and Scotland publicly publish their consumption emissions every year  Although there are no legal targets yet associated with the reduction of the consumption-based emissions
+24  SMART stands for Specifc, Measurable, Achievable, Relevant, and Time-Bound
+Circular economy as a climate strategy: current knowledge and calls-to-action   | 21
+REFERENCES
+Afonis, Stavros, Marco Sakai, Kate Scott, John Barrett, and Andy Gouldson
+2017  Consumption-based Carbon Accounting: Does It Have a Future? Wiley Interdisciplinary Reviews: Climate Change  8 (1): e438
+Bacchus, James  2021  Legal Issues with the European Carbon Border Adjust -
+ment Mechanism  CATO Briefng Paper 125: 36
+Barrie, Jack, and Melissa MacEwen  2021  The Solar Panels Dark Side  Chatham HouseInternational Afairs Think Tank  October 1, 2021  Last
+Modifed 12 July 2022  https://www  chathamhouse org/publications/the-world -
+today/2021-10/solar-panels-dark-side
+Belkhir, Lotf, and Ahmed Elmeligi  2018  Assessing ICT Global Emissions
+Footprint: Trends to 2040 & Recommendations  Journal of Cleaner Production 177  44863  https://doi  org/10 1016/j jclepro 2017 12 239
+Benton, Tim G , and Helen Harwatt  2022  Sustainable Agriculture and Food Systems: Comparing Contrasting and Contested Versions  Re -
+search Paper  London: Royal Institute of International Afairs  https://doi
+org/10 55317/9781784135263
+Best, Aaron, Laurens Duin, and Marta Chelminska  2018  Macroeconomic
+and Societal Impacts of Mainstreaming the Circular Economy  https://www
+ecologic eu/sites/default/fles/publication/2018/2809-macroeconomic-and_ societal-impacts_fnalv2 pdf
+Circle Economy  2021  Circularity Gap Report   Amsterdam, the Netherlands:
+Circle Economy  Climate Watch  2022  Climate Data for Action: Emissions and Policies  World
+Resources Institute, Washington DC  Last modifed 12 July 2022  https://www
+climatewatchdata org/  Coulombel, Boutueil, Liu, Viguie, and Yin  2019  Substantial Rebound Efects in
+Urban Ridesharing: Simulating Travel Decisions in Paris, France  Transporta -
+tion Research Part D: Transport and Environment 71  Cui, Zehao, Qiang Xie, and Arumugam Manthiram  2021  A Cobalt- and
+Manganese-Free High-Nickel Layered Oxide Cathode for Long-Life, Safer Lithium-Ion Batteries  Advanced Energy Materials  11 (41): 2102421  https://doi
+org/10 1002/aenm 202102421
+Cunningham, Gwen  2020  Reading the Fine Print: Ensuring Circular Business
+Models Are Truly Sustainable   https://www  circle-economy com/blogs/read -
+ing-the-fne-print-ensuring-circular-business-models-are-truly-sustainable
+Debacker, W, and S Manshoven  2016  Key Barriers and Opportunities for
+Materials Passports and Reversible Building Design in the Current System  Buildings as Material Banks   https://www  Bamb2020 Eu/Wp-Content/Up -
+loads/2016/03/D1_Synthesis-Reporton-State-of-the-Art_20161 129_ FINAL pdf  EIT (European Institute of Innovation & Technology) Food  2020  Can Regenerative Agriculture Replace Conventional Farming? Last modifed 12 June 2022  https://www  eitfood eu/blog/can-regenerative-agriculture-replace -
+conventional-farming
+Ellen MacArthur Foundation  2017  A New Textiles Economy: Redesigning Fash -
+ions Future  Cowes, United Kingdom: Ellen MacArthur Foundation  Ellen MacArthur Foundation  2019a  Completing the PictureHow the Circular
+Economy Tackles Climate Change  Cowes, United Kingdom: Ellen MacAr -
+thur Foundation
+Ellen MacArthur Foundation  2019b  City Governments and Their Role in
+Enabling a Circular Economy Transition: An Overview of Urban Policy Levers  Cowes, United Kingdom: Ellen MacArthur Foundation
+Energy Transitions Commission  2018  Mission Possible: Reaching Net-Zero
+Carbon Emissions from Harder-to-Abate Sectors by Mid-Century  https:// www energy-transitions org/publications/mission-possible/
+European Commission  2020  A New Circular Economy Action PlanFor a
+Cleaner and More Competitive Europe
+European Commission  2021a  Technical Guidance on the Application of Do
+No Signifcant Harm Under the Recovery and Resilience Facility Regulation  Brussels, Belgium: European Commission
+European Commission  2021b  Carbon Border: Adjustment Mechanism   Brussels,
+Belgium: EU Publications Ofce  https://ec  europa eu/commission/presscorner/
+detail/en/qanda_21_3661  European Commission  2022  Proposal for a Regulation Establishing a
+Framework for Setting Ecodesign Requirements for Sustainable Products and Repealing Directive 2009/125/EC  Brussels, Belgium: European Commission  https://environment  ec europa eu/document/download/11246a52-4be4-4266 -
+95b1-a15dbf145f51_en?flename=COM_2022_142_1_EN_ACT_part1_v6 pdf
+FAO (Food and Agriculture Organization)  2019  The State of Food and Agricul -
+ture 2019: Moving Forward on Food Loss and Waste Reduction   Rome  Licence:
+CC BY-NC-SA 3 0 IGO
+Forster, Dionys, Christian Andres, Rajeev Verma, Christine Zundel, Monika
+Messmer, and Paul Mder  2013  Yield and Economic Performance of Organic and Conventional Cotton-Based Farming SystemsResults from a Field Trial in India  PloS One  8 (12): e81039
+GACERE (Global Alliance on Circular Economy and Resource Efciency)  2021  Circular Economy and Climate Change  Working Paper  https://ec  europa eu/
+environment/international_issues/pdf/GACERE%20Working%20Document%20 on%20Circular%20Economy%20and%20Climate%20Change%20(17%20 May%202021) pdf
+22 | WORKING PAPER |  November 2022
+GHG (Greenhouse Gas) Protocol  2013  Technical Guidance for Calculating
+Scope 3 Emissions  Washington DC, USA: World Resources Institute and World
+Business Council for Sustainable Development
+GISTEMP (NASA Goddards Global Surface Temperature Analysis) Team  2022
+GISS Surface Temperature Analysis (GISTEMP), Version 4  NASA Goddard Institute for Space Studies  Dataset accessed 2022-07-12 at https://data  giss
+nasa gov/gistemp/  Lenssen, N , G  Schmidt, J  Hansen, M  Menne, A  Persin, R  Ruedy, and D  Zyss  2019  Improvements in the GISTEMP uncertainty model
+J. Geophys. Res. Atmos. , 124, no  12, 6307-6326  https://agupubs  onlinelibrary
+wiley com/doi/full/10 1029/2018JD029522
+GIZ (Deutsche Gesellschaft fr Internationale Zusammenarbeit)  2017  Global
+Roadmap on ODS Bank Management  Eschborn, Germany: GIZ
+GIZ  2021  Circular Economy as a Cornerstone for Meeting the Goals of the
+Paris Agreement  Eschborn, Germany: GIZ
+Global Alliance for Buildings and Construction, International Energy Agency
+and the United Nations Environment Programme  2019  2019 Global Status
+Report for Buildings and Construction: Towards a Zero-emission, Efcient and Resilient Building and Construction Sector
+Global Fashion Agenda and The Boston Consulting Group  2017  Pulse of the
+Fashion Industry  2017  https://www  globalfashionagenda com/publications -
+and-policy/pulse-of-the-industry/
+Glser-Chahoud, Simon, Matthias Pfaf, and Frank Schultmann  2021  The Link
+Between Product Service Lifetime and GHG Emissions: A Comparative Study
+for Diferent Consumer Products  Journal of Industrial Ecology  25 (2): 46578
+Gourley, Storm William D , Tyler Or, and Zhongwei Chen  2020  Breaking Free
+from Cobalt Reliance in Lithium-Ion Batteries  iScience  23 (9)  https://doi
+org/10 1016/j isci 2020 101505
+G7 (Group of Seven)  2022  Berlin Roadmap on Resource Efciency and Circu -
+lar Economy 2022-2025  Berlin, Germany: G7  Heath, Garvin, Dwarakanath Ravikumar, Brianna Hansen, and Elaine Kupets
+2022  A Critical Review of the Circular Economy for Lithium-Ion Batteries and Photovoltaic ModulesStatus, Challenges, and Opportunities  Journal of the Air & Waste Management Association 72 (6): 478539
+Hertwich, Edgar G , Saleem Ali, Luca Ciacci, Tomer Fishman, Niko Heeren, Eric
+Masanet, Farnaz Nojavan Asghari, Elsa Olivetti, Stefan Pauliuk, and Qingshi Tu  2019  Material Efciency Strategies to Reducing GHG Emissions Associated with Buildings, Vehicles, and ElectronicsA Review  Environmental Research
+Letters  14 (4): 043004
+Honingh, Dorien, Tim van Emmerik, Wim Uijttewaal, Hadi Kardhana, Olivier Hoes, and Nick van de Giesen  2020  Urban River Water Level Increase
+through Plastic Waste Accumulation at a Rack Structure  Frontiers in Earth Science  8: 28  ICLEI (Local Governments for Sustainability)  2022  Circular City Actions Frame -
+work: Bringing the Circular Economy to Every City   https://circulars  iclei org/
+wp-content/uploads/2021/10/Circular-City-Action-Framework_V2 pdf
+IEA (International Energy Agency)  2021  The Role of Critical World Energy
+Outlook Special Report: Minerals in Clean Energy Transition   https://www  iea
+org/reports/the-role-of-critical-minerals-in-clean-energy-transitions/mineral -
+requirements-for-clean-energy-transitions
+Institute for Global Environmental Strategies, Aalto University, and D-mat Ltd
+2019  1.5-Degree Lifestyles: Targets and Options for Reducing Lifestyle Carbon Footprints   Technical Report  Institute for Global Environmental Strate -
+gies, Hayama, Japan
+IPCC (Intergovernmental Panel on Climate Change)  2019  In Climate Change
+and Land: An IPCC Special Report on Climate Change, Desertifcation, Land Degradation, Sustainable Land Management, Food Security, and GHG Fluxes in Terrestrial Ecosystems   Summary for Policymakers
+IPCC  2021  6th Assessment Report  https://www  ipcc ch/assess -
+ment-report/ar6/
+IPCC  2022  Climate Change 2022: Mitigation of Climate Change  Contribution
+of Working Group III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change  P  R  Shukla, J  Skea, R  Slade, A  Al Khourdajie, R  van
+Diemen, D  McCollum, M  Pathak, S  Some, P   Vyas, R  Fradera, M  Belkacemi, A  Hasija, G  Lisboa, S  Luz, J  Malley, (eds )  Cambridge University Press, Cam -
+bridge, UK and New York, NY, USA  doi: 10 1017/9781009157926
+IEA PVPS (International Energy Agency Photovoltaic Power Systems Pro -
+gramme)/IRENA (International Renewable Energy Agency)  2016  End -
+of-Life Management: Solar Photovoltaic Panels  Abu Dhabi, United Arab Emirates: IRENA
+IRP (International Resource Panel)  2017  Assessing Global Resource Use: A
+Systems Approach to Resource Efciency and Pollution Reduction  Nairobi,
+Kenya: United Nations Environment Programme  IRP   2019  Global Resources Outlook 2019   Nairobi, Kenya: United Nations
+Environment Programme  IRP   2020  Resource Efciency and Climate Change: Material Efciency
+Strategies for a Low-Carbon Future  Nairobi, Kenya: United Nations Environ -
+ment Programme  Potonik, Janez, and Izabella Teixeira  2022  Making Climate Targets Achiev -
+able: Improving Wellbeing through Reduced Absolute Resource Use  Nairobi,
+Kenya: United Nations Environment Programme and IRP
+Ivanova, Diana, John Barrett, Dominik Wiedenhofer, Biljana Macura, Max
+Callaghan, and Felix Creutzig  2020  Quantifying the Potential for Climate
+Change Mitigation of Consumption Options  Environmental Research Letters 15 (9): 093001
+Circular economy as a climate strategy: current knowledge and calls-to-action   | 23
+
+Kaza, Silpa, Lisa Yao, Perinaz Bhada-Tata, and Frank van Woerden  2018  What
+a Waste 2 0: A Global Snapshot of Solid Waste Management to 2050  Urban
+Development Series  Washington, DC: World Bank  doi:10 1596/978-1-4648 -
+1329-0  Licence: Creative Commons Attribution CC BY 3 0 IGO
+Koide, R , S  Murakami, and K  Nansai  2022  Prioritising Low-risk and High-
+potential Circular Economy Strategies for Decarbonisation: A Meta-analysis
+on Consumer-oriented Product-service Systems  Renewable and Sustainable Energy Reviews  155: 111858  https://www  sciencedirect com/science/article/pii/
+S1364032121011254
+Lewis, Akenji, Magnus Bengtsson, Viivi Toivio, and Michael Lettenmeier  2021
+1 5-Degree Lifestyles: Towards A Fair Consumption Space for All: Summary for Policy Makers  Hot or Cool Institute, Berlin
+Li, Wangda, Steven Lee, and Arumugam Manthiram  2020  High-nickel NMA: A
+Cobalt-free Alternative to NMC and NCA Cathodes for Lithium-ion Batteries  Advanced Materials  32 (33): 2002718
+Liu, Pu, and Claire Barlow  2017  Wind Turbine Blade Waste in 2050  Waste
+Managemen t 62: 22940  https://doi  org/10 1016/j wasman 2017 02 007
+Material Economics  2018  The Circular EconomyA Powerful Force for Climate Mitigation   https://materialeconomics  com/publications/the-circular-economy -
+a-powerful-force-for-climate-mitigation-1
+Maxwell, D , P   Owen, L  McAndrew, K  Muehmel, and A  Neubauer  2011
+Addressing the Rebound Efect, A Report for the European Commission DG Environment   Brussels, Belgium: European Commission
+McKinsey, Global Fashion Agenda  2020  Fashion on Climate: How the Fashion
+Industry Can Urgently Act to Reduce Its GHG Emissions   McKinsey and Com -
+pany  https://www  mckinsey com/~/media/mckinsey/industries/retail/our%20
+insights/fashion%20on%20climate/fashion-on-climate-full-report pdf
+Modaresi, Roja, Stefan Pauliuk, Amund Lvik, and Daniel Mller  2014  Global Carbon Benefts of Material Substitution in Passenger Cars Until 2050 and the Impact on the Steel and Aluminium Industries  Environmental Science & Technology  48 (18): 1077684
+Morseletto, Piero  2020  Restorative and Regenerative: Exploring the Concepts
+in the Circular Economy  Journal of Industrial Ecology  24 (4): 76373
+Norgren, Alex, Alberta Carpenter, and Garvin Heath  2020  Design for Recy -
+cling Principles Applicable to Selected Clean Energy Technologies: Crystalline-Silicon Photovoltaic Modules, Electric Vehicle Batteries, and Wind Turbine Blades   Journal of Sustainable Metallurgy 6: 761774: https://doi  org/10 1007/
+s40831-020-00313-3
+OECD  2018  Mapping Support for Primary and Secondary Metal Produc -
+tionEnvironment Working Paper No  135  Paris, France: OECD, Global Plastics
+Outlook Database  PACE (Platform for Accelerating the Circular Economy)  2021  The Circular
+Economy Action Agenda for a) Electronics, b) Plastics, c) Textiles, d) Food, and e)Capital Equipment   The Hague, Netherlands: World Resources Institute
+https://pacecircular  org/sites/default/fles/2021-02/action-agenda-electronics -
+feb2021_FINAL pdf
+Parajuly, K , R  Kuehr, A  K  Awasthi, C  Fitzpatrick, J  Lepawsky, E  Smith, R
+Widmer, and X  Zeng  2019  Future E-Waste Scenarios  Bonn, Germany, StEP
+and UNU ViE-SCYCLE, Osaka, Japan: UNEP IETC (International Environmental
+Technology Centre)
+Patchell, Jerry  2018  Can the Implications of the GHG Protocols Scope 3
+Standard Be Realized? Journal of Cleaner Production  185: 94158
+Peltzer, R  2014  Cotton Made in Africa: From the Niche to the Mass Market
+WDEV Special Report 1/2014  World Economy & Development in Brief
+Pew Charitable Trusts and Systemiq  2020  Breaking the Plastic Wave
+Philadelphia, USA: Pew Charitable Trusts  https://www  pewtrusts org/-/media/
+assets/2020/10/breakingtheplasticwave_mainreport pdf  Poulton, P  , J  Johnston, A  Macdonald, R  White, and D  Powlson  2018  Major
+Limitations to Achieving 4 per 1000 Increases in Soil Organic Carbon Stock in Temperature Regions: Evidence From Long-term Experiments at Rothamsted Research, United Kingdom  Global Change Biology  24 (6): 2563-2584
+Piemonte, Vincenzo, and Fausto Gironi  2011  Land-use Change Emissions: How Green are the Bioplastics? Environmental Progress & Sustainable Energy 30 (4): 68591
+Quantis  2018  Measuring Fashion: Insights from the Environmental Impact of
+the Global Apparel and Footwear Industries  https://quantis  com/wp-content/
+uploads/2018/03/measuringfashion_globalimpactstudy_full-report_quan -
+tis_cwf_2018a pdf  Rajagopalan, Neethi, Anse Smeets, Karolien Peeters, Sofe de Regel, Tom
+Rommens, Ke Wang, Philppe Stolz, Rolf Frischknecht, Garvin Heath, and Dwarakanath Ravikumar  2021  Preliminary Environmental and Financial Vi -
+ability Analysis of Circular Economy Scenarios for Satisfying PV System Service Lifetime  Golden, CO (United States): NREL (National Renewable Energy Lab)
+Ranganathan, Janet, Richard Waite, Tim Searchinger, and Jessica Zionts  2020
+Regenerative Agriculture: Good for Soil Health, but Limited Potential to Mitigate Climate Change  December 5, 2020  https://www  wri org/insights/
+regenerative-agriculture-good-soil-health-limited-potential-mitigate -
+climate-change
+Russell, Stephen  2019  Estimating and Reporting the Comparative Emissions
+Impacts of Products  Washington DC, USA: World Resources Institute  Sandin, Gustav, and Greg Peters  2018  Environmental Impact of Textile Reuse
+and RecyclingA Review  Journal of Cleaner Production  184: 35365
+24 | WORKING PAPER |  November 2022
+Schrder, Patrick  2018  Why We Need Circular, Nature-Based Solutions
+to End Water Poverty  Institute of Development Studies  March 22, 2018  https://www  ids ac uk/opinions/why-we-need-circular-nature-based-solutions -
+to-end-water-poverty/
+SDSN, Yale Center for Environmental Law & Policy, and Center for Global
+Commons at the University of Tokyo  2021  Global Commons Stewardship Index
+2021  Paris; New Haven, CT; and Tokyo
+Searchinger, T , R  Waite, C  Hanson, J  Ranganathan, P   Dumas, E  Matthews, and
+C  Klirs  2019  Creating a Sustainable Food Future: A Menu of Solutions to Feed
+Nearly 10 Billion People by 2050   Final Report  Washington DC, USA: World
+Resources Institute
+Shen, Li, Ernst Worrell, and Martin Patel  2012  Comparing Life Cycle Energy
+and GHG Emissions of Bio-based PET, Recycled PET, PLA, and Man-made Cel -
+lulosics  Biofuels, Bioproducts and Biorefning 6 (6): 62539
+Sprecher, Benjamin, Yanping Xiao, Allan Walton, John Speight, Rex Harris, Rene Kleijn, Geert Visser, and Gert Jan Kramer  2014  Life Cycle Inventory of the Production of Rare Earths and the Subsequent Production of NdFeB Rare Earth Permanent Magnets  Environmental Science & Technology 48 (7): 395158
+SYSTEMIQ and Center for Global Commons at the University of Tokyo  2022  Planet Positive Chemicals   London and Tokyo
+Tasaki, Tomohiro, Masaharu Motoshita, Hiroyuki Uchida, and Yasufumi Suzuki  2013  Assessing the Replacement of Electrical Home Appliances for the Environment  Journal of Industrial Ecology  17 (2): 290-298  https://doi
+org/10 1111/j 1530-9290 2012 00551 x
+Thompson, Dana, Jennifer Hartley, Simon Lambert, Muez Shiref, Gavin Harper, Emma Kendrick, Paul Anderson, Karl Ryder, Linda Gaines, and Andrew Abbott  2020  The Importance of Design in Lithium Ion Battery RecyclingA Critical Review  Green Chemistry  22 (22): 75857603
+Toor, G S , Y Y  Yang, S  Das, S  Dorsey, and G  Felton  2021  Soil Health in
+Agricultural Ecosystems: Current Status and Future Perspectives  Advances in Agronomy , 168, pp 157-201
+Tsuji K , K  Kurisu, J  Nakatani, and Y  Moriguchi  2020  Evaluation of Environ -
+mental Impact of Car Sharing in Consideration of Uncertainty of Infuential Variables  Int. J. of Automation Technology 14 (6)
+Tukker, Arnold, Hector Pollitt, and Maurits Henkemans  2020  Consumption -
+based Carbon Accounting: Sense and Sensibility  Climate Policy   https://doi  org
+/10 1080/14693062 2020 1728208
+UBA (Umweltbundesamt, the German Environment Agency)  2020  Resource-Efcient Pathways Towards Greenhouse-Gas NeutralityRESCUE Summary Report   Umweltbundesamt, Dessau-Rolau  https://www  umweltbundesamt
+de/sites/default/fles/medien/376/publikationen/rescue_kurzfassung_eng pdf  UNDP-UNEP (United Nations Development Programme-United Nations Envi-ronment Programme)  2020  A 1.5C World Requires a Circular and Low Carbon
+Economy   New York, USA: UNDP
+UNEA (United Nations Environment Assembly)  2019  United Nations Environ -
+ment Assembly of the United Nations Environment Programme, Resolution 4/1  https://wedocs  unep org/bitstream/handle/20 500 11822/28517/English
+pdf?sequence=3&isAllowed=y
+UNEP (United Nations Environment Programme)  2019  Temperature Rise is
+Locked-in for the Coming Decades in the Arctic  Last updated 12 July 2022
+http://www  unep org/news-and-stories/press-release/temperature-rise -
+locked-coming-decades-arctic  UNEP   2020  Sustainability and Circularity in the Textile Value Chain, Global
+Stocktaking   Nairobi, Kenya: UNEP
+UNEP   2021  Emissions Gap Report 2021   Nairobi, Kenya: UNEP
+US EPA, OAR (US Environmental Protection Agency, Ofce of Air and Radia -
+tion)  2016  Basic Information about Landfll Gas  Overviews and Factsheets
+Last updated 09 August 2022  https://www  epa gov/lmop/basic-information -
+about-landfll-gas  Vreede, G  van de, and M  Sevenster  2010  Lifecycle Environmental Impact
+Assessment of Textiles, for Priority Streams in Dutch Lifecycle-based Waste
+Policy   Delft, Netherlands: CE Delft
+Walker, S , and R  Rothman  2020  Life Cycle Assessment of Bio-Based and
+Fossil-Based Plastic: A Review   Journal of Cleaner Production  261 (July): 121158
+doi:10 1016/j jclepro 2020 121158
+World Bank  2020  Addressing Food Loss and Waste: A Global Problem with
+Local Solutions  Washington DC, USA: World Bank Group  https://openknowl -
+edge worldbank org/handle/10986/34521
+World Resources Institute and Apparel Impact Institute  2021  Roadmap to Net
+Zero: Delivering Science-Based Targets in the Apparel Sector   Washington DC,
+USA: World Resources Institute
+Xu, Chengjian, Qiang Dai, Linda Gaines, Mingming Hu, Arnold Tukker, and
+Bernhard Steubing  2020  Future Material Demand for Automotive Lithium-Based Batteries  Communications Materials  1 (1): 99  https://doi  org/10 1038/
+s43246-020-00095-x
+Circular economy as a climate strategy: current knowledge and calls-to-action   | 25
+ACKNOWLEDGMENTS
+The authors would like to thank the following organisations and experts for
+their contributions to the paper through interviews, reviews and consultations: Matthew Fraser (Circle Economy) ; Miranda Schnitger (Ellen MacArthur
+Foundation) ; Gabriel Jacqmin (European Climate Foundation) ; Timon Lepold
+and Nils Wortberg (Federal Ministry for the Environment, Nature Conservation, Nuclear Safety and Consumer Protection, Germany) ; Chika Aoki-Suzuki,
+Premakumara Jagath Dickella Gamaralalage, Amila Abeynayaka, Dwayne Appleby, and Matthew Hengesbaugh  (Institute for Global Environmental
+Strategies) ; Annelies Withofs and Edgar van de Brug (IKEA Foundation) ; Chloe
+de Roos Feinberg and Karan Kumar (Laudes Foundation) ; Arnold Tukker (Leiden
+University (CML)) ; Thibaud Voita (NDC Partnership) ; Caitlin Murphy ( National
+Renewable Energy Laboratory (NREL) ); Hettie Boonman and Elmer Rietveld
+(Netherlands Organisation for Applied Scientifc Research (TNO)) ; Michiel Zijp
+and Susanne Waaijers-van der Loop (National Institute for Public Health and the Environment, the Netherlands (RIVM)) ; Kirsten Svenja Wiebe (SINTEF) ;
+Carter Brandon, David McGinty, Deepak Krishnan, Kevin Kurkul, Michael Doust, Natalia Alayza, Nathalie Badaoui Choumar, Simon Sharpe, Stientje van Veldhoven, Taryn Fransen, and Tomohiro Tasaki (World Resources Institute) ; and
+Reid Lifset (Yale University, Member of International Resource Panel)
+The authors recognise further contributions from the PACE Board delegates and Secretariat team (Heather Millen, Lotte Holvast, Lekha Nambiar, lose Lochon Gudmundsson, Pojen Lin, Edoardo Scalese)
+While the experts acknowledged in this section have provided signifcant input
+to the development of this paper, the conclusions and recommendations in this report are synthesised by the authors based on literature and consultations, and therefore do not necessarily refect the ofcial positions of every organisation, company and government involved or cited  Furthermore, the National Renewable Energy Laboratory (NREL) co-authors are acknowledged for their contributions to the knowledge landscape  The NREL co-authors, and NREL as an institution, do not take positions recommending or not recommending policies or actions to be taken by governments or other decision-makers
+This work was authored in part by the National Renewable Energy Laboratory,
+operated by Alliance for Sustainable Energy, LLC, for the U S  Department of Energy (DOE) under Contract No  DE-AC36-08GO28308  Funding provided
+by internal National Renewable Energy Laboratory resources  The views expressed in the article do not necessarily represent the views of the DOE or the U S  Government  The U S  Government retains and the publisher, by
+accepting the article for publication, acknowledges that the U S  Government retains a nonexclusive, paid-up, irrevocable, worldwide licence to publish or reproduce the published form of this work, or allow others to do so, for U S  Government purposes  Chatham House, the Royal Institute of International Afairs, is an independent policy institute based in London  Our mission is to help build a sustainably secure, prosperous and just world  Chatham House does not express opinions of its own  The opinions expressed in this publication are the responsibility of the authors
+ABOUT THE AUTHORS
+Ke Wang  is the Program Director at Platform for Accelerating the Circular
+Economy, hosted by World Resources Institute
+Contact: ke wang@pacecircular org
+Milo Costanza-van den Belt  was a Knowledge Intern at Platform for
+Accelerating the Circular Economy, hosted by World Resources Institute
+Garvin Heath is a Principal Environmental Engineer at National Renewable
+Energy Laboratory
+Julien Walzberg  is a Researcher IIIOperations Research Analysis at Nat ional
+Renewable Energy Laboratory  Taylor Curtis  is a Regulatory-Policy Analyst at the Strategic Energy Analysis
+Center of National Renewable Energy Laboratory
+Jack Barrie  is a Research Fellow at the Environment and Society Programme of
+Chatham House  Patrick Schrder  is a Senior Research Fellow at the Environment and Society
+Programme of Chatham House
+Leah Lazer  is a Research Associate at  the Ross Center for Sustainable Cities of
+World Resources Institute
+Juan Carlos Altamirano  is a Senior Economist at the Economics Center and
+Climate Program of World Resources Institute
+Cover photo credit:  THINK b / Adobe Stock
+26 | WORKING PAPER |  November 2022
+ABOUT WRI
+World Resources Institute is a global research organization that turns big
+ideas into action at the nexus of environment, economic opportunity, and human well-being
+Our Challenge Natural resources are at the foundation of economic opportunity and human
+well-being  But today, we are depleting Earths resources at rates that are not sustainable, endangering economies and peoples lives  People depend on clean water, fertile land, healthy forests, and a stable climate  Livable cities and clean energy are essential for a sustainable planet  We must address these urgent, global challenges this decade
+Our Vision We envision an equitable and prosperous planet driven by the wise
+management of natural resources  We aspire to create a world where the actions of government, business, and communities combine to eliminate poverty and sustain the natural environment for all people
+ABOUT PACE
+Since 2018, PACE has become the global collaboration platform for key public and private decision makers to share a vision, best practices, and scale the circular economy together  Nearly 100 leaders from governments, companies and civil society, across continents and sectors, have joined PACEs Leadership Group to help accelerate the transition to a circular economy globally
+Our vision is a global, circular economic system that enables human and
+environmental well-being
+Our mission is to catalyze global leadership from business, government, and
+civil society to accelerate the transition from a linear to a circular economy that will improve human and environmental well-being for current and future generations
+Our goal is to help double global circularity by 2032, working towards climate-
+neutral and inclusive economies  ABOUT CHATHAM HOUSE
+Chatham House, the Royal Institute of International Afairs, mission is to help governments and societies build a sustainably secure, prosperous and just world
+We pursue our mission through dialogue, analysis and solutions-based ideas,
+and by empowering the next generation to build a better world
+As we embark on our second century, we are focused on three goals
+for the future:
+Sustainable and equitable growth: Design pathways to sustainable growth that protect the planet and reduce
+inequalities within and between countries
+Peaceful and thriving societies: Promote the rule of law over the rule of force, so as to reduce levels of human
+insecurity, enhance resilience and prevent large-scale confict
+Accountable and inclusive governance: Enable greater political accountability and more inclusive governance at global,
+regional and sectoral levels
+Understanding the impact of, and opportunities from, technological innovation
+is critical to achieving each goal  Equally important is reaching, engaging and inspiring the next generation  We integrate both elements into all our work
+ABOUT NREL
+The National Renewable Energy Laboratory (NREL) is the U S  Department
+of Energys primary national laboratory for renewable energy and energy efciency research  From scientifc discovery to accelerating market adoption, NREL deploys its deep technical expertise and unmatched breadth of capabilities to drive the transformation of our nations energy resources and systems  NRELs innovations span the spectrum of clean energy, renewable electricity, and energy efciency  The laboratory is home to three national research centersfor solar, wind, and bioenergy and several programs that advance cutting-edge research in areas such as strategic energy analysis and energy systems integration  At NREL, we are transforming energy
+Circular economy as a climate strategy: current knowledge and calls-to-action   | 27 Copyright 2022 World Resources Institute. This work is licensed under the Creative Commons Attribution 4.0 International Licence.
+To view a copy of the licence, visit http://creativecommons.org/licenses/by/4.0/
+Maps are for illustrative purposes and do not imply the expression of any opinion on the part of WRI, concerning the legal status of any
+country or territory or concerning the delimitation of frontiers or boundaries.pacecircular .org
+wri.org chathamhouse.org nrel.gov

@@ -27,7 +27,7 @@ g.kioumourtzis@external.euc.ac.cy
 8Department of Computer Science, Universitat Politcnica de CatalunyaBarcelonaTech, 08034 Barcelona,
 Spain; anna.gatzioura@gmail.com
 *Correspondence: vrettos@mail.ntua.gr; Tel.: +30-210-772-2558
- These authors contributed equally to this work.
+These authors contributed equally to this work.
 Received: 31 July 2018; Accepted: 12 October 2018; Published: 17 October 2018
 /gid00030/gid00035/gid00032/gid00030/gid00038/gid00001/gid00033/gid00042/gid00045 /gid00001
 /gid00048/gid00043/gid00031/gid00028/gid00047/gid00032/gid00046

@@ -10,6 +10,7 @@ class Autotyper:
         self.finger_speed = finger_speed
         self.starting_pos = starting_pos
         self.finger_pos = self.starting_pos
+        self.name()
 
     def find_position(self, letter):
         position = ()
@@ -80,6 +81,9 @@ class Autotyper:
             pygame.draw.circle(screen, color=finger_color[finger], center=(85+58*X, 285+Y*58), radius=15)
 
 class SeekHunt(Autotyper):
+    def name(self):
+        self.name = "SeekHunt"
+
     def type(self, text, typed, capitalized):
         # print(self.finger_pos)
         typed = "".join(typed)
@@ -157,6 +161,10 @@ class Type10Finger(Autotyper):
         # print(self.finger_pos)
         if len(self.finger_pos.keys()) != 8:
             raise Exception("The number of finger has to be 8")
+
+    def name(self):
+        self.name = "10Fingers"
+
 
     def type(self, text, typed, capitalized):
         # print(self.finger_pos)

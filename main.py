@@ -296,10 +296,19 @@ def create_simulation(mode):
                         if 715 <= x <= 885 and 180 <= y <= 220:
                             wps = round(len(testing_text.split())/((current_time - start_ticks)/1000)*60)
                             lps = round(len(testing_text)/(current_time - start_ticks)*1000)
-                            mistake = 0
+                            accuracy = 0
                             for i, j in zip(typed, testing_text):
-                                if i != j:
-                                    mistake += 1
+                                if i == j:
+                                    accuracy += 1
+                            accuracy = round(accuracy/len(typed) * 100)
+                            raw_accuracy = 100-round(raw_accuracy/len(typed) * 100)
+                            wps_mean = sum(wpm_list)/len(wpm_list)
+                            lps_mean = sum(lps_list)/(len(lps_list))
+                            consistency = 100-((sum((x - wps_mean) ** 2 for x in wpm_list) / len(wpm_list))**0.5 / (wps_mean) \
+                                        + (sum((x - lps_mean) ** 2 for x in lps_list) / len(lps_list))**0.5 / (lps_mean)) \
+                                        * 100                            
+
+
                             state = "evaluate"
                         elif 532 <= x <= 667 and 179 <= y <= 216:
                             state = "prepare"
@@ -366,7 +375,7 @@ def create_simulation(mode):
                                 # print(type(CHOSEN_STYLE), type(CHOSEN_STYLE[0]), type(CHOSEN_STYLE[0][0]))                           
                             state = "prepare"
                             change_text = True
-                            CHOICE = "custom"
+                            CHOICE = input_text
                         except Exception:
                             pass
 
@@ -393,7 +402,6 @@ def create_simulation(mode):
                 limit = 350
 
                 text_type = "Dummy"
-
             case "menu":
                 title = title_font.render("Keyboard Simulator", True, pygame.Color("Black"))
                 title_rect = title.get_rect()
@@ -429,10 +437,8 @@ def create_simulation(mode):
                 
                 draw_input_box(screen, input_box, input_text, input_font, active, color_active, color_inactive)
                 create_text(screen, "Simulation Name:", input_font, "Black", (650, 549))
-
             case "prepare":
                 test = Test(screen)
-
                 if change_text:
                     if text_type == "  Book  ":
                         text_path = "books"
@@ -448,12 +454,15 @@ def create_simulation(mode):
                     starting_line = random.randint(0, len(text)-1)
 
                     testing_text = ""
+                    if mode == "train":
+                        limit = random.choice([500, 260, 350])
+
                     while True:
                         if text[starting_line]:
                             testing_text += text[starting_line]
 
                         starting_line += 1
-                        if len(testing_text) > 300 or starting_line >= len(text):
+                        if len(testing_text) > limit or starting_line >= len(text):
                             testing_text = testing_text.replace("\n", " ")
                             # print(testing_text)
                             break
@@ -490,6 +499,8 @@ def create_simulation(mode):
                 
                 # for i in QWERTY_dist:
                 #     print(i)
+                if mode == "train":
+                    CHOICE = random.choice(["QWERTY", "DVORAK", "COLEMAK"] + [i[:-4] for i in os.listdir("save")])
 
 
                 if CHOICE == "QWERTY":
@@ -503,6 +514,19 @@ def create_simulation(mode):
                     CHOSEN_DIST = dist
                 else:
                     CHOSEN_DIST = dist
+                    if mode == "train":
+                        input_text = CHOICE
+                        # print(CHOICE)
+                        with open(f"save/{input_text}.txt") as f:
+                            unprocessed_keyboard = f.readlines()[0]     
+                            CHOSEN_STYLE = process_string(unprocessed_keyboard)
+                            # for i in CHOSEN_STYLE:
+                            #     print(i)
+                            # print(type(CHOSEN_STYLE), type(CHOSEN_STYLE[0]), type(CHOSEN_STYLE[0][0]))                           
+                        state = "prepare"
+                        change_text = True
+
+
 
 
                 # CHOSEN_STYLE = [['`~', '1!', '2@', '3#', '4$', '5%', '6^', '7&', '8*', '9(', '0)', '-_', '=+', 'backspace'], 
@@ -588,6 +612,15 @@ def create_simulation(mode):
                 raw_typed = []
                 finished = False
 
+                raw_accuracy = 0
+                pre_letter = -1
+
+                lps_list, wpm_list = [], []
+
+                if mode == "train":
+                    text_type = random.choice(["  Book  ", "Article", "  Code  ", "Dummy"])
+                    
+
                 # total_time = 0
             case "running":
                 pressed_key = []
@@ -631,11 +664,27 @@ def create_simulation(mode):
                     
                     if mode == "train":
                         wpm = round(len(testing_text.split())/((current_time - start_ticks)/1000)*60)
-                        data = [CHOICE, len(testing_text), current_time - start_ticks, wpm, autotyper.type_genre]
+                        lps = round(len(testing_text)/(current_time - start_ticks)*1000)
+                        if auto:
+                            accuracy = len(typed)
+                            raw_accuracy = 0
+                        accuracy = round(accuracy/len(typed) * 100)
+                        raw_accuracy = 100-round(raw_accuracy/len(typed) * 100)
+                        wps_mean = sum(wpm_list)/len(wpm_list)
+                        lps_mean = sum(lps_list)/(len(lps_list))
+                        consistency = 100-((sum((x - wps_mean) ** 2 for x in wpm_list) / len(wpm_list))**0.5 / (wps_mean) \
+                                    + (sum((x - lps_mean) ** 2 for x in lps_list) / len(lps_list))**0.5 / (lps_mean)) \
+                                    * 100                            
+                        if not auto:
+                            typing_method = "Typing"
+                        else:
+                            typing_method = autotyper.name
+
+                        data = [CHOICE, len(testing_text), len(testing_text.split()), (current_time - start_ticks)/1000, wpm, lps, accuracy, raw_accuracy, consistency, typing_method, text_type.strip()]
                         with open("data.csv", "a", newline="") as file:
                             writer = csv.writer(file)
                             writer.writerow(data)
-                        if repeat == 1:
+                        if repeat == 0:
                             change_text = True
                         else:
                             change_text = False
@@ -745,8 +794,19 @@ def create_simulation(mode):
                 create_button(screen, " Back ", start_font, pygame.Color("Black"), (150, 200), width=4, box_color=pygame.Color("SkyBlue"))
 
                 
-                
-                # print(raw_typed)
+                if typed:
+                    # print(typed)
+                    if len(typed) < len(testing_text) and len(typed)-1 > pre_letter:
+                        for i in range(pre_letter+1, len(typed)):
+                            if typed[i] != testing_text[i]:
+                                raw_accuracy += 1
+                        pre_letter = len(typed)-1
+                    # print(raw_accuracy, len(typed), len(typed)-raw_accuracy)
+                if start_time:
+                    if (current_time-start_ticks) > 2000:
+                        wpm_list.append(len("".join(typed).split())/(current_time-start_ticks))
+                        lps_list.append(len(typed)/(current_time-start_ticks))
+
             case "evaluate":
                 create_box(screen, 10, 10, 980, 230, pygame.Color("Gray"), pygame.Color("Black"), 5, 10)
                 create_text(screen, f"Text length: ", start_font, "Black", (120, 50))
@@ -756,6 +816,15 @@ def create_simulation(mode):
                 pygame.draw.line(screen, pygame.Color("Black"), (200, 150), (800, 150), 2)    
                 create_text(screen, f"Speed: ", start_font, "Black", (100, 200))
                 create_text(screen, f"{str(wps)} (WPM)              {str(lps)} (LPS)", start_font, "Black", (600, 200))
+
+
+                create_box(screen, 10, 250, 480, 250, pygame.Color("Gray"), pygame.Color("Black"), 5, 10)
+                create_text(screen, f"Raw acccuracy: {raw_accuracy}%", start_font, "Black", (240, 280))
+                create_text(screen, f"Acccuracy: {accuracy}%", start_font, "Black", (240, 330))
+                create_text(screen, f"Consistency: {round(consistency)}%", start_font, "Black", (240, 380))
+                # create_text(screen, f"Raw acccuracy", start_font, "Black", (20, 260))
+
+
                 # print(mistake, raw_error)
                 # WPS_text = start_font.render(f"Words per minute: {str(wps)} (wpm)", True, pygame.Color("Black"))
                 # screen.blit(WPS_text, (50, 100))
@@ -783,7 +852,7 @@ def create_simulation(mode):
 
 
 def main():
-    create_simulation(mode="")
+    create_simulation(mode="train")
 
 
 

@@ -1,6 +1,8 @@
 import pygame
 import os
+import sys
 import random
+import csv
 from collections import defaultdict
 
 import matplotlib.pyplot as plt
@@ -27,7 +29,7 @@ def generate_keyboard():
 
     keyboard = [["`~", "1!","2@","3#","4$","5%","6^", "7&","8*","9(","0)","-_" ,"=+", "backspace"],
                 ["Tab"] + first + ["\\|"],
-                ["Caps Lock"] + second + ["Enter"],
+                ["caps lock"] + second + ["Enter"],
                 ["LShift"] + third + ["RShift"]           
                 ]
     
@@ -450,7 +452,7 @@ class Genetic:
 
         COLEMAK = [["`~", "1!", "2@", "3#", "4$", "5%", "6^", "7&", "8*", "9(", "0)", "-_", "=+", "backspace"],
                     ["Tab", "Q", "W", "F", "P", "G", "J", "L", "U", "Y", ";:", "[{", "]}", "\\|"],
-                    ["Caps Lock", "A", "R", "S", "T", "D", "H", "N", "E", "I", "O", "'\"", "Enter"],
+                    ["caps lock", "A", "R", "S", "T", "D", "H", "N", "E", "I", "O", "'\"", "Enter"],
                     ["LShift", "Z", "X", "C", "V", "B", "K", "M", ",<", ".>", "/?", "RShift"]
                 ]
 
@@ -497,7 +499,6 @@ class Genetic:
 
             self.history.append(min(self.population.values()))
             if _ == generation-1:
-                self.fit()
                 save_keyboard = [process_string(i) for i in list(self.population.keys())[:save]]
                 
                 # print(save_keyboard)
@@ -558,8 +559,8 @@ class Genetic:
 
         for _ in range(sample):
             typed = []
-            # type = random.choice(os.listdir("sample_text"))
-            type = "code"
+            type = random.choice(os.listdir("sample_text"))
+            # type = "code"
             text = random.choice(os.listdir("sample_text/" + type))
             with open(f"sample_text\\{type}\\{text}", "r") as f:
                 text = f.readlines()
@@ -614,6 +615,76 @@ class Genetic:
 
         return 100/(WPS/sample), WPS/sample
 
+    def evaluate(self, keyboard, name):
+        FINGER_POS = {"1" : (2, 1), "2" : (2, 2), "3" : (2, 3), "4" : (2, 4), "5" : (2, 7), "6" : (2, 8), "7" : (2, 9), "8" : (2, 10)}
+        FINGER_SPEED = {"1" : 20, "2" : 30, "3" : 40, "4" : 50, "5" : 50, "6" : 40, "7" : 30, "8" : 20}
+        FINGER_COLOR = {"0": pygame.Color("Gray"), "1" : pygame.Color("Pink"), "2" : pygame.Color("Red"), "3" : pygame.Color("Yellow"), "4" : pygame.Color("Green"), "5" : pygame.Color("Blue"), "6" : pygame.Color("Purple"), "7" : pygame.Color("Brown"), "8" : pygame.Color("Light blue")}
+
+        dist_layout = [[0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5,9.5,10.5,11.5,12.5,14],
+                        [0.8, 2, 3, 4, 5 ,6 ,7, 8, 9, 10, 11, 12, 13, 14.3],
+                        [0.9, 2.2 ,3.2, 4.2, 5.2, 6.2, 7.2, 8.2, 9.2, 10.2, 11.2,12.2,13.9],
+                        [1.1, 2.7,3.7,4.7,5.7,6.7,7.7,8.7,9.7,10.7,11.7,13.6]
+                        ]
+        
+        autotyper = Type10Finger(keyboard=keyboard, dist_layout =dist_layout, finger_speed = FINGER_SPEED, starting_pos=FINGER_POS)
+        data = []
+
+        for file in (os.listdir("sample_text/evaluation")):
+            print(f"    -{file}")
+            typed = []
+            # type = "code"
+            # text = random.choice(os.listdir("sample_text/" + type))
+            with open(f"sample_text\\evaluation\\{file}", "r") as f:
+                text = f.readlines()
+            testing_text = "".join(text)
+            testing_text = testing_text.replace("\n", " ")
+            testing_text = testing_text.strip()
+            # print(testing_text)
+            length = len(testing_text)
+            length_word = len(testing_text.split())
+            capslock = False
+            total_cost = 0
+
+            
+            while not(len(typed) >= len(testing_text)-1):
+                # try:
+                # print(testing_text,"\n\n", typed)
+                cost, letter, fingers = autotyper.type(testing_text, typed, capslock)
+                # except Exception:
+                #     # print("CHECING", (testing_text[len(typed):]), ord(testing_text[len(typed)]), "2", typed, "3",  letter)
+                #     raise Exception
+                for i in letter:
+                    for j in self.frequency:
+                        if len(j) <= 2:
+                            if i.lower() in j.lower():
+                                self.frequency[j] += 1
+                        else:
+                            if i.lower() == j.lower():
+                                self.frequency[j] += 1
+
+
+                if "caps lock" in letter:
+                    capslock = False if capslock == True else True
+                for i in letter:
+                    if len(i) == 1:
+                        typed.append(i)
+                    if i == "space":
+                        typed.append(" ")
+                total_cost += cost
+            # print(total_cost)
+            if total_cost == 0:
+                continue
+            LPS = length/total_cost
+            WPM = length_word/total_cost
+
+            data.append([name, length, length_word, total_cost, WPM, LPS, file])
+        
+
+            # print(length/total_cost)
+        return data
+
+
+
 # def check_balance(times, repeat=30):
 #     QWERTY = [["`~", "1!","2@","3#","4$","5%","6^", "7&","8*","9(","0)","-_" ,"=+", "backspace"],
 #         ["Tab", "Q" ,"W" ,"E" ,"R" ,"T" ,"Y" ,"U" ,  "I" ,"O" ,"P" ,"[{" ,"]}", "\\|"],
@@ -630,16 +701,64 @@ class Genetic:
 
 def train():
     # print(check_balance(times=30, repeat=30))
-    gens = Genetic(population_number=150, selection_method="rank", selection_rate=0.8, mutation_rate=0.1,
+    gens = Genetic(population_number=100, selection_method="rank", selection_rate=0.8, mutation_rate=0.1,
             mutation_intensity=0.3, dominant=0.7)
 
-    gens.simulate(generation=100, save=10, name="simulation8")
+    gens.simulate(generation=100, save=10, name="simulation1")
+
+def evaluate():
+    gens = Genetic(population_number=100, selection_method="rank", selection_rate=0.8, mutation_rate=0.1,
+            mutation_intensity=0.3, dominant=0.7)
+
+    keyboards = {
+    "simulation1" : [['`~', '1!', '2@', '3#', '4$', '5%', '6^', '7&', '8*', '9(', '0)', '-_', '=+', 'backspace'], ['Tab', '\'"', 'W', 'F', 'U', 'M', '.>', 'C', 'I', 'Q', 'R', '/?', '[{', '\\|'], ['caps lock', ',<', 'T', 'E', 'D', 'O', 'A', 'S', 'P', 'N', 'B', ']}', 'Enter'], ['LShift', ';:', 'X', 'V', 'G', 'H', 'L', 'Y', 'J', 'Z', 'K', 'RShift']],
+    "simulation2" : [['`~', '1!', '2@', '3#', '4$', '5%', '6^', '7&', '8*', '9(', '0)', '-_', '=+', 'backspace'], ['Tab', 'Z', ';:', 'N', ']}', '[{', 'L', 'I', '\'"', 'H', 'E', '.>', 'F', '\\|'], ['caps lock', ',<', 'T', 'S', 'R', 'X', 'V', 'P', 'C', 'J', 'U', 'K', 'Enter'], ['LShift', 'Y', 'A', 'W', 'Q', '/?', 'G', 'O', 'D', 'B', 'M', 'RShift']],
+    "simulation3" : [['`~', '1!', '2@', '3#', '4$', '5%', '6^', '7&', '8*', '9(', '0)', '-_', '=+', 'backspace'], ['Tab', 'X', 'K', 'H', 'D', 'C', 'B', 'L', 'I', 'T', 'J', ';:', ']}', '\\|'], ['caps lock', '[{', 'E', 'S', 'O', 'R', 'P', 'A', 'N', 'Y', '\'"', 'U', 'Enter'], ['LShift', 'Q', 'M', ',<', 'W', '/?', '.>', 'F', 'Z', 'G', 'V', 'RShift']],
+    "QWERTY" : [["`~", "1!","2@","3#","4$","5%","6^", "7&","8*","9(","0)","-_" ,"=+", "backspace"],
+            ["Tab", "Q" ,"W" ,"E" ,"R" ,"T" ,"Y" ,"U" ,  "I" ,"O" ,"P" ,"[{" ,"]}", "\\|"],
+            ["caps lock", "A" ,"S" ,"D" ,"F" ,"G" ,"H" , "J" , "K" ,"L" ,";:","'\"", "Enter"],
+            ["LShift",   "Z" ,"X" ,"C" ,"V" ,"B" ,"N" ,"M" , ",<",".>","/?", "RShift",]
+            ],
+
+    "DVORAK" : [["`~", "1!","2@","3#","4$","5%","6^", "7&","8*","9(","0)","[{" ,"]}", "backspace"],
+            ["Tab", "'\"" ,",<" ,".>" ,"P" ,"Y" ,"F" ,"G" , "C" ,"R" ,"L" ,"/?" ,"=+", "\\|"],
+            ["caps lock", "A" ,"O" ,"E" ,"U" ,"I" ,"D" , "H" , "T" ,"N" ,"S","-_", "Enter"],
+            ["LShift", ";:", "Q" ,"J" ,"K" ,"X" ,"B" ,"M" ,"W" , "V", "Z", "RShift",]
+            ],
+
+    "COLEMAK" : [["`~", "1!", "2@", "3#", "4$", "5%", "6^", "7&", "8*", "9(", "0)", "-_", "=+", "backspace"],
+                ["Tab", "Q", "W", "F", "P", "G", "J", "L", "U", "Y", ";:", "[{", "]}", "\\|"],
+                ["caps lock", "A", "R", "S", "T", "D", "H", "N", "E", "I", "O", "'\"", "Enter"],
+                ["LShift", "Z", "X", "C", "V", "B", "K", "M", ",<", ".>", "/?", "RShift"]
+            ]
+    }
+    data = [['keyboard','letters','words','time','wpm','lps','text']]
+    for keyboard in keyboards:
+        # print(list(gens.evaluate(keyboard=keyboards[keyboard], name=keyboard)))
+        print(keyboard)
+        data += list(gens.evaluate(keyboard=keyboards[keyboard], name=keyboard))
+
+        
+        # print(data)
+    with open("evaluation.csv", "w", newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(data)
+
+        
 
 
 
 def main():
+    args = sys.argv
     print()
-    train()
+    if len(args) > 1:
+        if args[0] == "t":
+            train()
+        elif args[1] == "e":
+            evaluate()
+    else:
+        raise Exception("Invalid arguments")
+    
     # gens = Genetic(population_number=100, selection_method="tournament", selection_rate=0.9, mutation_rate=0.05,
     #         mutation_intensity=1, fitness_function=fit_keyboard, eltism=0.1)
     
