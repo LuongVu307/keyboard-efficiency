@@ -1,0 +1,7 @@
+pygame
+pandas 
+seaborn 
+matplotlib 
+requests 
+bs4 
+PyPDF2

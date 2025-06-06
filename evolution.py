@@ -701,7 +701,7 @@ class Genetic:
 
 def train():
     # print(check_balance(times=30, repeat=30))
-    gens = Genetic(population_number=100, selection_method="rank", selection_rate=0.8, mutation_rate=0.1,
+    gens = Genetic(population_number=10, selection_method="rank", selection_rate=0.8, mutation_rate=0.1,
             mutation_intensity=0.3, dominant=0.7)
 
     gens.simulate(generation=100, save=10, name="simulation1")
@@ -752,9 +752,9 @@ def main():
     args = sys.argv
     print()
     if len(args) > 1:
-        if args[0] == "t":
+        if args[1] == "--train":
             train()
-        elif args[1] == "e":
+        elif args[1] == "--eval":
             evaluate()
     else:
         raise Exception("Invalid arguments")
