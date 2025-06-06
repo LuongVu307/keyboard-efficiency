@@ -44,7 +44,7 @@ sample_text/ <br>
 ## Project Report
 
 The full research write-up is available here:
-[📄 Report.pdf](./keyboard.pdf)
+[📄 Report.pdf](./report/keyboard.pdf)
 
 ## Getting Started
 
@@ -91,20 +91,13 @@ Configuration parameters (e.g., population size, mutation rate) can be adjusted 
 
 ## 📄 License
 
-This project is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** License.
+This project uses a dual-license setup:
 
-You are free to:
+- 🧠 **Source Code** — [MIT License](./LICENSE)
+- 📑 **Report, Dataset, and Media** — [Creative Commons Attribution 4.0 International (CC BY 4.0)](./report/LICENSE)
 
-* Share — copy and redistribute the material in any medium or format
-* Adapt — remix, transform, and build upon the material for any purpose, even commercially
-
-**Under the following terms:**
-
-* Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
-
-Full license text: [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
-
-A `LICENSE` file is included in this repository.
+- You may freely use, modify, and share the code under the MIT License.
+- You may share and adapt the research content and visuals with proper attribution.
 
 ---
 
