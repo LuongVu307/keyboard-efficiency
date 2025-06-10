@@ -89,7 +89,7 @@ for evaluating
 
 Configuration parameters (e.g., population size, mutation rate) can be adjusted directly in the script.
 
-## 📄 License
+## License
 
 This project uses a dual-license setup:
 
